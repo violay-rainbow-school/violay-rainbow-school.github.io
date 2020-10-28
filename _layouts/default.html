@@ -50,10 +50,13 @@ ga('send', 'pageview');
 <nav id="menu">
     <ul>
         <h3>Navigation</h3>
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="{{ site.baseurl }}/about">About <span class="badge badge-primary">Memoirs Jekyll Theme</span></a></li>
-        <li><a href="{{ site.baseurl }}/categories">Categories</a></li>      
-        <li><a href="{{ site.baseurl }}/contact">Contact</a></li>       
+        <li><a href="{{ site.baseurl }}/">Accueil</a></li>
+        <li><a href="{{ site.baseurl }}/pedagogy">Pédagogie</a></li>
+        <li><a href="{{ site.baseurl }}/schooling">Scolarité</a></li>
+        <li><a href="{{ site.baseurl }}/school-registration">Rejoindre l'école</a></li>
+        <li><a href="{{ site.baseurl }}/contribute">Nous soutenir</a></li>
+        <li><a href="{{ site.baseurl }}/categories">Catégories</a></li>      
+        <li><a href="{{ site.baseurl }}/contact">Nous contacter</a></li>       
     </ul>   
 </nav>
 
@@ -111,10 +114,14 @@ ga('send', 'pageview');
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12 text-center text-lg-left">
-                Copyright © {{ site.time | date: "%Y" }} {{ site.name }} 
+                Copyright © {{ site.time | date: "%Y" }} {{ site.name }}<br>
+                <a href="https://www.google.fr/maps/dir//36+Rue+des+Gen%C3%AAts,+42780+Violay/@45.8535438,4.3569771,17z/data=!4m17!1m7!3m6!1s0x47f468646d028e2f:0xd16927419183142f!2s36+Rue+des+Gen%C3%AAts,+42780+Violay!3b1!8m2!3d45.8535401!4d4.3591658!4m8!1m0!1m5!1m1!1s0x47f468646d028e2f:0xd16927419183142f!2m2!1d4.3591658!2d45.8535401!3e2">{{ site.address }}</a><br>
+                <a href="tel:{{ site.phone.landlineLink }}">{{ site.phone.landline }}</a> - <a href="tel:{{ site.phone.mobileLink }}">{{ site.phone.mobile }}</a>
             </div>
-            <div class="col-md-6 col-sm-12 text-center text-lg-right">    
-                <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs Jekyll Theme</a> by WowThemes.net
+            <div class="col-md-6 col-sm-12 text-center text-lg-right">
+                <a href="https://www.facebook.com/EcoleMontessoriViolay/">Page Facebook</a><br>
+                <a href="mailto:montessori.violay@gmail.com">{{ site.email }}</a><br>
+                <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Theme</a> by WowThemes.net
             </div>
         </div>
     </div>

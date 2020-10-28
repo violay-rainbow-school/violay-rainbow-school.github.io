@@ -3,6 +3,7 @@
 ## Installation
 
 1. Installer Ruby :
+
     ```bash
     sudo apt-get install ruby-full build-essential zlib1g-dev
     echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
@@ -10,15 +11,21 @@
     echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
     source ~/.bashrc
     ```
+
 1. Installer Jekyll :
+
     ```bash
     gem install jekyll bundler
     ```
+
 1. Récupérer le code source du site :
+
     ```bash
     git clone adresseRepositoryGithub
     ```
+
 1. Dans le dossier du site :
+
     ```bash
     bundle install
     ```
@@ -35,6 +42,7 @@ bundle exec jekyll serve
 
 Fichier `/_config.yml` :
 - Adresse du site :
+
     ```yaml
     baseurl: https://violay-rainbow-school.github.io/
     ```
