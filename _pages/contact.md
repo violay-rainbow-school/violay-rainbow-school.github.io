@@ -17,4 +17,8 @@ Magalie Farjot, Présidente AEP : <aep.violay@gmail.com>, 06 32 08 83 46
 
 Prendre RDV : Bouton Miello
 
-Carte : où nous trouver? (avec photo du parking)
+Où nous trouver ?
+
+<a href="{{ site.location_map }}">Itinéraire Google Maps</a>
+
+(avec photo du parking)

@@ -12,6 +12,7 @@ include: ["_pages"]
 permalink: /:title/
 email: montessori.violay@gmail.com
 address: 36 Rue des Genêts 42780 Violay
+location_map: 'https://www.google.fr/maps/dir//36+Rue+des+Gen%C3%AAts,+42780+Violay/@45.8535438,4.3569771,17z/data=!4m17!1m7!3m6!1s0x47f468646d028e2f:0xd16927419183142f!2s36+Rue+des+Gen%C3%AAts,+42780+Violay!3b1!8m2!3d45.8535401!4d4.3591658!4m8!1m0!1m5!1m1!1s0x47f468646d028e2f:0xd16927419183142f!2m2!1d4.3591658!2d45.8535401!3e2'
 phone:
   landline: '04 74 63 91 41'
   landlineLink: '+33474639141'
