@@ -1,0 +1,14 @@
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+.home-link {
+    width: 10em;
+    height: 10em;
+    margin: auto;
+    background-color: green;
+    border-radius: 50%;
+}

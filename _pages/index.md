@@ -7,6 +7,15 @@ image:
 imageshadow: true
 ---
 
+<div class="home-grid">
+    <div class="home-link"></div>
+    <div class="home-link"></div>
+    <div class="home-link"></div>
+    <div class="home-link"></div>
+    <div class="home-link"></div>
+    <div class="home-link"></div>
+</div>
+
 Bouton "Projet" 
 Bouton "Inscription de Miello"
 
