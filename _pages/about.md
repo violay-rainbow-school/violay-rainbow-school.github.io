@@ -1,12 +1,15 @@
 ---
 layout: page
 title: L'école
-permalink: /schooling
+permalink: /about
 comments: false
 image: 
 imageshadow: true
 ---
 
+- [Pédagogie Montessori](/montessory-pedagogy)
+- [Projet pédagogique](/educational-project)
+- [Equipe](/team)
 - [Coût](/cost)
 - [Horaires](/timetable)
 - [Calendrier scolaire](/school-calendar)
