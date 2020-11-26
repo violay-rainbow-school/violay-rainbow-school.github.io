@@ -17,7 +17,7 @@ Pour chaque inscription, y compris celles en cours d’année, nous proposons un
 
 Cette proposition est mise en place dans le but de vous permettre d’opter pour le choix le plus adapté à votre enfant et à son épanouissement. L’équipe pédagogique se réserve le droit de décider ou non de la poursuite de la scolarité de l’enfant au sein de l’école à l’issue de cette période d’essai dans l’intérêt du groupe et de l'enfant.
 
-Il n'y a pas de période spécifique pour l'inscription.
-Lorsque vous avez lu notre projet pédagogique, vous pouvez :
-- Demander un RDV avec notre directrice ( Bouton RDV Miello)
-- Préinscrire directement votre enfant (Bouton inscription Miello). Si nous ne vous connaissons pas encore, un RDV vous sera alors proposé. Nous vous renseignerons alors sur la date possible d'accueil de votre enfant.
+Il n'y a pas de période spécifique pour l'inscription.  
+Lorsque vous avez lu [notre projet pédagogique]({{ site.educational_project_url }}), vous pouvez compléter le formulaire de préinscription :
+
+<a class="btn btn-success" href="/school-registration/pre-registration-form">Se préinscrire</a>

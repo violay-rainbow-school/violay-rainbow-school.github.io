@@ -7,9 +7,6 @@ image:
 imageshadow: true
 ---
 
-Bouton "Projet" 
-Bouton "Inscription de Miello"
-
 ## QUI SOMMES-NOUS?
 
 Une école de deux classes (3/6ans et 6/12ans) indépendante Montessori.
@@ -29,9 +26,9 @@ avec un ancrage fort dans la nature, une ouverture sur le monde, la découverte 
 - petits effectifs,
 - classes spacieuses et lumineuses
 
-En savoir plus... (bouton : Fonctionnement de l'école)
+En savoir plus... <div class="toAsk">(bouton : Fonctionnement de l'école)</div>
 
-Diaporama photos école
+<div class="toAsk">Diaporama photos école</div>
 
 ## NOTRE ÉQUIPE
 
@@ -43,33 +40,32 @@ Directrice et éducatrice Montessori 6/12ans
 Photo Angélique
 Educatrice Montessori 3/6ans
 
-Bouton : Equipe pédagogique
+<div class="toAsk">Bouton : Equipe pédagogique</div>
 
-Bandeau :
+<div class="toAsk">Bandeau :</div>
 « N’élevons pas nos enfants pour le monde d’aujourd’hui. Ce monde aura changé lorsqu’ils seront grands. Aussi doit-on en priorité aider l’enfant à cultiver ses facultés de création et d’adaptation. » Maria Montessori
 
 **Nos valeurs et priorités**
 
 Une école pour révéler le meilleur de chacun :
-Bouton : Projet pédagogique
+<div class="toAsk">Bouton : Projet pédagogique</div>
 
-Bandeau :
+<div class="toAsk">Bandeau :</div>
 « L'enfant est, pour l'humanité, à la fois un espoir et une promesse. En prenant soin de cet embryon comme notre trésor le plus précieux, nous travaillerons à faire grandir l'humanité. » Maria Montessori
 
-calendrier
-Manifestations prévues
+Evénements
 
-Qqch pour insérer facilement des manifestations avec une photo, un descriptif rapide et un lien vers la billeterie Hello asso
+<div class="toAsk">Qqch pour insérer facilement des manifestations avec une photo, un descriptif rapide et un lien vers la billeterie Hello asso</div>
 
 pour nous contacter
 Vous pouvez nous contacter par courrier, téléphone ou mail
 
-Formulaire contact
-Bouton "prendre RDV Miello"
+<div class="toAsk">Formulaire contact</div>
+<div class="toAsk">Bouton "prendre RDV Miello"</div>
 
-Dans tous les bas de page :
+<div class="toAsk">Dans tous les bas de page :
 36 Rue des Genêts 42780 Violay
 montessori.violay@gmail.com
 04 74 63 91 41 - 06 32 08 83 46
 Lien Facebook
-
+</div>

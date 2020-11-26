@@ -1,0 +1,42 @@
+.pre-registration-wrapper {
+    margin-top: 20px;
+    position: relative;
+    height: 3000px;
+}
+
+.pre-registration-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media all and (max-width: 375px) {
+
+    .pre-registration-wrapper {
+        margin: 20px -40px 0 -40px;
+    }
+}
+
+/* 
+ * Property to add inside the iframe to avoid overflowing text.
+ * 
+ * TODO: Find a way to bypass cross origin error
+ */
+/*
+.form-text {
+    white-space: normal;
+}
+*/
+
+/* 
+ * Property to add inside the iframe to avoid blank space at the bottom of the form
+ * 
+ * TODO: Find a way to bypass cross origin error
+ */
+/*
+.page-wrap > .content > .detail-area {
+    padding-bottom: 0;
+}
+*/
