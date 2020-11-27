@@ -3,8 +3,26 @@
     src: url('../fonts/santos-dumont.ttf');
 }
 
-/* Hand writing:
+/* Hand writing everywhere:
 * {
     font-family: 'santos-dumont';
 }
 */
+
+.toAsk {
+    color: indianred;
+    font-weight: bold;
+}
+
+.pre-registration-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+}
+
+.pre-registration-wrapper iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
