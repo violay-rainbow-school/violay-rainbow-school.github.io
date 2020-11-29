@@ -1,0 +1,28 @@
+---
+title: "Evénements"
+layout: default
+permalink: "/events.html"
+---
+
+<div class="page-single">
+    <div class="entry-header">       
+        <h1 class="posttitle">{{ page.title }}</h1>        
+    </div>
+</div>
+
+{% for category in site.categories %}
+    {% if category[0] == "Event" %}
+        <div class="blog-grid-container">
+            {% assign pages_list = category[1] | reverse %}
+            {% for post in pages_list %}
+                {% if post.title != null %}
+                    {% if group == null or group == post.group %}
+                        {% include event_box.html %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+            {% assign pages_list = nil %}
+            {% assign group = nil %}
+        </div>
+    {% endif %}
+{% endfor %}
