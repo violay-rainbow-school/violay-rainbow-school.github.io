@@ -20,6 +20,9 @@ phone:
   mobileLink: '+33632088346'
 educational_project_url: 'https://s3.amazonaws.com/transparentclassroom.com/schools/2760/2020/attachments/37c7a7d25c9f189d89782831492e41df3a285c50.original.pdf'
 
+# Events
+future: true
+
 # Authors
 authors:
   sal:
@@ -67,8 +70,6 @@ markdown: kramdown
 kramdown:
    syntax_highlighter_opts:
       disable : true
-
-
 
 # Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
 adsense: "disabled"

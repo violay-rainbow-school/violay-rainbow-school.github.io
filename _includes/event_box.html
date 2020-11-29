@@ -29,9 +29,7 @@
         </div>
         <div class="card-footer bg-white">
             <div class="wrapfooter">
-                {% if post.start_date %}
-                    <span class="event-date">{{ post.start_date | date_to_string }}</span>
-                {% endif %}
+                <span class="event-date">{{ post.date | date_to_string }}</span>
                 {% if post.end_date %}
                     <span class="event-date"> au {{ post.end_date | date_to_string }}</span>
                 {% endif %}
