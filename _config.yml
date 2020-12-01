@@ -2,8 +2,8 @@
 name: "Ecole Arc-en-ciel"
 title: "Ecole Arc-en-ciel"
 description: "L'école Montessori Arc-en-ciel"
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+logo: 'assets/images/logo/logo.png'
+favicon: 'assets/images/logo/logo.png'
 baseurl: 
 google_analytics: 'UA-xxxxxxxx-1'
 disqus: 'arc-en-ciel'

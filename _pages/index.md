@@ -1,10 +1,12 @@
 ---
-layout: page
+layout: home
 title: Bienvenue à l'école Montessori Arc-en-ciel
 permalink: /
 comments: false
 image: 
 imageshadow: true
+hide_logo: true
+show_site_tag: false
 ---
 
 ## QUI SOMMES-NOUS?
