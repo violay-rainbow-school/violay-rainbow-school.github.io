@@ -3,13 +3,37 @@ layout: default
 ---
 
 <div class="hero">
-    <img src="/assets/images/svg/logo_main_arc-en-ciel_.svg" alt="Bienvenue">
-    <h1 class="home-title">Ecole Montessori Arc-en-ciel</h1>
-    <h2>Bienvenue</h2>
+    <img class="home-logo" src="/assets/images/svg/logo_main_arc-en-ciel_.svg" alt="Bienvenue">
+    <h1 class="home-title">Bienvenue</h1>
+    <h2 class="home-subtitle">Ecole Montessori Arc-en-ciel</h2>
 </div>
 
 <!-- Featured Image -->
 {% include featured-image.html %}
+
+<!-- Links -->
+<div class="home-link-wrapper">
+    <a class="home-link" href="{{ site.baseurl }}/">
+        <img class="home-link-image" src="/assets/images/svg/button-red.svg" alt="">
+        <div>Présentation</div>
+    </a>
+    <a class="home-link" href="{{ site.baseurl }}/">
+        <img class="home-link-image" src="/assets/images/svg/button-orange.svg" alt="">
+        <div>Rejoindre l'école</div>
+    </a>
+    <a class="home-link" href="{{ site.baseurl }}/">
+        <img class="home-link-image" src="/assets/images/svg/button-yellow.svg" alt="">
+        <div>Événements</div>
+    </a>
+    <a class="home-link" href="{{ site.baseurl }}/">
+        <img class="home-link-image" src="/assets/images/svg/button-blue.svg" alt="">
+        <div>Nous soutenir</div>
+    </a>
+    <a class="home-link" href="{{ site.baseurl }}/">
+        <img class="home-link-image" src="/assets/images/svg/button-violet.svg" alt="">
+        <div>Nous contacter</div>
+    </a>
+</div>
 
 <!-- Content -->
 {% include article.html %}

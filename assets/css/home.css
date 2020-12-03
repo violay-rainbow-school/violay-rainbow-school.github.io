@@ -1,3 +1,9 @@
+.hero {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 5em;
+}
+
 .home-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
@@ -5,14 +11,43 @@
     justify-content: center;
 }
 
+.home-link-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    margin-bottom: 5em;
+}
+
 .home-link {
-    width: 10em;
-    height: 10em;
-    margin: auto;
-    background-color: green;
-    border-radius: 50%;
+    font-family: 'Arima Madurai';
+    display: block;
+    flex-direction: column;
+    color: rgb(43, 52, 81);
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.home-link-image {
+    width: 150px;
+    height: 150px;
+}
+
+.home-logo {
+    margin: 2em auto;
+}
+
+.home-title, .home-subtitle {
+    color: rgb(43, 52, 81);
+    text-align: center;
 }
 
 .home-title {
-    
+    font-family: 'handwriting';
+    font-size: 3.5em;
+}
+
+.home-subtitle {
+    font-family: 'Caveat';
+    font-size: 2.5em;
+    text-shadow: 2px 2px silver;
 }
