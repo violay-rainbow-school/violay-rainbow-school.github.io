@@ -7,8 +7,6 @@ image:
 imageshadow: true
 ---
 
-Bouton : Prendre RDV (Miello)
-
 ## Sophie Pardigon
 
 Directrice – Éducatrice 6-12 ans
