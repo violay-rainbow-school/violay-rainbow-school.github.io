@@ -21,3 +21,4 @@ Il n'y a pas de période spécifique pour l'inscription.
 Lorsque vous avez lu [notre projet pédagogique]({{ site.educational_project_url }}), vous pouvez compléter le formulaire de préinscription :
 
 <a class="btn btn-success" href="/school-registration/pre-registration-form">Se préinscrire</a>
+

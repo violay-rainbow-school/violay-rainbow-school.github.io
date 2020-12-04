@@ -2,13 +2,14 @@
 name: "Ecole Arc-en-ciel"
 title: "Ecole Arc-en-ciel"
 description: "L'école Montessori Arc-en-ciel"
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/logo.png'
+logo: 'assets/images/logo/logo.png'
+favicon: 'assets/images/logo/logo.png'
 baseurl: 
 google_analytics: 'UA-xxxxxxxx-1'
 disqus: 'arc-en-ciel'
 mailchimp-list: ~
-include: ["_pages"]
+include: 
+  - "_pages"
 permalink: /:title/
 email: montessori.violay@gmail.com
 address: 36 Rue des Genêts 42780 Violay
@@ -19,6 +20,23 @@ phone:
   mobile: '06 32 08 83 46'
   mobileLink: '+33632088346'
 educational_project_url: 'https://s3.amazonaws.com/transparentclassroom.com/schools/2760/2020/attachments/37c7a7d25c9f189d89782831492e41df3a285c50.original.pdf'
+educational_team_members:
+  - name: "Sophie Pardigon"
+    job_title: "Directrice et éducatrice 6-12 ans"
+    picture: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.gQLEgtkuC4qTFctC8DJ34gHaLH%26pid%3DApi&f=1"
+  - name: "Angélique Dumontet"
+    job_title: "Educatrice 3-6 ans"
+    picture: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.gQLEgtkuC4qTFctC8DJ34gHaLH%26pid%3DApi&f=1"
+  - name: "Marie-Hélène Barbier"
+    job_title: "Formatrice et ressources Montessori"
+    picture: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.gQLEgtkuC4qTFctC8DJ34gHaLH%26pid%3DApi&f=1"
+home_buttons:
+  - "/assets/images/svg/button-red.svg"
+  - "/assets/images/svg/button-orange.svg"
+  - "/assets/images/svg/button-yellow.svg"
+  - "/assets/images/svg/button-green.svg"
+  - "/assets/images/svg/button-blue.svg"
+  - "/assets/images/svg/button-violet.svg"
 
 # Events
 future: true

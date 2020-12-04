@@ -1,14 +1,3 @@
-@font-face {
-    font-family: 'santos-dumont';
-    src: url('../fonts/santos-dumont.ttf');
-}
-
-/* Hand writing everywhere:
-* {
-    font-family: 'santos-dumont';
-}
-*/
-
 .toAsk {
     color: indianred;
     font-weight: bold;
@@ -25,4 +14,9 @@
     height: 100%;
     width: 100%;
     top: 0;
+}
+
+@font-face {
+    font-family: 'handwriting';
+    src: url('../fonts/cursive-standard.ttf');
 }
