@@ -13,26 +13,43 @@ layout: default
 
 <!-- Links -->
 <div class="home-link-wrapper">
-    <a class="home-link" href="{{ site.baseurl }}/">
-        <img class="home-link-image" src="/assets/images/svg/button-red.svg" alt="">
+    <a class="home-link" href="{{ site.baseurl }}/about">
+        <img class="home-link-image" src="{{ site.home_buttons[0] }}" alt="">
         <div>Présentation</div>
     </a>
-    <a class="home-link" href="{{ site.baseurl }}/">
-        <img class="home-link-image" src="/assets/images/svg/button-orange.svg" alt="">
+    <a class="home-link" href="{{ site.baseurl }}/school-registration">
+        <img class="home-link-image" src="{{ site.home_buttons[1] }}" alt="">
         <div>Rejoindre l'école</div>
     </a>
-    <a class="home-link" href="{{ site.baseurl }}/">
-        <img class="home-link-image" src="/assets/images/svg/button-yellow.svg" alt="">
+    <a class="home-link" href="{{ site.baseurl }}/events">
+        <img class="home-link-image" src="{{ site.home_buttons[2] }}" alt="">
         <div>Événements</div>
     </a>
-    <a class="home-link" href="{{ site.baseurl }}/">
-        <img class="home-link-image" src="/assets/images/svg/button-blue.svg" alt="">
+    <a class="home-link" href="{{ site.baseurl }}/contribute">
+        <img class="home-link-image" src="{{ site.home_buttons[3] }}" alt="">
         <div>Nous soutenir</div>
     </a>
-    <a class="home-link" href="{{ site.baseurl }}/">
-        <img class="home-link-image" src="/assets/images/svg/button-violet.svg" alt="">
+    <a class="home-link" href="{{ site.baseurl }}/contact">
+        <img class="home-link-image" src="{{ site.home_buttons[4] }}" alt="">
         <div>Nous contacter</div>
     </a>
+</div>
+
+<!-- Team -->
+<h3 class="home-team-title">Equipe éducative</h3>
+<div class="home-team-wrapper">
+    {% for team_member in site.educational_team_members %}
+        <div class="home-team-member">
+            <div class="home-team-member-picture">
+                <img class="home-team-member-picture-background" src="{{ site.home_buttons[forloop.index] }}" alt="">
+                <div class="home-team-member-picture-foreground" style="background-image: url({{ team_member.picture }});"></div>
+            </div>
+            <div class="home-team-member-meta">
+                <div class="home-team-member-name">{{ team_member.name }}</div>
+                <div class="home-team-member-job-title">{{ team_member.job_title }}</div>
+            </div>
+        </div>
+    {% endfor %}
 </div>
 
 <!-- Content -->

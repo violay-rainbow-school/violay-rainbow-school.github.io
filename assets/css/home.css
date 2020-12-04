@@ -4,17 +4,11 @@
     margin-bottom: 5em;
 }
 
-.home-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
-    grid-gap: 10px;
-    justify-content: center;
-}
-
 .home-link-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
     margin-bottom: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .home-link {
@@ -23,8 +17,9 @@
     flex-direction: column;
     color: rgb(43, 52, 81);
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 1.5em;
     text-align: center;
+    margin: 20px;
 }
 
 .home-link-image {
@@ -50,4 +45,59 @@
     font-family: 'Caveat';
     font-size: 2.5em;
     text-shadow: 2px 2px silver;
+}
+
+.home-team-title {
+    font-family: "Arima Madurai";
+    text-align: center;
+}
+
+.home-team-wrapper {
+    margin-bottom: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.home-team-member {
+    margin: 20px;
+}
+
+.home-team-member-picture {
+    position: relative;
+    height: 300px;
+}
+
+.home-team-member-picture-background {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+}
+
+.home-team-member-picture-foreground {
+    filter: grayscale(100%);
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    left: 40px;
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    background-size: 250px;
+    background-repeat: no-repeat;
+}
+
+.home-team-member-meta {
+    text-align: center;
+}
+
+.home-team-member-name {
+    font-family: "Arima Madurai";
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.home-team-member-job-title {
+    font-family: "Caveat";
+    font-size: 1.5em;
 }

@@ -17,9 +17,15 @@
     <link href="{{ site.baseurl }}/assets/css/prism.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/assets/css/common.css" rel="stylesheet">
-    <link href="{{ site.baseurl }}/assets/css/home.css" rel="stylesheet">
-    <link href="{{ site.baseurl }}/assets/css/registration.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/assets/css/navbar.css" rel="stylesheet">
+
+    {% if page.url == '/' %}
+        <link href="{{ site.baseurl }}/assets/css/home.css" rel="stylesheet">
+    {% endif %}
+
+    {% if page.url == '/school-registration/pre-registration-form' %}
+        <link href="{{ site.baseurl }}/assets/css/registration.css" rel="stylesheet">
+    {% endif %}
 
     <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 </head>
