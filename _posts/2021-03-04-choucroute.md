@@ -3,7 +3,6 @@ layout: post
 title: Une bonne choucroute
 categories: [ Event ]
 image: https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_M8NP7SCKXlY%2FTS_TdNOwR0I%2FAAAAAAAAE4c%2FxuhqLuwRAcg%2Fs1600%2FIMG_0014.JPG&f=1&nofb=1
-date: 2022-12-15
 end_date: 2027-01-20
 ---
 
