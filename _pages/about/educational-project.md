@@ -141,6 +141,24 @@ Parce que le destin de l'humanité est lié à celui de notre planète, une sens
 Les enfants sont sensibilisés au « zéro déchet » puisque nous mettons en place cette politique dans la mesure du possible au sein de l’école. En effet, un compost est mis à disposition des enfants, de leurs parents et de l’équipe encadrante. Dans la mesure du possible, les emballages sont évités et le tri sélectif est pratiqué. Les enfants ont à disposition des mouchoirs en tissu, des serviettes en tissu pour les repas et des essuie-mains en tissu. L’ensemble est lavé et désinfecté tous les jours, à savoir que la consommation d’eau pour le nettoyage est toujours moindre que celle utilisée pour fabriquer ces mêmes produits jetables.
 Les enfants ont un potager, aménagé selon les principes de la permaculture, ils utilisent des semences et des engrais biologiques. Ils prennent également soin des poules, animaux qui nous aident à réduire nos déchets et qui font partis intégrante du projet pédagogique. Les précautions en mesure d’hygiène sont prises lorsque les enfants les manipulent : port de gants, pelle, balayette, lavage des mains. 
 
+## Laïcité et religion
+
+### Enseignement laïc
+
+La laïcité est un principe de liberté, liberté de croire ou de ne pas croire. Elle est au fondement de notre société et de notre enseignement qui doit préserver les élèves de
+tout prosélytisme idéologique, économique et religieux. Le principe de laïcité garantit la liberté de conscience et protège la liberté de croire, de ne pas croire et de changer de conviction. Pour comprendre notre patrimoine culturel et le monde contemporain dans lequel nous vivons, il est important d’enseigner les faits religieux dans le respect des
+croyances de chacun. L’enseignement des faits religieux des différentes religions s’appuie, par exemple, sur les grands textes religieux, les oeuvres d’art, la diversité des
+représentations et des visions du monde. Nous aspirons à un monde de paix, c’est pourquoi il est important que les enfants aient accès à ces connaissances, une façon d’éveiller à la tolérance, d’éveiller leur esprit critique et leur libre-arbitre.
+
+### Association catholique
+
+Notre école a une histoire, en effet, elle a été fondée par les Frères et Soeurs Saint-Charles 1800. Elle a ensuite été gérée à l'aide d'une association catholique créée par les
+parents d'élèves (vers 1925), dénommée aujourd'hui Association de l'École Privée de Violay (Association loi 1901 à but non lucratif). Les valeurs catholiques ont forgé notre
+école. C’est pourquoi, pour respecter notre histoire et les aspirations fondatrices, nous demandons aux familles de respecter les valeurs et les enseignements de l’Eglise
+catholique (pour préciser notre propos, voici une liste non exhaustive de ces valeurs : le respect de la dignité de tout homme, le respect de la vie, la liberté, la charité, la paix, la patience, la bonté, la tolérance, le courage, l’humilité, la compassion, le pardon...)
+C’est pourquoi, nous ne souhaitons pas que les familles utilisent l’école (ses manifestations, ses rencontres, son réseau ou tout ce qui peut lui être assimilé) pour diffuser des idées ou proposer des activités listées par la Milviludes (https://www.derives-sectes.gouv.fr/) et/ou contraires aux enseignements catholiques.
+Pour les familles qui le souhaiteraient, l’association gérante propose des activités catholiques en lien avec la paroisse (exemples non exhaustifs : messe des écoles, calendriers Champagnat…)
+
 ## L’organisation pédagogique
 
 L’emploi du temps des enfants
