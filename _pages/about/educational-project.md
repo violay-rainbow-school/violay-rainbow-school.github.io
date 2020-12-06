@@ -15,7 +15,9 @@ Diaporama photos école
 
 Les parents d’élèves, en inscrivant leurs enfants, s’engagent dans une démarche de co-éducation avec l’école. Se faisant, ils s'engagent à respecter le choix de la pédagogie Montessori et l’ensemble des points présentés dans le présent projet pédagogique. Les éducatrices ainsi que les parents s'engagent à travailler ensemble au service du développement de l'enfant. Ils construisent une relation de confiance et de respect. 
 L'école propose un cadre sécurisant basé sur des règles de vie en communauté, cadre explicité dans le règlement intérieur. Les parents respectent ce cadre et, au besoin, aident l'enfant à l'accepter.
+
 Maria Montessori concevait sa pédagogie comme une aide à la vie. En ce sens, c'est le développement de l'enfant tout entier qui est visé. Les parents sont les premiers éducateurs de l'enfant, une bonne communication entre les familles et les éducatrices est donc absolument essentielle. Il est également indispensable de se respecter, de se faire confiance et de partager des valeurs éducatives communes. 
+
 Plus l'enfant trouve de cohérence entre ce qu'il vit à l'école et ce qu'il vit à la maison et mieux il se développe. L'équipe éducative et les parents sont donc des partenaires. C’est pourquoi l’école met en place un programme de formation des parents et des enseignants afin que chacun puisse se sentir compétent dans l’éducation des enfants. En outre, ces temps sont l’occasion de tisser le lien si important entre la famille et l’école : 
 
 - rencontres collectives et individuelles entre parents et équipe pédagogique
@@ -30,7 +32,11 @@ En cas de difficulté constatée, il importe que les parents prennent rendez-vou
 
 ## Bienveillance
 
-L’école Montessori Arc en Ciel a fait résolument le choix de la bienveillance éducative. Pour nous, il importe de poser un regard positif sur l’enfant, afin que celui-ci se sente en sécurité et puisse ainsi développer tout son potentiel. Nous souhaitons offrir à chaque enfant de l’école un cadre protecteur, qui lui permette d’exister pour ce qu’il est, de grandir et de développer sa personnalité en toute sérénité. Nous savons que nous pouvons, au quotidien, nous appuyer sur l’intelligence de l’enfant et sa volonté naturelle de coopérer. Nous accordons à l’enfant une grande confiance, car nous pensons qu’un enfant fait toujours du mieux qu’il peut, tant dans l’acquisition ou la mise en œuvre de ses compétences que dans son comportement et ses relations aux autres. Il nous importe que l’enfant et l’adulte puissent tisser une relation vraie, de personne à personne, dans la confiance réciproque. Les enfants seront ainsi accompagnés par des adultes exprimant leur pleine confiance en eux, en leurs capacités, en leur potentiel. En considérant chaque enfant comme une personne unique, de valeur et digne d’intérêt, nous souhaitons favoriser le développement de l’estime de soi des enfants. Nous espérons conduire les enfants à se sentir capables, libres et indépendants.
+L’école Montessori Arc en Ciel a fait résolument le choix de la bienveillance éducative. Pour nous, il importe de poser un regard positif sur l’enfant, afin que celui-ci se sente en sécurité et puisse ainsi développer tout son potentiel. 
+
+Nous souhaitons offrir à chaque enfant de l’école un cadre protecteur, qui lui permette d’exister pour ce qu’il est, de grandir et de développer sa personnalité en toute sérénité. Nous savons que nous pouvons, au quotidien, nous appuyer sur l’intelligence de l’enfant et sa volonté naturelle de coopérer. Nous accordons à l’enfant une grande confiance, car nous pensons qu’un enfant fait toujours du mieux qu’il peut, tant dans l’acquisition ou la mise en œuvre de ses compétences que dans son comportement et ses relations aux autres. 
+
+Il nous importe que l’enfant et l’adulte puissent tisser une relation vraie, de personne à personne, dans la confiance réciproque. Les enfants seront ainsi accompagnés par des adultes exprimant leur pleine confiance en eux, en leurs capacités, en leur potentiel. En considérant chaque enfant comme une personne unique, de valeur et digne d’intérêt, nous souhaitons favoriser le développement de l’estime de soi des enfants. Nous espérons conduire les enfants à se sentir capables, libres et indépendants.
 
 ### Nous aidons l'enfant à interagir avec les autres 
 
@@ -38,7 +44,9 @@ Nous souhaitons donner une place importante à la gestion des émotions des enfa
 
 ### Nous respectons le rythme et les besoins de chaque enfant 
 
-L’enfant est celui qui connaît le mieux ses propres besoins et les moyens d’y répondre correctement. Nous souhaitons permettre à chaque enfant de prendre conscience, d’écouter et d’apporter une réponse à ses besoins physiologiques : sommeil, faim, besoin de se concentrer, de sortir ou de s’isoler du groupe, etc.. Ainsi, l’enfant acquiert peu à peu une meilleure connaissance de lui-même, et une plus grande autonomie. L'enfant sera guidé sur le chemin de l’autonomie par un adulte bienveillant et respectueux. Le rythme d’apprentissage de chacun est lui aussi respecté, grâce à une pédagogie individualisée. L'adulte, en observant attentivement chaque enfant, peut proposer au bon moment les activités dont l'enfant a besoin pour pouvoir évoluer. En effet, pour pouvoir construire son intelligence, l'enfant a besoin de faire des activités qui l'intéressent personnellement. Il est à noter que l’enfant ne pourra commencer ce travail que lorsqu’il se sentira pleinement en confiance dans l’ambiance de l’école. Tout en restant en conformité avec les orientations de l’Education Nationale (respect du socle commun de connaissances et de compétences et de culture), nous accorderons à chaque enfant le temps nécessaire pour se sentir serein et être prêt à entrer dans les apprentissages.
+L’enfant est celui qui connaît le mieux ses propres besoins et les moyens d’y répondre correctement. Nous souhaitons permettre à chaque enfant de prendre conscience, d’écouter et d’apporter une réponse à ses besoins physiologiques : sommeil, faim, besoin de se concentrer, de sortir ou de s’isoler du groupe, etc.. Ainsi, l’enfant acquiert peu à peu une meilleure connaissance de lui-même, et une plus grande autonomie. L'enfant sera guidé sur le chemin de l’autonomie par un adulte bienveillant et respectueux. 
+
+Le rythme d’apprentissage de chacun est lui aussi respecté, grâce à une pédagogie individualisée. L'adulte, en observant attentivement chaque enfant, peut proposer au bon moment les activités dont l'enfant a besoin pour pouvoir évoluer. En effet, pour pouvoir construire son intelligence, l'enfant a besoin de faire des activités qui l'intéressent personnellement. Il est à noter que l’enfant ne pourra commencer ce travail que lorsqu’il se sentira pleinement en confiance dans l’ambiance de l’école. Tout en restant en conformité avec les orientations de l’Education Nationale (respect du socle commun de connaissances et de compétences et de culture), nous accorderons à chaque enfant le temps nécessaire pour se sentir serein et être prêt à entrer dans les apprentissages.
 
 ## Une école à la vie
 
@@ -54,16 +62,20 @@ Cette réflexion montre que le rôle de l’école n’est pas seulement de tran
 > « Un enfant enfermé dans ses limites reste incapable de se valoriser et n’arrivera pas à s’adapter à l’extérieur. » – Maria Montessori
 
 Pour que l’enfant s’épanouisse et devienne un adulte indépendant et libre, il faut privilégier son indépendance et son esprit de création. C’est pourquoi Maria Montessori base sa pédagogie sur le libre choix par l’enfant de ses activités. L’enfant choisit son activité, le lieu où il souhaite la faire ainsi que le temps qu’il veut y passer. 
+
 Quel est l’intérêt de ce libre-choix ? 
+
 L’enfant prend énormément de plaisir à répéter son activité, cela lui permet de se construire et d’acquérir la ou les compétences visées par le matériel. 
-Le libre-choix permet à l’enfant de se concentrer spontanément sur une activité. De plus, le matériel proposé gagne en complexité donc les plages de concentration s’allongent. 
-Le libre-choix permet à l’enfant de construire sa volonté. 
-Le libre-choix permet le développement de l’auto-discipline. En effet, libre de choisir une activité qui répond à ses besoins, l’enfant n’a plus d’intérêt à adopter un comportement destructeur. 
-La liberté de l’enfant est encadrée par des règles simples mais indispensables à son bon développement.
-Il choisit effectivement ses activités mais elles sont proposées dans la classe par l’éducateur. 
-Il peut se servir du matériel uniquement s’il lui a été présenté par l’éducateur. 
-Les échanges verbaux se font discrètement pour ne pas déranger les activités des autres enfants. 
-Il ne peut utiliser un matériel qui n’est pas rangé à sa place. 
+- Le libre-choix permet à l’enfant de se concentrer spontanément sur une activité. De plus, le matériel proposé gagne en complexité donc les plages de concentration s’allongent. 
+- Le libre-choix permet à l’enfant de construire sa volonté. 
+- Le libre-choix permet le développement de l’auto-discipline. En effet, libre de choisir une activité qui répond à ses besoins, l’enfant n’a plus d’intérêt à adopter un comportement destructeur. 
+
+La liberté de l’enfant est encadrée par des règles simples mais indispensables à son bon développement :
+- Il choisit effectivement ses activités mais elles sont proposées dans la classe par l’éducateur. 
+- Il peut se servir du matériel uniquement s’il lui a été présenté par l’éducateur. 
+- Les échanges verbaux se font discrètement pour ne pas déranger les activités des autres enfants. 
+- Il ne peut utiliser un matériel qui n’est pas rangé à sa place. 
+
 L’enfant est donc acteur conscient de son éducation : 
 
 > « un enfant n’est pas un vase que l’on remplit mais une source que l’on laisse jaillir » – Maria Montessori.
@@ -138,26 +150,28 @@ Dans cet environnement préparé, l’enfant est aidé à entrer dans la respons
 ## L’école et son engagement pour l’environnement
 
 Parce que le destin de l'humanité est lié à celui de notre planète, une sensibilisation précoce à la beauté et à la fragilité du monde qui nous entoure est nécessaire afin de le préserver. Un lien direct avec la nature est la base de la découverte, de la compréhension et du respect de l’environnement. L'observation de la faune et de la flore locales, l'identification des besoins des plantes et des animaux ainsi que l'étude des grands équilibres biologiques et climatiques permettront aux enfants de comprendre les enjeux d'une démarche respectueuse et responsable.
-Les enfants sont sensibilisés au « zéro déchet » puisque nous mettons en place cette politique dans la mesure du possible au sein de l’école. En effet, un compost est mis à disposition des enfants, de leurs parents et de l’équipe encadrante. Dans la mesure du possible, les emballages sont évités et le tri sélectif est pratiqué. Les enfants ont à disposition des mouchoirs en tissu, des serviettes en tissu pour les repas et des essuie-mains en tissu. L’ensemble est lavé et désinfecté tous les jours, à savoir que la consommation d’eau pour le nettoyage est toujours moindre que celle utilisée pour fabriquer ces mêmes produits jetables.
+
+Les enfants sont sensibilisés au « zéro déchet » puisque nous mettons en place cette politique dans la mesure du possible au sein de l’école. En effet, un compost est mis à disposition des enfants, de leurs parents et de l’équipe encadrante. Dans la mesure du possible, les emballages sont évités et le tri sélectif est pratiqué. 
+
+Les enfants ont à disposition des mouchoirs en tissu, des serviettes en tissu pour les repas et des essuie-mains en tissu. L’ensemble est lavé et désinfecté tous les jours, à savoir que la consommation d’eau pour le nettoyage est toujours moindre que celle utilisée pour fabriquer ces mêmes produits jetables.
+
 Les enfants ont un potager, aménagé selon les principes de la permaculture, ils utilisent des semences et des engrais biologiques. Ils prennent également soin des poules, animaux qui nous aident à réduire nos déchets et qui font partis intégrante du projet pédagogique. Les précautions en mesure d’hygiène sont prises lorsque les enfants les manipulent : port de gants, pelle, balayette, lavage des mains. 
 
 ## Laïcité et religion
 
 ### Enseignement laïc
 
-La laïcité est un principe de liberté, liberté de croire ou de ne pas croire. Elle est au fondement de notre société et de notre enseignement qui doit préserver les élèves de
-tout prosélytisme idéologique, économique et religieux. Le principe de laïcité garantit la liberté de conscience et protège la liberté de croire, de ne pas croire et de changer de conviction. Pour comprendre notre patrimoine culturel et le monde contemporain dans lequel nous vivons, il est important d’enseigner les faits religieux dans le respect des
-croyances de chacun. L’enseignement des faits religieux des différentes religions s’appuie, par exemple, sur les grands textes religieux, les oeuvres d’art, la diversité des
-représentations et des visions du monde. Nous aspirons à un monde de paix, c’est pourquoi il est important que les enfants aient accès à ces connaissances, une façon d’éveiller à la tolérance, d’éveiller leur esprit critique et leur libre-arbitre.
+La laïcité est un principe de liberté, liberté de croire ou de ne pas croire. Elle est au fondement de notre société et de notre enseignement qui doit préserver les élèves de tout prosélytisme idéologique, économique et religieux. Le principe de laïcité garantit la liberté de conscience et protège la liberté de croire, de ne pas croire et de changer de conviction. 
+
+Pour comprendre notre patrimoine culturel et le monde contemporain dans lequel nous vivons, il est important d’enseigner les faits religieux dans le respect des croyances de chacun. L’enseignement des faits religieux des différentes religions s’appuie, par exemple, sur les grands textes religieux, les oeuvres d’art, la diversité des représentations et des visions du monde. 
+
+Nous aspirons à un monde de paix, c’est pourquoi il est important que les enfants aient accès à ces connaissances, une façon d’éveiller à la tolérance, d’éveiller leur esprit critique et leur libre-arbitre.
 
 ### Association catholique
 
-Notre école a une histoire, en effet, elle a été fondée par les Frères et Soeurs Saint-Charles 1800. Elle a ensuite été gérée à l'aide d'une association catholique créée par les
-parents d'élèves (vers 1925), dénommée aujourd'hui Association de l'École Privée de Violay (Association loi 1901 à but non lucratif). Les valeurs catholiques ont forgé notre
-école. C’est pourquoi, pour respecter notre histoire et les aspirations fondatrices, nous demandons aux familles de respecter les valeurs et les enseignements de l’Eglise
-catholique (pour préciser notre propos, voici une liste non exhaustive de ces valeurs : le respect de la dignité de tout homme, le respect de la vie, la liberté, la charité, la paix, la patience, la bonté, la tolérance, le courage, l’humilité, la compassion, le pardon...)
-C’est pourquoi, nous ne souhaitons pas que les familles utilisent l’école (ses manifestations, ses rencontres, son réseau ou tout ce qui peut lui être assimilé) pour diffuser des idées ou proposer des activités listées par la Milviludes (https://www.derives-sectes.gouv.fr/) et/ou contraires aux enseignements catholiques.
-Pour les familles qui le souhaiteraient, l’association gérante propose des activités catholiques en lien avec la paroisse (exemples non exhaustifs : messe des écoles, calendriers Champagnat…)
+Notre école a une histoire, en effet, elle a été fondée par les Frères et Soeurs Saint-Charles 1800. Elle a ensuite été gérée à l'aide d'une association catholique créée par les parents d'élèves (vers 1925), dénommée aujourd'hui Association de l'École Privée de Violay (Association loi 1901 à but non lucratif). Les valeurs catholiques ont forgé notre école. Ainsi, pour respecter notre histoire et les aspirations fondatrices, nous demandons aux familles de respecter les valeurs et les enseignements de l’Eglise catholique (pour préciser notre propos, voici une liste non exhaustive de ces valeurs : le respect de la dignité de tout homme, le respect de la vie, la liberté, la charité, la paix, la patience, la bonté, la tolérance, le courage, l’humilité, la compassion, le pardon...)
+
+C’est pourquoi, nous ne souhaitons pas que les familles utilisent l’école (ses manifestations, ses rencontres, son réseau ou tout ce qui peut lui être assimilé) pour diffuser des idées ou proposer des activités listées par la Milviludes (https://www.derives-sectes.gouv.fr/) et/ou contraires aux enseignements catholiques. Pour les familles qui le souhaiteraient, l’association gérante propose des activités catholiques en lien avec la paroisse (exemples non exhaustifs : messe des écoles, calendriers Champagnat…)
 
 ## L’organisation pédagogique
 
@@ -187,14 +201,17 @@ A l'issue du repas, les enfants sortent dans le jardin pendant 1 heure environ. 
 
 ## Le suivi des enfants
 
-Le travail des enfants ne fait pas l’objet d’évaluations notées. L’habitude du travail en autonomie et auto-correctif permet à l’enfant d’avoir une perception juste de ses capacités et de ses difficultés. L’enfant comprend qu’il travaille pour lui-même et non pour la note, l’éducatrice ou encore ses parents.  La progression dans le matériel et l’observation attentive des enfants par l’éducatrice lui permet de savoir exactement où en est l’enfant. L’application « Je valide » est utilisée afin d’avoir un suivi individualisé pour chaque enfant, chaque compétence acquise y est consignée. Deux fois par an pour les enfants de 3 ans, puis trois fois par an pour les autres enfants, un bilan est organisé. Il permet notamment à l’éducatrice de faire le point avec les parents sur :
-- la relation de l’enfant avec le travail, son degré d’indépendance
-- son attitude avec les autres enfants et les adultes présents au sein de l’environnement préparé.
-- sa progression dans les activités présentées.
+Le travail des enfants ne fait pas l’objet d’évaluations notées. L’habitude du travail en autonomie et auto-correctif permet à l’enfant d’avoir une perception juste de ses capacités et de ses difficultés. L’enfant comprend qu’il travaille pour lui-même et non pour la note, l’éducatrice ou encore ses parents. La progression dans le matériel et l’observation attentive des enfants par l’éducatrice lui permet de savoir exactement où en est l’enfant. Le logiciel Transparent Classroom est utilisé afin d’avoir un suivi individualisé pour chaque enfant, chaque compétence acquise y est consignée. 
 
-En dehors de ces moments institués, les parents peuvent solliciter un rendez-vous avec l’éducatrice pour évoquer toute difficulté constatée.
+Deux fois par an, un bilan pédagogique est organisé. Il permet notamment à l'éducatrice de faire le point avec les parents sur :
+- la relation de l'enfant avec le travail, son degré d’indépendance
+- son attitude avec les autres enfants et les adultes présents au sein de l’environnement préparé. 
+- sa progression dans les activités présentées. 
 
-Les contacts quotidiens avec l’éducatrice et/ou l’assistante permettent aux parents d’être informés du bon déroulement de la journée.
+En dehors de ces moments institués, les parents peuvent solliciter un rendez-vous avec l'éducatrice pour évoquer toute difficulté constatée. 
+
+Les contacts quotidiens avec l'éducatrice et/ou l’assistante permettent aux parents d’être informés du bon déroulement de la journée.
+
 
 ## L’implication des parents au sein de l’école 
 
