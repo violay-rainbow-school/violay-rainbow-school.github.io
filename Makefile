@@ -3,3 +3,6 @@ browse:
 
 serve:
 	bundle exec jekyll serve --livereload
+
+open_transparent_classroom_api_documentation:
+	firefox https://www.transparentclassroom.com/api
