@@ -19,8 +19,8 @@ Les enfants mettent la table et la rangent, apprennent les règles de politesse�
 
 Nous vous proposons deux formules : 
 - la « lunch box » / panier repas : préparée par vos soins et apporté le matin à l’école.  Cette solution, économique, vous permet de choisir ce que votre enfant va manger.
-- la formule « traiteur » : le repas est fourni par un traiteur local. Le traiteur que nous avons choisi est « Saveur des 4 matins » de Panissières, pour la qualité des repas préparé avec une préférence pour les producteurs locaux. Le repas est au prix de 4€35, pour une entrée, un plat chaud, un fromage et un dessert, pain compris. Ce fonctionnement est plus simple pour les parents et permets à l’enfant de manger la même chose que ses camarades.
+- la formule « traiteur » : le repas est fourni par un traiteur local. Le traiteur que nous avons choisi est « Saveur des 4 matins » de Panissières. Le repas est au prix de 4€35, pour une entrée, un plat chaud, un fromage et un dessert, pain compris. 
 
 ## Garderie
 
-En fonction de la demande, une garderie est mise en place. Actuellement, la garderie a lieu tous les jours de 16h45 à 18h. Une garderie le matin de 7h45 à 8h30 est à l'étude.
+En fonction de la demande, une garderie est mise en place. Actuellement, la garderie a lieu tous les jours de 16h45 à 18h. Une garderie le matin de 7h45 à 8h30 sera proposée à la rentrée scolaire 2021 s'il y a de la demande. 
