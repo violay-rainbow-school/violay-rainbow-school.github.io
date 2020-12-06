@@ -17,7 +17,8 @@ Pour chaque inscription, y compris celles en cours d’année, nous proposons un
 Cette proposition est mise en place dans le but de vous permettre d’opter pour le choix le plus adapté à votre enfant et à son épanouissement. L’équipe pédagogique se réserve le droit de décider ou non de la poursuite de la scolarité de l’enfant au sein de l’école à l’issue de cette période d’essai dans l’intérêt du groupe et de l'enfant.
 
 ### Procédure pour visiter l'école puis s'inscrire 
-Vous envisagez une inscription chez nous ? Vous souhaitez visiter l'école ? Remplissez le formulaire ci-dessous, nous prendrons ensuite contact avec vous afin de visiter les locaux et rencontrer l'équipe. Lors de la visite, nous aurons l'occasion de répondre à toutes vos questions et de faire connaissance. Ensuite, nous validerons  l'inscription ensemble, en effet, il faut que être sûrs, de votre côté comme du notre, de partager les mêmes valeurs et les mêmes objectifs pour le bien-être de l'enfant.  
+
+Vous envisagez une inscription chez nous ? Vous souhaitez visiter l'école ? Remplissez le formulaire ci-dessous, nous prendrons ensuite contact avec vous afin de visiter les locaux et rencontrer l'équipe. Lors de la visite, nous aurons l'occasion de répondre à toutes vos questions et de faire connaissance. Ensuite, nous validerons  l'inscription ensemble, en effet, il faut être sûrs, de votre côté comme du notre, de partager les mêmes valeurs et les mêmes objectifs pour le bien-être de l'enfant.  
 
 Il n'y a pas de période spécifique pour l'inscription.  
 Lorsque vous avez lu [notre projet pédagogique]({{ site.educational_project_url }}), vous pouvez compléter le formulaire de préinscription :
