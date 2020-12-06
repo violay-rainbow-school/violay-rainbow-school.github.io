@@ -3,6 +3,10 @@ body {
     --main-color: rgb(43, 52, 81);
 }
 
+p {
+    text-align: justify;
+}
+
 h2, strong {
     color: var(--main-color);
 }
