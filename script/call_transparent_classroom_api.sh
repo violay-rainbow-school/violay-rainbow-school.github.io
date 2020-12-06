@@ -46,8 +46,6 @@ if [ ! $# -eq 3 ]; then
     exit
 fi
 
-echo zog
-exit
 loginResponse=$(login "$1" "$2") # Sample: {"type":"user","id":190212,"first_name":"Sarah","last_name":"FRAICHIT","email":"sarah@fraichit.zog","roles":["parent"],"school_id":2760,"api_token":"a62hxP2TtXRDpaBqZ_fs","push_tokens":[],"push_enabled":false}
 token=$(getTokenFromLoginResponse $loginResponse)
 $3

@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="page-single">
+    <div class="entry-header">       
+        <h1 class="posttitle">{{ page.title }}</h1>        
+    </div>
+</div>
+
+<!-- Featured Image -->
+{% include featured-image.html %}
+
+<div class="big-button-wrapper">
+    {%- for link in page.links -%}
+        <a class="big-button" href="{{ site.baseurl }}{{ link.url }}">
+            <img class="big-button-image" src="{{ site.button_images[forloop.index0] }}" alt="">
+            <div>{{ link.content }}</div>
+        </a>
+    {%- endfor -%}
+</div>
+
+<!-- Content -->
+{% include article.html %}
+
+<!-- Comments if not disabled with comments: false -->
+{% include comments.html %}

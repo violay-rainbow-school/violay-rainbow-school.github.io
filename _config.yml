@@ -30,7 +30,13 @@ educational_team_members:
   - name: "Marie-Hélène Barbier"
     job_title: "Formatrice et ressources Montessori"
     picture: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.gQLEgtkuC4qTFctC8DJ34gHaLH%26pid%3DApi&f=1"
-home_buttons:
+button_images:
+  - "/assets/images/svg/button-red.svg"
+  - "/assets/images/svg/button-orange.svg"
+  - "/assets/images/svg/button-yellow.svg"
+  - "/assets/images/svg/button-green.svg"
+  - "/assets/images/svg/button-blue.svg"
+  - "/assets/images/svg/button-violet.svg"
   - "/assets/images/svg/button-red.svg"
   - "/assets/images/svg/button-orange.svg"
   - "/assets/images/svg/button-yellow.svg"
