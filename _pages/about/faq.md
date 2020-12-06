@@ -11,11 +11,11 @@ imageshadow: true
 
 QUELLES SONT LES QUALIFICATIONS DES ENSEIGNANTS? QUI LES RECRUTE?
 
-Les enseignants recrutés pour enseigner dans notre école sont des professionnels de l’éducation formés à la pédagogie Montessori.
+Les éducatrices recrutées de notre école sont des professionnels de l’éducation formés à la pédagogie Montessori.
 
-L’Association gérante a elle-même choisi avec soin les enseignantes, pour leur **qualités professionnelles** (rigueur, compétences, motivation…), **relationnelles et humaines** (bienveillance, amour des enfants, valeurs…).
+L’Association gérante les a elle-même choisi avec soin, pour leur **qualités professionnelles** (rigueur, compétences, motivation…), **relationnelles et humaines** (bienveillance, amour des enfants, valeurs…).
 
-Cette **liberté de choix de l’équipe pédagogique** est un atout majeur de notre école hors contrat : ce sont les enseignants, au quotidien avec nos enfants, qui leur transmettent les compétences, aptitudes relationnelles et font vivre les valeurs que nous voulons retrouver chez nos enfants.
+Cette **liberté de choix de l’équipe pédagogique** est un atout majeur de notre école hors contrat : ce sont les éducatrices, au quotidien avec nos enfants, qui leur transmettent les compétences, aptitudes relationnelles et font vivre les valeurs que nous voulons retrouver chez nos enfants.
 
 EST-CE UNE ECOLE COÛTEUSE?
 
@@ -27,7 +27,7 @@ Et c’est un réel tour de force pour l’association de proposer à ce tarif u
 
 EN QUOI CONSISTE L’INVESTISSEMENT PARENTAL?
 
-Dans le projet pédagogique de l’école, les **parents font partie intégrante de la vie scolaire**. Il est en effet primordial qu’il y ait une réelle cohérence entre ce que vit l’enfant à l’école et à la maison. Les parents pourront donc souvent échanger avec les enseignantes, participer à des moments de classe pour présenter leur métier, faire découvrir un centre d’intérêt aux enfants…
+Dans le projet pédagogique de l’école, les **parents font partie intégrante de la vie scolaire**. Il est en effet primordial qu’il y ait une réelle cohérence entre ce que vit l’enfant à l’école et à la maison. Les parents pourront donc souvent échanger avec les éducatrices, participer à des moments de classe pour présenter leur métier, faire découvrir un centre d’intérêt aux enfants…
 
 En outre, l’investissement des parents permet de **réduire le coût de la scolarité.** Il peut prendre des formes très variées :
 
@@ -43,9 +43,11 @@ ET POUR LE COLLÈGE?
 
 Si l’approche éducative de Maria Montessori s’applique à l’intégralité de la vie scolaire, actuellement, en France, collèges et lycées sont encore rarissimes.
 
-Nulle inquiétude à avoir, la scolarité Montessori est toujours une pépite dans la vie de l’enfant : il y développe de solides connaissances et construit son intelligence émotionnelle et sociale, qui lui permettront de continuer sa scolarité en milieu traditionnel sans difficulté.
+Nulle inquiétude à avoir, la scolarité Montessori est toujours une pépite dans la vie de l’enfant : il y développe une grande capacité d'adaptation, un sens aigu des responsabilités, de solides connaissances et construit son intelligence émotionnelle et sociale, qui lui permettront de continuer sa scolarité en milieu traditionnel sans difficulté.
 
 Chaque enfant, quelque soit son école de provenance, devra s’adapter à un nouveau fonctionnement au collège. L’autonomie déjà acquise et la confiance en eux sera un fort atout.
+
+En outre, Sophie, notre directrice et éducatrice Montessori 6-12 a enseigné plus de 10 ans dans le secondaire, elle connait parfaitement ce milieu et préparera nos élèves à ce grand changement en douceur. 
 
 Sur le plan administratif, il est prévu que les enfants qui passent dans un collège publique passent un petit test d’orientation (similaire aux évaluations nationales que passent les élèves des écoles publiques pour évaluer le niveau moyen français). Le collège Champagnat de Feurs nous a informé qu’il ne demandera pas ce test et se basera sur l’avis de l’enseignantes de CM2.
 
