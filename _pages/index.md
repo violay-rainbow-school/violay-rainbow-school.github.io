@@ -32,7 +32,7 @@ Avec un ancrage fort dans la nature, une ouverture sur le monde, la découverte 
 - petits effectifs,
 - classes spacieuses et lumineuses
 
-[En savoir plus...]()
+[En savoir plus...](/about)
 
 <div class="toAsk">Diaporama photos école</div>
 
@@ -41,7 +41,7 @@ Avec un ancrage fort dans la nature, une ouverture sur le monde, la découverte 
 **Nos valeurs et priorités**
 
 Une école pour révéler le meilleur de chacun :  
-[Projet pédagogique]()
+[Projet pédagogique](/educational-project)
 
 > « L'enfant est, pour l'humanité, à la fois un espoir et une promesse. En prenant soin de cet embryon comme notre trésor le plus précieux, nous travaillerons à faire grandir l'humanité. » Maria Montessori
 

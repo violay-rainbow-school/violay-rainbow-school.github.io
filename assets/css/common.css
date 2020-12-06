@@ -1,19 +1,14 @@
-.toAsk {
-    color: indianred;
-    font-weight: bold;
+body {
+    font-family: 'Arima Madurai';
+    --main-color: rgb(43, 52, 81);
 }
 
-.pre-registration-wrapper {
-    position: relative;
-    padding-top: 56.25%;
-    overflow: hidden;
+p {
+    text-align: justify;
 }
 
-.pre-registration-wrapper iframe {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
+h2, strong {
+    color: var(--main-color);
 }
 
 @font-face {
