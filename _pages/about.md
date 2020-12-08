@@ -5,7 +5,7 @@ permalink: /about
 comments: false
 image: 
 imageshadow: true
-links:
+button_links:
   - content: "Projet pédagogique"
     url: "/educational-project"
   - content: "Equipe"

@@ -1,8 +1,10 @@
 #! /bin/bash
 
+## Make a usable link from google drive files links or identifiers.
+
 showHelp() {
     if [ $# -eq 0 ]; then
-        echo "$(basename $0) googleDriveImageUrl"
+        echo "$(basename $0) googleDriveImageUrlOrIdentifier anotherGoogleDriveImageUrlOrIdentifier"
         exit
     fi
 }
@@ -18,9 +20,11 @@ makeGoogleDriveImageUrlFromImageLink() {
 
 showHelp $@
 
-if [ ${1:0:4} != 'http' ]; then
-    makeGoogleDriveImageUrlFromImageId "$1"
-    exit
-fi
-
-makeGoogleDriveImageUrlFromImageLink "$1"
+for link in $@; do
+    if [ ${link:0:4} != 'http' ]; then
+        makeGoogleDriveImageUrlFromImageId "$link"
+        continue
+    fi
+    
+    makeGoogleDriveImageUrlFromImageLink "$link"
+done
