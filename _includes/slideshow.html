@@ -1,7 +1,0 @@
-<div class="slideshow">
-    {%- for picture in page.pictures -%}
-        <a class="slideshow-picture-link" href="{{ site.baseurl }}{{ picture.big }}">
-            <img class="slideshow-picture-small" src="{{ site.baseurl }}{{ picture.small }}" alt="{{ picture.tags[0] }}">
-        </a>
-    {%- endfor -%}
-</div>
