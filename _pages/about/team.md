@@ -7,7 +7,7 @@ image:
 imageshadow: true
 ---
 
-<figure style="background-image: url({{ site.educational_team_members[0].picture }}); background-position: bottom 70% left 0;"></figure>
+<figure id="team-member-0" style="background-image: url({{ site.educational_team_members[0].picture }}); background-position: bottom 70% left 0;"></figure>
 
 ## Sophie Pardigon
 
@@ -21,7 +21,7 @@ Depuis plus de sept ans je suis différentes formations : dans un premier temps,
 
 J’ai également suivi la formation CNV (module 1, 2 et 3) dispensée par Line Sandrini, formatrice certifiée de Déclic Education CNV avec Angélique, formation passionnante qui, en plus de nous apporter énormément de clés pour notre vie professionnelle et personnelle, nous a permis de renforcer nos liens dans notre super équipe ! Enfin, (année riche en formation pour nous toutes !), j’ai suivi les formations de permaculture design afin de transmettre aux enfants cette vision de la vie en synergie avec les éléments qui nous entourent. Enfin,nous nous étions lancés à l'Arbresle dans la démarche qualité de la fondation pour l'école afin d'obtenir la certification et donc le label Qualité. J'ai, pour cela,suivi la formation à la démarche qualité en tant que directrice d'établissement. Nous poursuivons ce travail à l'éco-école Montessori Arc-en-ciel.
 
-<figure style="background-image: url({{ site.educational_team_members[1].picture }})"></figure>
+<figure id="team-member-1" style="background-image: url({{ site.educational_team_members[1].picture }})"></figure>
 
 ## Angélique Dumontet
 
@@ -34,7 +34,7 @@ J’ai pu faire mes preuves dans le domaine de l’enfance en encadrant des enfa
 
 Le poste d’assistante Montessori que j’ai occupé durant l’année scolaire 2018-2019 à l’envol des petits curieux a été l’opportunité pour moi de continuer dans cette voie d’autant que je partageais déjà les valeurs de cette pédagogie passionnante. J’ai suivi la formation d’assistante Montessori avec Caroline Dallo éducatrice AMI 6-12 ans et traductrice des formations AMI assistante 3-6 ans et éducateur 6-12 ans ainsi que la formation d’éducatrice Montessori 3-6 ans avec Marie-Hélène Barbier. J’ai également pris beaucoup de plaisir à suivre la formation CNV (module 1, 2 et 3) dispensée par Line Sandrini, formatrice certifiée de Déclic Education CNV avec Sophie. Je suis ravie de rejoindre cette belle école, d’apporter ma bonne humeur et mon énergie en tant qu’éducatrice auprès des enfants.
 
-<figure style="background-image: url({{ site.educational_team_members[2].picture }})"></figure>
+<figure id="team-member-2" style="background-image: url({{ site.educational_team_members[2].picture }})"></figure>
 
 ## Marie-Hélène Barbier
 
