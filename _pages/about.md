@@ -1,6 +1,6 @@
 ---
 layout: about
-title: L'école
+title: Présentation de l'école
 permalink: /about
 comments: false
 image: 
