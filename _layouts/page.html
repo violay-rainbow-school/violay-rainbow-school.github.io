@@ -16,3 +16,32 @@ layout: default
 
 <!-- Comments if not disabled with comments: false -->
 {% include comments.html %}
+
+<!-- Leaflet map -->
+<div id="map" style="width: 100%; height: 400px;"></div>
+
+    
+<!-- Leaflet map -->
+{% if page.map == true %}
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""
+    ></script>
+
+    <script>
+        (function() {
+            let schoolCoordinates = [45.8542, 4.3621];
+            let mapOptions = {
+                center: schoolCoordinates,
+                zoom: 10
+            }
+            let map = new L.map("map", mapOptions);
+            let layer = new L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png");
+            
+            map.addLayer(layer);
+
+            let marker = L.marker(schoolCoordinates).addTo(map);
+            marker.bindPopup("<strong>Eco-école Arc-en-Ciel</strong><br>36 rue des Genets<br>42780 VIOLAY").openPopup();
+        })();
+    </script>
+{% endif %}

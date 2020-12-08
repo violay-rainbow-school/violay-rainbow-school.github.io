@@ -18,16 +18,16 @@ layout: default
 <h3 class="home-team-title">Equipe éducative</h3>
 <div class="home-team-wrapper">
     {% for team_member in site.educational_team_members %}
-        <div class="home-team-member">
+        <a href="/team#team-member-{{ forloop.index0 }}" class="home-team-member">
             <div class="home-team-member-picture">
-                <img class="home-team-member-picture-background" src="{{ site.button_images[forloop.index] }}" alt="">
-                <div class="home-team-member-picture-foreground" style="background-image: url({{ team_member.picture }});"></div>
+                <img class="home-team-member-picture-background" src="{{ site.button_images[forloop.index0] }}" alt="">
+                <div class="home-team-member-picture-foreground" style="background-image: url({{ team_member.picture }});{{ team_member.style }}"></div>
             </div>
             <div class="home-team-member-meta">
                 <div class="home-team-member-name">{{ team_member.name }}</div>
                 <div class="home-team-member-job-title">{{ team_member.job_title }}</div>
             </div>
-        </div>
+        </a>
     {% endfor %}
 </div>
 

@@ -41,6 +41,7 @@
 }
 
 .home-team-member {
+    color: var(--main-color);
     margin: 20px;
 }
 

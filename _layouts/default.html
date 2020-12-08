@@ -29,8 +29,20 @@
         <link href="{{ site.baseurl }}/assets/css/registration.css" rel="stylesheet">
     {% endif %}
 
+    {% if page.url == '/team' %}
+        <link href="{{ site.baseurl }}/assets/css/team.css" rel="stylesheet">
+    {% endif %}
+
     {% if page.slideshow == 'page' %}
         <link href="{{ site.baseurl }}/assets/css/slideshow.css" rel="stylesheet">
+    {% endif %}
+
+    <!-- Leaflet map -->
+    {% if page.map == true %}
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin=""
+        />
     {% endif %}
 
     <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
