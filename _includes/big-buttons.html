@@ -1,0 +1,8 @@
+<div class="big-button-wrapper">
+    {% for link in page.button_links %}
+        <a class="big-button" href="{{ site.baseurl }}{{ link.url }}">
+            <img class="big-button-image" src="{{ site.button_images[forloop.index0] }}" alt="">
+            <div>{{ link.content }}</div>
+        </a>
+    {% endfor %}
+</div>

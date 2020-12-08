@@ -7,6 +7,19 @@ image:
 imageshadow: true
 hide_logo: true
 show_site_tag: false
+button_links:
+- content: "Présentation"
+  url: "/about"
+- content: "Photos"
+  url: "/slideshow"
+- content: "Rejoindre l'école"
+  url: "/school-registration"
+- content: "Événements"
+  url: "/events"
+- content: "Nous soutenir"
+  url: "/contribute"
+- content: "Nous contacter"
+  url: "/contact"
 ---
 
 ## QUI SOMMES-NOUS?
@@ -33,8 +46,6 @@ Avec un ancrage fort dans la nature, une ouverture sur le monde, la découverte 
 - classes spacieuses et lumineuses
 
 [En savoir plus...](/about)
-
-<div class="toAsk">Diaporama photos école</div>
 
 > « N’élevons pas nos enfants pour le monde d’aujourd’hui. Ce monde aura changé lorsqu’ils seront grands. Aussi doit-on en priorité aider l’enfant à cultiver ses facultés de création et d’adaptation. » Maria Montessori
 

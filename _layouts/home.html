@@ -11,29 +11,8 @@ layout: default
 <!-- Featured Image -->
 {% include featured-image.html %}
 
-<!-- Links -->
-<div class="big-button-wrapper">
-    <a class="big-button" href="{{ site.baseurl }}/about">
-        <img class="big-button-image" src="{{ site.button_images[0] }}" alt="">
-        <div>Présentation</div>
-    </a>
-    <a class="big-button" href="{{ site.baseurl }}/school-registration">
-        <img class="big-button-image" src="{{ site.button_images[1] }}" alt="">
-        <div>Rejoindre l'école</div>
-    </a>
-    <a class="big-button" href="{{ site.baseurl }}/events">
-        <img class="big-button-image" src="{{ site.button_images[2] }}" alt="">
-        <div>Événements</div>
-    </a>
-    <a class="big-button" href="{{ site.baseurl }}/contribute">
-        <img class="big-button-image" src="{{ site.button_images[3] }}" alt="">
-        <div>Nous soutenir</div>
-    </a>
-    <a class="big-button" href="{{ site.baseurl }}/contact">
-        <img class="big-button-image" src="{{ site.button_images[4] }}" alt="">
-        <div>Nous contacter</div>
-    </a>
-</div>
+<!-- Button links -->
+{% include big-buttons.html %}
 
 <!-- Team -->
 <h3 class="home-team-title">Equipe éducative</h3>
