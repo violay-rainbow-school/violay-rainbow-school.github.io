@@ -3,6 +3,7 @@ layout: page
 title: Nous contacter
 permalink: /contact
 comments: false
+map: true
 ---
 
 Eco-école Montessori Arc-en-Ciel  
@@ -15,10 +16,10 @@ Eco-école Montessori Arc-en-Ciel
 Sophie Pardigon, Directrice : <direction.montessori.violay@gmail.com>  
 Magalie Farjot, Présidente AEP : <aep.violay@gmail.com>, 06 32 08 83 46
 
-Prendre RDV : Bouton Miello
+Vous souhaitez nous rejoindre ?
+
+[C'est par ici](/school-registration)
 
 Où nous trouver ?
 
 <a href="{{ site.location_map }}">Itinéraire Google Maps</a>
-
-(avec photo du parking)

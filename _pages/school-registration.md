@@ -7,7 +7,6 @@ image:
 imageshadow: true
 ---
 
-
 Nous acceptons les enfants à partir de 2ans et demi, en fonction de leur maturité et de l'équilibre de la classe. Nous ne pouvons accepter d'enfants de plus de 9 ans qui n'ont pas suivi auparavant une éducation Montessori.
 
 Dans la mesure des places disponibles, nous acceptons les inscriptions en cours d’année, car nous sommes sensibles à la situation des enfants qui peuvent rencontrer des difficultés dans leur situation scolaire actuelle.
