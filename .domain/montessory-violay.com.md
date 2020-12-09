@@ -41,5 +41,3 @@ _submission._tcp 10800 IN SRV 0 1 465 mail.gandi.net.
 webmail 10800 IN CNAME webmail.gandi.net.
 www 1800 IN CNAME violay-rainbow-school.github.io.
 ```
-
-> Le sous-domaine www.montessory-violay.com ne fonctionne pas, je ne sais pas pourquoi.
