@@ -15,9 +15,10 @@ Notre projet vous touche, vous partagez nos valeurs et souhaitez nous soutenir ?
 
 Vous pouvez en toute simplicité effectuer votre don ci-dessous :
 
-[Vous êtes un particulier](https://www.helloasso.com/associations/ecole-montessori-arc-en-ciel/collectes/mecenat-particulier/don)
-
-[Vous êtes un professionnel](https://www.helloasso.com/associations/ecole-montessori-arc-en-ciel/formulaires/1)
+<div class="contribute-link-wrapper">
+    <a class="contribute-link" href="https://www.helloasso.com/associations/ecole-montessori-arc-en-ciel/collectes/mecenat-particulier/don">Vous êtes un particulier<br><span class="contribute-link-donate">Faire un don</span></a>
+    <a class="contribute-link" href="https://www.helloasso.com/associations/ecole-montessori-arc-en-ciel/formulaires/1">Vous êtes un professionnel<br><span class="contribute-link-donate">Faire un don</span></a>
+</div>
 
 Vous recevrez automatiquement votre reçu fiscal et pourrez déduire de vos impôts :
 
@@ -29,7 +30,8 @@ Vous recevrez automatiquement votre reçu fiscal et pourrez déduire de vos imp�
 
 ## Votre soutien est très précieux, merci !
 
-- Albatross
-- Pâte à tartiner
-- Hypnothérapeute Bini
-- Garage Farjot
+Ils nous soutiennent :
+- [Albatross](https://www.albatrossglobal.org/)
+- [Pâte à tartiner](https://m.facebook.com/pateatartiner)
+- [Hypnothérapeute Bini](http://bien-dans-sa-tete.com/)
+- [Garage Farjot](https://www.facebook.com/garage.farjot/)
