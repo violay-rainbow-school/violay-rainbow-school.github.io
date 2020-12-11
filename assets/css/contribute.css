@@ -1,0 +1,39 @@
+.article-post ul {
+    list-style: url(/assets/images/svg/bullet-yellow.svg);
+}
+
+.contribute-link-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contribute-link {
+    display: block;
+    text-align: center;
+    background-image: url(/assets/images/svg/button-yellow.svg);
+    background-size: 125px;
+    background-repeat: no-repeat;
+    background-position: top 50px center;
+    height: 200px;
+    color: var(--main-color);
+    font-family: 'Open Sans Condensed';
+    font-size: 1.5em;
+}
+
+.contribute-link:hover {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.contribute-link-donate {
+    position: relative;
+    font-weight: bold;
+    top: 50px;
+}
+
+@media all and (max-width: 710px) {
+    .contribute-link-wrapper {
+        grid-template-columns: 1fr;
+    }
+}

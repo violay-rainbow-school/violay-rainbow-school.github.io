@@ -1,6 +1,7 @@
 body {
     font-family: 'Arima Madurai';
     --main-color: rgb(43, 52, 81);
+    --secondary-color: rgb(27, 119, 48);
     --background-color: rgb(51, 52, 110);
 }
 
