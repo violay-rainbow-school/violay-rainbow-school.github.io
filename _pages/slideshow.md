@@ -8,7 +8,8 @@ comments: false
 
 ## Environnement préparé 3-6 ans
 
-[![](https://drive.google.com/uc?export=view&id=108s3m4u0jWlpHK1bPxZPeJDUgbMjRL9g)]()
+[![](https://drive.google.com/uc?export=view&id=108s3m4u0jWlpHK1bPxZPeJDUgbMjRL9g)](https://drive.google.com/uc?export=view&id=1doGjbA33lQqHAF7q_GzlXK96uJMPu8Lh
+)
 [![](https://drive.google.com/uc?export=view&id=1Bn1it5qsvuEsSRvv3hNPcZWEB-OTEinn)]()
 [![](https://drive.google.com/uc?export=view&id=1EBXgZRM7PWVO4miuOBliUnLLO-YQ6goQ)]()
 [![](https://drive.google.com/uc?export=view&id=1Htuwp_TXvCsM4VOrrMcQjkK4vAQkXEni)]()
@@ -19,8 +20,7 @@ comments: false
 
 ## Environnement préparé 6-12 ans
 
-[![](https://drive.google.com/uc?export=view&id=1MH27jSYLEcTCtGlUfU7x-WSjDIaxhGUD)] (https://drive.google.com/uc?export=view&id=1doGjbA33lQqHAF7q_GzlXK96uJMPu8Lh
-)
+[![](https://drive.google.com/uc?export=view&id=1MH27jSYLEcTCtGlUfU7x-WSjDIaxhGUD)]()
 [![](https://drive.google.com/uc?export=view&id=1LV_AYhK-4bdC6TumwplLStloWrYBnNAO)]()
 [![](https://drive.google.com/uc?export=view&id=1FTOvOUxvrk8jPHw6Ous_b-j_V8iKuqr8)]()
 [![](https://drive.google.com/uc?export=view&id=1GuB-emU3RFz_sJMkIbBZHGjTBtXPmNc8)]()
