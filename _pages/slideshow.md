@@ -36,6 +36,7 @@ comments: false
 [![](https://drive.google.com/uc?export=view&id=1j32sb_ZBzuSrnlBs3xDKR2yFNb6rewey)]()
 [![](https://drive.google.com/uc?export=view&id=1jCQfZ_XhgqW0IdWVdJYXF10BiZe4jd2b)]()
 [![](https://drive.google.com/uc?export=view&id=1k-b8ylSpGcxmVUtSBvDZMt29V7K28ZZw)]()
+[![](https://drive.google.com/uc?export=view&id=1ngb0W8Xx04ANpdEhhGUf7oHXFCzurhmk)]()
 
 ## Environnement préparé 6-12 ans
 
@@ -53,6 +54,8 @@ comments: false
 [![](https://drive.google.com/uc?export=view&id=1c8hfck2fD2gAaWr4VWEEVM1Od9u3BW1Q)]()
 [![](https://drive.google.com/uc?export=view&id=1hVmUCoRFtz55eRkC8XefPpQBr6uMRxi3)]()
 [![](https://drive.google.com/uc?export=view&id=1lS6xJHrbzD2_ZurODMI5v7XJkvqdqqKm)]()
+[![](https://drive.google.com/uc?export=view&id=1mmWp54IE9D7jNt2KBLY3FzNctXYB4ZMI)]()
+[![](https://drive.google.com/uc?export=view&id=1sdSyd9JWS2FXgm96Qp3SQkyU59_7hjnh)]()
 
 ## Salle de restauration
 
@@ -73,7 +76,4 @@ comments: false
 [![](https://drive.google.com/uc?export=view&id=1OAIoGJLM1woZRQP8eUr29JrgmKsV3NbW)]()
 [![](https://drive.google.com/uc?export=view&id=1EiaqCW8vQgmCk6M8BkY4nWssi242A7AH)]()
 [![](https://drive.google.com/uc?export=view&id=1m92X-ECIlNKydr4pKbrvp-01Xp8XEVG5)]()
-[![](https://drive.google.com/uc?export=view&id=1mmWp54IE9D7jNt2KBLY3FzNctXYB4ZMI)]()
-[![](https://drive.google.com/uc?export=view&id=1ngb0W8Xx04ANpdEhhGUf7oHXFCzurhmk)]()
-[![](https://drive.google.com/uc?export=view&id=1sdSyd9JWS2FXgm96Qp3SQkyU59_7hjnh)]()
 [![](https://drive.google.com/uc?export=view&id=1veKRY-pXNqEBZ-H8HSYPPD6HmpqJqUK7)]()
