@@ -19,7 +19,8 @@ comments: false
 
 ## Environnement préparé 6-12 ans
 
-[![](https://drive.google.com/uc?export=view&id=1MH27jSYLEcTCtGlUfU7x-WSjDIaxhGUD)]()
+[![](https://drive.google.com/uc?export=view&id=1MH27jSYLEcTCtGlUfU7x-WSjDIaxhGUD)](https://drive.google.com/uc?export=view&id=1doGjbA33lQqHAF7q_GzlXK96uJMPu8Lh
+)
 [![](https://drive.google.com/uc?export=view&id=1LV_AYhK-4bdC6TumwplLStloWrYBnNAO)]()
 [![](https://drive.google.com/uc?export=view&id=1FTOvOUxvrk8jPHw6Ous_b-j_V8iKuqr8)]()
 [![](https://drive.google.com/uc?export=view&id=1GuB-emU3RFz_sJMkIbBZHGjTBtXPmNc8)]()
