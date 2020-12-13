@@ -44,9 +44,10 @@ comments: false
 )
 [![](https://drive.google.com/uc?export=view&id=1j32sb_ZBzuSrnlBs3xDKR2yFNb6rewey)](https://drive.google.com/uc?export=view&id=1f5SoOqfCEdQFxZkO1uLY4OWdtdnVwsFR
 )
-[![](https://drive.google.com/uc?export=view&id=1jCQfZ_XhgqW0IdWVdJYXF10BiZe4jd2b)]()
-[![](https://drive.google.com/uc?export=view&id=1k-b8ylSpGcxmVUtSBvDZMt29V7K28ZZw)](https://drive.google.com/file/d/14Gaxs6P0F5EVb049B5m7Rifq-bPwB_CX/view?usp=sharing)
-[![](https://drive.google.com/uc?export=view&id=1ngb0W8Xx04ANpdEhhGUf7oHXFCzurhmk)](https://drive.google.com/uc?export=view&id=1g-2-ihA6xgh2oFwXm3Xmk-uJVLwT5hJe
+[![](https://drive.google.com/uc?export=view&id=1jCQfZ_XhgqW0IdWVdJYXF10BiZe4jd2b)](https://drive.google.com/file/d/14Gaxs6P0F5EVb049B5m7Rifq-bPwB_CX/view?usp=sharing)
+[![](https://drive.google.com/uc?export=view&id=1k-b8ylSpGcxmVUtSBvDZMt29V7K28ZZw)](https://drive.google.com/uc?export=view&id=1g-2-ihA6xgh2oFwXm3Xmk-uJVLwT5hJe
+)
+[![](https://drive.google.com/uc?export=view&id=1ngb0W8Xx04ANpdEhhGUf7oHXFCzurhmk)](https://drive.google.com/uc?export=view&id=1CbX_6qP54SIbdCQjTRh6WiGUdF88HBnB
 )
 
 ## Environnement préparé 6-12 ans
@@ -70,16 +71,20 @@ comments: false
 
 ## Salle de restauration
 
-[![](https://drive.google.com/uc?export=view&id=1i5RHacHk_9srfTGqrzyyBzxZWIXspvmL)]()
+[![](https://drive.google.com/uc?export=view&id=1i5RHacHk_9srfTGqrzyyBzxZWIXspvmL)](https://drive.google.com/uc?export=view&id=1-Rwz52c7zukMFrRlQSER1eQKJLni5a_2
+)
 
 ## Salle de garderie 
 
-[![](https://drive.google.com/uc?export=view&id=102Dml6JTbDVxifqF8_S-Y6T6r3JbYs8Q)]()
+[![](https://drive.google.com/uc?export=view&id=102Dml6JTbDVxifqF8_S-Y6T6r3JbYs8Q)](https://drive.google.com/uc?export=view&id=1g7Xy1WluJ7GhAdz75T_eVlkNXukPOO4r
+)
 
 ## Extérieur
 
-[![](https://drive.google.com/uc?export=view&id=1lOsr4Px8-3R2QcIh2gOUM2NSq4RDjWvb)]()
-[![](https://drive.google.com/uc?export=view&id=1TDxRdCbiSyrxlkUALhCNHJ0ZbCzHj1M6)]()
+[![](https://drive.google.com/uc?export=view&id=1lOsr4Px8-3R2QcIh2gOUM2NSq4RDjWvb)](https://drive.google.com/uc?export=view&id=1dOtF-8hyBlEciONVoBoyyVVOp8HSehYy
+)
+[![](https://drive.google.com/uc?export=view&id=1TDxRdCbiSyrxlkUALhCNHJ0ZbCzHj1M6)](https://drive.google.com/uc?export=view&id=1UymQ-unihh2jdZ__S_Mt0W1MoNAUO8da
+)
 [![](https://drive.google.com/uc?export=view&id=1Vp33Q3EC7n7FBIb-W64batQAxHqAvE4k)]()
 [![](https://drive.google.com/uc?export=view&id=1RDxZqgWFQRGkCFc56aX_noW_2XzOoHqb)]()
 [![](https://drive.google.com/uc?export=view&id=1RkWy1TTyYPpAnBOAL_K_sBABrYGUrnm-)]()
