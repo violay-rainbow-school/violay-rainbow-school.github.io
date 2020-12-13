@@ -32,6 +32,10 @@ comments: false
 [![](https://drive.google.com/uc?export=view&id=1TrhUMCzKRp9jBcJRTM5Vbbr_M7E68Pay)]()
 [![](https://drive.google.com/uc?export=view&id=1b5j8nTPqu3Edc62qytpzP2B8UUaZUMk-)]()
 [![](https://drive.google.com/uc?export=view&id=1bcFEr32S9aAcNVaXbga9Wm9KyeeouLI2)]()
+[![](https://drive.google.com/uc?export=view&id=1glvPNHBfZUCCW5VfQd5F0ihSgU-Hhd5e)]()
+[![](https://drive.google.com/uc?export=view&id=1j32sb_ZBzuSrnlBs3xDKR2yFNb6rewey)]()
+[![](https://drive.google.com/uc?export=view&id=1jCQfZ_XhgqW0IdWVdJYXF10BiZe4jd2b)]()
+[![](https://drive.google.com/uc?export=view&id=1k-b8ylSpGcxmVUtSBvDZMt29V7K28ZZw)]()
 
 ## Environnement préparé 6-12 ans
 
@@ -47,17 +51,12 @@ comments: false
 [![](https://drive.google.com/uc?export=view&id=1T17oCtubMIv0EA3wnMS_kjlYJndBfTri)]()
 [![](https://drive.google.com/uc?export=view&id=1_Ml3ICiYbBC5ThXCSMpdaDOYHgJu3lM-)]()
 [![](https://drive.google.com/uc?export=view&id=1c8hfck2fD2gAaWr4VWEEVM1Od9u3BW1Q)]()
+[![](https://drive.google.com/uc?export=view&id=1hVmUCoRFtz55eRkC8XefPpQBr6uMRxi3)]()
+[![](https://drive.google.com/uc?export=view&id=1lS6xJHrbzD2_ZurODMI5v7XJkvqdqqKm)]()
 
 ## Salle de restauration
 
-[![](https://drive.google.com/uc?export=view&id=1glvPNHBfZUCCW5VfQd5F0ihSgU-Hhd5e)]()
-[![](https://drive.google.com/uc?export=view&id=1hVmUCoRFtz55eRkC8XefPpQBr6uMRxi3)]()
 [![](https://drive.google.com/uc?export=view&id=1i5RHacHk_9srfTGqrzyyBzxZWIXspvmL)]()
-[![](https://drive.google.com/uc?export=view&id=1j32sb_ZBzuSrnlBs3xDKR2yFNb6rewey)]()
-[![](https://drive.google.com/uc?export=view&id=1jCQfZ_XhgqW0IdWVdJYXF10BiZe4jd2b)]()
-[![](https://drive.google.com/uc?export=view&id=1k-b8ylSpGcxmVUtSBvDZMt29V7K28ZZw)]()
-[![](https://drive.google.com/uc?export=view&id=1lOsr4Px8-3R2QcIh2gOUM2NSq4RDjWvb)]()
-[![](https://drive.google.com/uc?export=view&id=1lS6xJHrbzD2_ZurODMI5v7XJkvqdqqKm)]()
 
 ## Salle de garderie 
 
@@ -65,6 +64,7 @@ comments: false
 
 ## Extérieur
 
+[![](https://drive.google.com/uc?export=view&id=1lOsr4Px8-3R2QcIh2gOUM2NSq4RDjWvb)]()
 [![](https://drive.google.com/uc?export=view&id=1TDxRdCbiSyrxlkUALhCNHJ0ZbCzHj1M6)]()
 [![](https://drive.google.com/uc?export=view&id=1Vp33Q3EC7n7FBIb-W64batQAxHqAvE4k)]()
 [![](https://drive.google.com/uc?export=view&id=1RDxZqgWFQRGkCFc56aX_noW_2XzOoHqb)]()
