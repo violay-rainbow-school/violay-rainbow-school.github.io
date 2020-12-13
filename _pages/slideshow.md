@@ -44,7 +44,7 @@ comments: false
 )
 [![](https://drive.google.com/uc?export=view&id=1j32sb_ZBzuSrnlBs3xDKR2yFNb6rewey)](https://drive.google.com/uc?export=view&id=1f5SoOqfCEdQFxZkO1uLY4OWdtdnVwsFR
 )
-[![](https://drive.google.com/uc?export=view&id=1jCQfZ_XhgqW0IdWVdJYXF10BiZe4jd2b)](https://drive.google.com/file/d/14Gaxs6P0F5EVb049B5m7Rifq-bPwB_CX/view?usp=sharing)
+[![](https://drive.google.com/uc?export=view&id=1jCQfZ_XhgqW0IdWVdJYXF10BiZe4jd2b)](https://drive.google.com/uc?export=view&id=14Gaxs6P0F5EVb049B5m7Rifq-bPwB_CX)
 [![](https://drive.google.com/uc?export=view&id=1k-b8ylSpGcxmVUtSBvDZMt29V7K28ZZw)](https://drive.google.com/uc?export=view&id=1g-2-ihA6xgh2oFwXm3Xmk-uJVLwT5hJe
 )
 [![](https://drive.google.com/uc?export=view&id=1ngb0W8Xx04ANpdEhhGUf7oHXFCzurhmk)](https://drive.google.com/uc?export=view&id=1CbX_6qP54SIbdCQjTRh6WiGUdF88HBnB
