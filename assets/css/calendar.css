@@ -1,0 +1,22 @@
+.calendar {
+    max-width: 1000px;
+    margin: 3em auto;
+}
+
+.day {
+    border: solid 1px grey;
+    text-align: center;
+    padding: 5px;
+}
+
+.school-open {
+    color: green;
+}
+
+.selected {
+    background-color: skyblue;
+}
+
+.weekend {
+    background-color: gainsboro;
+}

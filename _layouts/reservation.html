@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="page-single">
+    <div class="entry-header">       
+        <h1 class="posttitle">{{ page.title }}</h1>        
+    </div>
+</div>
+
+<div id="calendar" class="calendar" year="{{ page.year }}" month="{{ page.month }}" closed-dates="{% for date in page.closed_dates %}{{ date }} {% endfor %}"></div>
+
+<script src="/assets/js/calendar/calendar.js"></script>
+<script>
+    const getClosedDates = (closedDatesAttribute) => closedDatesAttribute.split(' ')
+        .map((date) => parseInt(date))
+        .filter((date) => Number.isInteger(date));
+
+    const calendarElement = document.querySelector('#calendar');
+    let selectedDates = [];
+    let options = {
+        calendarElement,
+        selectedDates,
+        closedDates: getClosedDates(calendarElement.getAttribute('closed-dates')),
+        year: calendarElement.getAttribute('year'),
+        month: calendarElement.getAttribute('month') - 1,
+    };
+    
+    createCalendar(options);
+</script>
