@@ -8,11 +8,16 @@ layout: default
     </div>
 </div>
 
+<!-- Flash messages -->
+<div id="flash"></div>
+
 <!-- Display monthly calendar -->
-<form action="#" id="calendar">
+<form action="#" id="calendar-form">
+    <button class="btn btn-success" type="submit">Enregistrer</button>
     {%- for month in page.months -%}
         <div class="calendar-month" month="{{ month }}"></div>
     {%- endfor -%}
+    <button class="btn btn-success" type="submit">Enregistrer</button>
 </form>
 
 {% for date in page.closed_dates %}
@@ -23,6 +28,13 @@ layout: default
 <script>
     const closedDates = [...document.querySelectorAll('.closed-date')].map(closedDateElement => new Date(closedDateElement.textContent));
     const calendarElements = document.querySelectorAll('.calendar-month');
+
+    document.querySelector('#calendar-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        const selectedDates = [...document.querySelectorAll('.day-checkbox:checked')].map(checkbox => checkbox.value)
+        console.log(selectedDates)
+        // TODO: send data to the API
+    })
     
     calendarElements.forEach((calendarElement) => {
         let monthParts = calendarElement.getAttribute('month').split('-');
@@ -34,5 +46,5 @@ layout: default
         };
         
         createMonthCalendar(options);
-    })
+    });
 </script>

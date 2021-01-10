@@ -78,7 +78,7 @@ function createMonthCalendar(properties) {
     // Draw calendar
     dates.map((date) => {
         const checkbox = isSchoolOpen(date)
-            ? `<input class="day-checkbox" type="checkbox" value="${date.getDate()}">`
+            ? `<input class="day-checkbox" type="checkbox" value="${year}-${month + 1}-${date.getDate()}" name="selectedDates[]">`
             : '';
         calendarElement.insertAdjacentHTML(
             'beforeend',
