@@ -17,7 +17,8 @@ function createMonthCalendar(properties) {
         );
     };
 
-    const isSchoolOpen = (date) => closedDates.filter((closedDate) => {
+    const isSchoolOpen = (date) =>
+        closedDates.filter((closedDate) => {
             closedDate.setHours(0, 0, 0, 0);
             return date.toString() === closedDate.toString();
         }).length <= 0;
@@ -76,22 +77,16 @@ function createMonthCalendar(properties) {
 
     // Draw calendar
     dates.map((date) => {
+        const checkbox = isSchoolOpen(date)
+            ? `<input class="day-checkbox" type="checkbox" value="${date.getDate()}">`
+            : '';
         calendarElement.insertAdjacentHTML(
             'beforeend',
-            `<div class="day ${
-                isSchoolOpen(date) ? 'school-open' : 'school-closed'
-            }">${date.getDate()}</div>`
+            `<div class="day ${isSchoolOpen(date) ? 'school-open' : 'school-closed'}"><span class="day-number">${date.getDate()}</span>${checkbox}</div>`
         );
     });
 
     // Style calendar
     calendarElement.style.display = 'grid';
     calendarElement.style.gridTemplateColumns = 'repeat(7, 1fr)';
-
-    // Select dates
-    calendarElement.querySelectorAll('.school-open').forEach((openDay) => {
-        openDay.addEventListener('click', function (event) {
-            this.classList.toggle('selected')
-        });
-    });
 }
