@@ -8,26 +8,29 @@ layout: default
     </div>
 </div>
 
-{%- for month in page.months -%}
-    <div class="calendar-month" year="{{ page.year }}" month="{{ month }}" closed-dates="{% for date in page.closed_dates %}{{ date }} {% endfor %}"></div>
-{%- endfor -%}
+<!-- Display monthly calendar -->
+<form action="#" id="calendar">
+    {%- for month in page.months -%}
+        <div class="calendar-month" month="{{ month }}"></div>
+    {%- endfor -%}
+</form>
+
+{% for date in page.closed_dates %}
+    <div class="closed-date" style="display: none;">{{ date }}</div>
+{% endfor %}
 
 <script src="/assets/js/calendar/calendar.js"></script>
 <script>
-    const getClosedDates = (closedDatesAttribute) => closedDatesAttribute.split(' ')
-        .map((date) => parseInt(date))
-        .filter((date) => Number.isInteger(date));
-
+    const closedDates = [...document.querySelectorAll('.closed-date')].map(closedDateElement => new Date(closedDateElement.textContent));
     const calendarElements = document.querySelectorAll('.calendar-month');
     
     calendarElements.forEach((calendarElement) => {
-        let selectedDates = [];
+        let monthParts = calendarElement.getAttribute('month').split('-');
         let options = {
             calendarElement,
-            selectedDates,
-            closedDates: getClosedDates(calendarElement.getAttribute('closed-dates')),
-            year: calendarElement.getAttribute('year'),
-            month: calendarElement.getAttribute('month') - 1,
+            closedDates,
+            year: monthParts[0],
+            month: monthParts[1] - 1,
         };
         
         createMonthCalendar(options);

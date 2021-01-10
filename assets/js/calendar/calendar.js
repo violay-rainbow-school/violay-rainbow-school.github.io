@@ -5,13 +5,7 @@
  * @param {int} month january is 0
  */
 function createMonthCalendar(properties) {
-    const {
-        calendarElement,
-        selectedDates,
-        closedDates,
-        year,
-        month,
-    } = properties;
+    const { calendarElement, closedDates, year, month } = properties;
 
     const getLastDayOfMonth = (year, month) => {
         const startingDate = new Date(year, month, 1);
@@ -23,9 +17,10 @@ function createMonthCalendar(properties) {
         );
     };
 
-    const isSchoolOpen = (date) => {
-        return !closedDates.includes(date.getDate());
-    };
+    const isSchoolOpen = (date) => closedDates.filter((closedDate) => {
+            closedDate.setHours(0, 0, 0, 0);
+            return date.toString() === closedDate.toString();
+        }).length <= 0;
 
     const lastDayOfMonth = getLastDayOfMonth(year, month);
     const dateCount = lastDayOfMonth.getDate();
@@ -42,17 +37,17 @@ function createMonthCalendar(properties) {
         return new Intl.DateTimeFormat('fr-FR', { month: 'long' }).format(
             new Date(year, monthIndex, 1)
         );
-    }
+    };
 
     calendarElement.insertAdjacentHTML(
         'beforebegin',
-        `<div class="month-name">${getMonthName(month)}</div>`
+        `<div class="month-name">${getMonthName(month)} ${year}</div>`
     );
 
     // Draw day names
     const getDayName = (day) =>
         new Intl.DateTimeFormat('fr-FR', { weekday: 'long' }).format(
-            new Date(year, 1, day)
+            new Date(2018, 0, day)
         );
 
     for (let i = 1; i <= 7; i++) {
@@ -94,26 +89,9 @@ function createMonthCalendar(properties) {
     calendarElement.style.gridTemplateColumns = 'repeat(7, 1fr)';
 
     // Select dates
-    document.querySelectorAll('.school-open').forEach((openDay) => {
+    calendarElement.querySelectorAll('.school-open').forEach((openDay) => {
         openDay.addEventListener('click', function (event) {
-            this.classList.toggle('selected');
-
-            const selectedDay = this.textContent;
-
-            if (
-                this.classList.contains('selected') &&
-                !selectedDates.includes(selectedDay)
-            ) {
-                selectedDates.push(new Date(year, month, selectedDay));
-                console.log(`${selectedDay} added to`, selectedDates);
-                return;
-            }
-
-            selectedDates = selectedDates.filter(
-                (date) => `${date.getDate()}` !== selectedDay
-            );
-
-            console.log(`${selectedDay} removed from`, selectedDates);
+            this.classList.toggle('selected')
         });
     });
 }

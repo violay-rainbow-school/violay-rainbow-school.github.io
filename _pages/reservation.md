@@ -1,16 +1,17 @@
 ---
 layout: reservation
 title: Réservation
-year: 2021
 months: 
-- 1
-- 2
-- 3
+- 2020-12
+- 2021-01
+- 2021-02
+- 2021-03
 closed_dates: 
-- 6
-- 13
-- 20
-- 27
+- 2020-12-24
+- 2021-01-06
+- 2021-01-13
+- 2021-01-20
+- 2021-01-27
 permalink: /reservation
 comments: false
 imageshadow: true
