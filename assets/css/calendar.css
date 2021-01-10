@@ -1,22 +1,36 @@
-.calendar {
+.calendar-month {
     max-width: 1000px;
-    margin: 3em auto;
+    margin: 0 auto;
+}
+
+.month-name {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0.25em;
 }
 
 .day {
-    border: solid 1px grey;
+    text-align: center;
+    padding: 5px;
+}
+
+.day-name {
     text-align: center;
     padding: 5px;
 }
 
 .school-open {
-    color: green;
+    color: black;
 }
 
 .selected {
     background-color: skyblue;
+    color: blanchedalmond;
 }
 
-.weekend {
+.school-closed {
     background-color: gainsboro;
+    color: grey;
 }

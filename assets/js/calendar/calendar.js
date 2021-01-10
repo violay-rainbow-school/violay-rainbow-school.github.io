@@ -1,11 +1,17 @@
 /**
- * Create the calendar
+ * Create a calendar for a month
  *
  * @param {int} year
  * @param {int} month january is 0
  */
-function createCalendar(properties) {
-    const { calendarElement, selectedDates, closedDates, year, month } = properties;
+function createMonthCalendar(properties) {
+    const {
+        calendarElement,
+        selectedDates,
+        closedDates,
+        year,
+        month,
+    } = properties;
 
     const getLastDayOfMonth = (year, month) => {
         const startingDate = new Date(year, month, 1);
@@ -17,12 +23,8 @@ function createCalendar(properties) {
         );
     };
 
-    const isWeekend = (date) => {
-        let day = date.getDay();
-        return day === 0 || day === 6;
-    };
     const isSchoolOpen = (date) => {
-        return !closedDates.includes(date.getDate()) && !isWeekend(date);
+        return !closedDates.includes(date.getDate());
     };
 
     const lastDayOfMonth = getLastDayOfMonth(year, month);
@@ -35,18 +37,28 @@ function createCalendar(properties) {
 
     const firstDayNameIndex = dates[0].getDay();
 
+    // Draw month name
+    const getMonthName = (monthIndex) => {
+        return new Intl.DateTimeFormat('fr-FR', { month: 'long' }).format(
+            new Date(year, monthIndex, 1)
+        );
+    }
+
+    calendarElement.insertAdjacentHTML(
+        'beforebegin',
+        `<div class="month-name">${getMonthName(month)}</div>`
+    );
+
     // Draw day names
     const getDayName = (day) =>
         new Intl.DateTimeFormat('fr-FR', { weekday: 'long' }).format(
-            new Date(2021, 1, day)
+            new Date(year, 1, day)
         );
 
     for (let i = 1; i <= 7; i++) {
         calendarElement.insertAdjacentHTML(
             'beforeend',
-            `<div class="day ${
-                [6, 7].includes(i) ? 'weekend' : ''
-            }">${getDayName(i)}</div>`
+            `<div class="day-name">${getDayName(i)}</div>`
         );
     }
 
@@ -54,9 +66,7 @@ function createCalendar(properties) {
     const drawEmptyCase = (dayNumber) =>
         calendarElement.insertAdjacentHTML(
             'beforeend',
-            `<div class="day ${
-                [0, 6].includes(dayNumber) ? 'weekend' : ''
-            }"></div>`
+            `<div class="day-blank"></div>`
         );
 
     if (firstDayNameIndex === 0) {
@@ -73,8 +83,8 @@ function createCalendar(properties) {
     dates.map((date) => {
         calendarElement.insertAdjacentHTML(
             'beforeend',
-            `<div class="day ${isWeekend(date) ? 'weekend' : ''} ${
-                isSchoolOpen(date) ? 'school-open' : ''
+            `<div class="day ${
+                isSchoolOpen(date) ? 'school-open' : 'school-closed'
             }">${date.getDate()}</div>`
         );
     });

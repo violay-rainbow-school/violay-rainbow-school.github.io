@@ -2,7 +2,10 @@
 layout: reservation
 title: Réservation
 year: 2021
-month: 1
+months: 
+- 1
+- 2
+- 3
 closed_dates: 
 - 6
 - 13
