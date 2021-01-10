@@ -85,8 +85,4 @@ function createMonthCalendar(properties) {
             `<div class="day ${isSchoolOpen(date) ? 'school-open' : 'school-closed'}"><span class="day-number">${date.getDate()}</span>${checkbox}</div>`
         );
     });
-
-    // Style calendar
-    calendarElement.style.display = 'grid';
-    calendarElement.style.gridTemplateColumns = 'repeat(7, 1fr)';
 }
