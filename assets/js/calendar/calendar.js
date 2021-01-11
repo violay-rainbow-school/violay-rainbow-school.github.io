@@ -77,12 +77,18 @@ function createMonthCalendar(properties) {
 
     // Draw calendar
     dates.map((date) => {
-        const checkbox = isSchoolOpen(date)
-            ? `<input class="day-checkbox" type="checkbox" value="${year}-${month + 1}-${date.getDate()}" name="selectedDates[]">`
-            : '';
         calendarElement.insertAdjacentHTML(
             'beforeend',
-            `<div class="day ${isSchoolOpen(date) ? 'school-open' : 'school-closed'}"><span class="day-number">${date.getDate()}</span>${checkbox}</div>`
+            `<div class="day ${
+                isSchoolOpen(date) ? 'school-open' : 'school-closed'
+            }" full-date="${year}-${month + 1}-${date.getDate()}">${date.getDate()}</div>`
         );
+    });
+
+    // Select dates
+    calendarElement.querySelectorAll('.school-open').forEach((openDay) => {
+        openDay.addEventListener('click', function (event) {
+            this.classList.toggle('selected-date')
+        });
     });
 }

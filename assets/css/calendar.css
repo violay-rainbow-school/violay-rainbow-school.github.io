@@ -5,6 +5,10 @@
     grid-template-columns: repeat(7, 1fr);
 }
 
+.calendar-child {
+    margin: 2em;
+}
+
 .month-name {
     font-size: 1.3em;
     font-weight: bold;
@@ -28,7 +32,7 @@
     color: black;
 }
 
-.selected {
+.selected-date {
     background-color: skyblue;
     color: blanchedalmond;
 }

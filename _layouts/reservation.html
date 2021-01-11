@@ -11,9 +11,21 @@ layout: default
 <!-- Flash messages -->
 <div id="flash"></div>
 
-<!-- Display monthly calendar -->
 <form action="#" id="calendar-form">
     <button class="btn btn-success" type="submit">Enregistrer</button>
+    
+    <!-- Select child -->
+    <div class="calendar-child">
+        <label for="child-select">Enfant :</label>
+    
+        <select name="child-select" id="child-select">
+            <option value="sarah">sarah</option>
+            <option value="jim">jim</option>
+            <option value="jean">jean</option>
+        </select>
+    </div>
+    
+    <!-- Display monthly calendar -->
     {%- for month in page.months -%}
         <div class="calendar-month" month="{{ month }}"></div>
     {%- endfor -%}
@@ -31,9 +43,9 @@ layout: default
 
     document.querySelector('#calendar-form').addEventListener('submit', function (event) {
         event.preventDefault();
-        const selectedDates = [...document.querySelectorAll('.day-checkbox:checked')].map(checkbox => checkbox.value)
+        const selectedDates = [...document.querySelectorAll('.selected-date')].map(dateElement => dateElement.getAttribute('full-date'))
         console.log(selectedDates)
-        // TODO: send data to the API
+        // TODO: send data to an API to save the dates
     })
     
     calendarElements.forEach((calendarElement) => {
