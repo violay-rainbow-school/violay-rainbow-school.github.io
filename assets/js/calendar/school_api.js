@@ -1,21 +1,11 @@
 (function () {
     const schoolApiUrl = 'http://127.0.0.1:8002';
+    const selectChildElementId = 'child-select';
+    const selectChildElement = document.getElementById(selectChildElementId);
     const closedDates = [...document.querySelectorAll('.closed-date')].map(
         (closedDateElement) => new Date(closedDateElement.textContent)
     );
     const calendarElements = document.querySelectorAll('.calendar-month');
-
-    /**
-     * Extract a child's first name from its element
-     */
-    const getChildFirstName = (childNameElement) =>
-        childNameElement.querySelector('.first-name');
-
-    /**
-     * Extract a child's last name from its element
-     */
-    const getChildLastName = (childNameElement) =>
-        childNameElement.querySelector('.last-name');
 
     /**
      * Update the child select element
@@ -23,17 +13,14 @@
      * @param {json} apiResponseContent
      */
     const updateSelectChildElement = (apiResponseContent) => {
-        let selectElement = document.getElementById('child-select');
         let children = apiResponseContent['hydra:member'];
 
-        selectElement.innerHTML = '';
-
+        selectChildElement.innerHTML = '';
         children.map((child) => {
-            console.log(child)
             const { id, firstName, lastName } = child;
-            selectElement.insertAdjacentHTML(
+            selectChildElement.insertAdjacentHTML(
                 'beforeend',
-                `<option value="${id}"><span class="first-name">${firstName}</span> <span class="last-name">${lastName}</span></option>`
+                `<option value="${id}" full-name="${firstName}%${lastName}">${firstName} ${lastName}</option>`
             );
         });
     };
@@ -54,16 +41,16 @@
     };
 
     /**
-     * Fetch children then execute the callback
+     * List children then execute the callback
      */
-    const fetchChildren = (successCallback, errorCallback = showError) =>
+    const listChildren = (successCallback, errorCallback = showError) =>
         fetch(`${schoolApiUrl}/api/children`)
             .then((response) => response.json())
             .then((responseContent) => successCallback(responseContent))
             .catch((error) => errorCallback(error));
 
     // Update child select element
-    fetchChildren(updateSelectChildElement);
+    listChildren(updateSelectChildElement);
 
     /**
      * Update a Child
@@ -73,7 +60,7 @@
      * @param {callable} errorCallback
      */
     const updateChild = (child, successCallback, errorCallback) => {
-        fetch(`${schoolApiUrl}/children/${child.id}`, {
+        fetch(`${schoolApiUrl}/api/children/${child.id}`, {
             method: 'PUT',
             body: JSON.stringify(child),
             headers: { 'Content-type': 'application/json; charset=UTF-8' },
@@ -88,15 +75,22 @@
         .querySelector('#calendar-form')
         .addEventListener('submit', function (event) {
             event.preventDefault();
+
             const selectedDates = [
                 ...document.querySelectorAll('.selected-date'),
-            ].map((dateElement) => dateElement.getAttribute('full-date'));
-            const childNameElement = document.getElementById('child-select');
-            console.log(childNameElement);
+            ].map((dateElement) => {
+                return { date: dateElement.getAttribute('full-date') };
+            });
+            const childNameElement =
+                selectChildElement.options[selectChildElement.selectedIndex];
+            const childFullNameParts = childNameElement
+                .getAttribute('full-name')
+                .split('%');
 
             const child = {
-                firstName: getChildFirstName(childNameElement),
-                lastName: getChildLastName(childNameElement),
+                id: childNameElement.value,
+                firstName: childFullNameParts[0],
+                lastName: childFullNameParts[1],
                 birthday: '2021-01-15T21:37:28.672Z',
                 restaurantDays: selectedDates,
             };
@@ -113,7 +107,9 @@
             year: monthParts[0],
             month: monthParts[1] - 1,
         };
-
+        
         createMonthCalendar(options);
     });
+
+    // TODO: update calendars by highlighting already selected restaurant days of the current child
 })();
