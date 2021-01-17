@@ -13,6 +13,14 @@ h2, strong {
     color: var(--main-color);
 }
 
+.flash {
+    margin: 1em 0;
+}
+
+.alert-danger {
+    padding: 1em;
+}
+
 @font-face {
     font-family: 'handwriting';
     src: url('../fonts/cursive-standard.ttf');

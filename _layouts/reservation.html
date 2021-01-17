@@ -9,7 +9,7 @@ layout: default
 </div>
 
 <!-- Flash messages -->
-<div id="flash"></div>
+<div class="flash" id="flash"></div>
 
 <form action="#" id="calendar-form">
     <button class="btn btn-success" type="submit">Enregistrer</button>
@@ -18,9 +18,7 @@ layout: default
     <div class="calendar-child">
         <label for="child-select">Enfant :</label>
     
-        <select name="child-select" id="child-select">
-            {# <option value="1"><span class="first-name">sarah</span> <span class="last-name">croche</span></option> #}
-        </select>
+        <select name="child-select" id="child-select"></select>
     </div>
     
     <!-- Display monthly calendar -->
@@ -36,3 +34,4 @@ layout: default
 
 <script src="/assets/js/calendar/calendar.js"></script>
 <script src="/assets/js/calendar/school_api.js"></script>
+<script src="/assets/js/calendar/reservation.js"></script>

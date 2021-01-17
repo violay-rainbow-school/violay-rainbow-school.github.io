@@ -5,7 +5,7 @@
  * @param {int} month january is 0
  */
 function createMonthCalendar(properties) {
-    const { calendarElement, closedDates, year, month } = properties;
+    const { calendarElement, closedDates, year, month, selectedDates } = properties;
 
     const getLastDayOfMonth = (year, month) => {
         const startingDate = new Date(year, month, 1);
@@ -16,6 +16,8 @@ function createMonthCalendar(properties) {
             0
         );
     };
+
+    const isSelectedDate = (date) => selectedDates.includes(date);
 
     const isSchoolOpen = (date) =>
         closedDates.filter((closedDate) => {
@@ -32,6 +34,9 @@ function createMonthCalendar(properties) {
     }
 
     const firstDayNameIndex = dates[0].getDay();
+
+    // Clear calendar element
+    calendarElement.innerHTML = '';
 
     // Draw month name
     const getMonthName = (monthIndex) => {
@@ -77,6 +82,7 @@ function createMonthCalendar(properties) {
 
     // Draw calendar
     dates.map((date) => {
+        console.log({selectedDates, isSelectedDate: isSelectedDate(date)}) // WIP
         calendarElement.insertAdjacentHTML(
             'beforeend',
             `<div class="day ${
