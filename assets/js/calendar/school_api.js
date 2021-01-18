@@ -36,6 +36,6 @@ const updateChild = (child, successCallback, errorCallback) => {
         headers: { 'Content-type': 'application/json; charset=UTF-8' },
     })
         .then((response) => response.json())
-        .then((json) => console.log(json))
-        .catch((error) => console.error(error));
+        .then((responseContent) => successCallback(responseContent))
+        .catch((error) => errorCallback(error));
 };
