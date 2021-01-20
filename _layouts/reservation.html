@@ -3,8 +3,8 @@ layout: default
 ---
 
 <div class="page-single">
-    <div class="entry-header">       
-        <h1 class="posttitle">{{ page.title }}</h1>        
+    <div class="entry-header">
+        <h1 class="posttitle">{{ page.title }}</h1>
     </div>
 </div>
 
@@ -13,17 +13,17 @@ layout: default
 
 <form action="#" id="calendar-form">
     <button class="btn btn-success" type="submit">Enregistrer</button>
-    
+
     <!-- Select child -->
     <div class="calendar-child">
         <label for="child-select">Enfant :</label>
-    
+
         <select name="child-select" id="child-select"></select>
     </div>
-    
+
     <!-- Display monthly calendar -->
     {%- for month in page.months -%}
-        <div class="calendar-month" month="{{ month }}"></div>
+        <div month="{{ month }}"></div>
     {%- endfor -%}
     <button class="btn btn-success" type="submit">Enregistrer</button>
 </form>

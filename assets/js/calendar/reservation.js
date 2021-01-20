@@ -6,7 +6,7 @@
     );
     let children = [];
     let currentChild = {};
-    const calendarElements = document.querySelectorAll('.calendar-month');
+    const calendarElements = document.querySelectorAll('div[month]');
 
     /**
      * Get the current child on change
@@ -49,14 +49,14 @@
     const showError = (error) => {
         console.error(error);
         let flashElement = document.getElementById('flash');
-        
+
         flashElement.innerHTML = '';
         flashElement.insertAdjacentHTML(
             'beforeend',
             `<div class="alert-danger">${error instanceof Object ? error.toString() : error}</div>`
         );
     };
-    
+
     // Update child select element
     listChildren(refreshSelectChildElement);
 

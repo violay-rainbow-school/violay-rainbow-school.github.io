@@ -5,7 +5,13 @@
  * @param {int} month january is 0
  */
 function createMonthCalendar(properties) {
-    const { calendarElement, closedDates, year, month, selectedDates } = properties;
+    const {
+        calendarElement,
+        closedDates,
+        year,
+        month,
+        selectedDates,
+    } = properties;
 
     const getLastDayOfMonth = (year, month) => {
         const startingDate = new Date(year, month, 1);
@@ -36,19 +42,25 @@ function createMonthCalendar(properties) {
     const firstDayNameIndex = dates[0].getDay();
 
     // Clear calendar element
+    console.log(calendarElement.innerHTML)
     calendarElement.innerHTML = '';
 
-    // Draw month name
+    // Draw month name in calendar title
     const getMonthName = (monthIndex) => {
         return new Intl.DateTimeFormat('fr-FR', { month: 'long' }).format(
             new Date(year, monthIndex, 1)
         );
     };
 
-    calendarElement.insertAdjacentHTML(
-        'beforebegin',
-        `<div class="month-name">${getMonthName(month)} ${year}</div>`
-    );
+    const titleElement = document.createElement('div');
+    titleElement.innerHTML = `<div class="month-name">${getMonthName(
+        month
+    )} ${year}</div>`;
+    calendarElement.appendChild(titleElement);
+
+    const calendarDatesElement = document.createElement('div');
+    calendarDatesElement.classList.add('calendar-month');
+    calendarElement.appendChild(calendarDatesElement);
 
     // Draw day names
     const getDayName = (day) =>
@@ -57,7 +69,7 @@ function createMonthCalendar(properties) {
         );
 
     for (let i = 1; i <= 7; i++) {
-        calendarElement.insertAdjacentHTML(
+        calendarDatesElement.insertAdjacentHTML(
             'beforeend',
             `<div class="day-name">${getDayName(i)}</div>`
         );
@@ -65,7 +77,7 @@ function createMonthCalendar(properties) {
 
     // Draw empty cases from previous month
     const drawEmptyCase = (dayNumber) =>
-        calendarElement.insertAdjacentHTML(
+        calendarDatesElement.insertAdjacentHTML(
             'beforeend',
             `<div class="day-blank"></div>`
         );
@@ -82,19 +94,21 @@ function createMonthCalendar(properties) {
 
     // Draw calendar
     dates.map((date) => {
-        console.log({selectedDates, isSelectedDate: isSelectedDate(date)}) // WIP
-        calendarElement.insertAdjacentHTML(
+        console.log({ selectedDates, isSelectedDate: isSelectedDate(date) }); // WIP
+        calendarDatesElement.insertAdjacentHTML(
             'beforeend',
             `<div class="day ${
                 isSchoolOpen(date) ? 'school-open' : 'school-closed'
-            }" full-date="${year}-${month + 1}-${date.getDate()}">${date.getDate()}</div>`
+            }" full-date="${year}-${
+                month + 1
+            }-${date.getDate()}">${date.getDate()}</div>`
         );
     });
 
     // Select dates
-    calendarElement.querySelectorAll('.school-open').forEach((openDay) => {
+    calendarDatesElement.querySelectorAll('.school-open').forEach((openDay) => {
         openDay.addEventListener('click', function (event) {
-            this.classList.toggle('selected-date')
+            this.classList.toggle('selected-date');
         });
     });
 }
