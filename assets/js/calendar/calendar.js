@@ -23,7 +23,10 @@ function createMonthCalendar(properties) {
         );
     };
 
-    const isSelectedDate = (date) => selectedDates.includes(date);
+    const isSelectedDate = (date) => {
+        const formatDateAsNumber = (dateToFormat) => `${dateToFormat.getFullYear()}${dateToFormat.getMonth()}${dateToFormat.getDate()}`;
+        return selectedDates.filter(currentDate => formatDateAsNumber(date) === formatDateAsNumber(currentDate)).length > 0;
+    };
 
     const isSchoolOpen = (date) =>
         closedDates.filter((closedDate) => {
@@ -42,7 +45,6 @@ function createMonthCalendar(properties) {
     const firstDayNameIndex = dates[0].getDay();
 
     // Clear calendar element
-    console.log(calendarElement.innerHTML)
     calendarElement.innerHTML = '';
 
     // Draw month name in calendar title
@@ -94,13 +96,10 @@ function createMonthCalendar(properties) {
 
     // Draw calendar
     dates.map((date) => {
-        console.log({ selectedDates, isSelectedDate: isSelectedDate(date) }); // WIP
         calendarDatesElement.insertAdjacentHTML(
             'beforeend',
-            `<div class="day ${
-                isSchoolOpen(date) ? 'school-open' : 'school-closed'
-            }" full-date="${year}-${
-                month + 1
+            `<div class="day ${isSchoolOpen(date) ? 'school-open' : 'school-closed'
+            } ${isSelectedDate(date) ? 'selected-date' : ''}" full-date="${year}-${month + 1
             }-${date.getDate()}">${date.getDate()}</div>`
         );
     });

@@ -99,15 +99,13 @@
                 closedDates,
                 year: monthParts[0],
                 month: monthParts[1] - 1,
-                selectedDates: currentChild.restaurantDays ?? []
+                selectedDates: currentChild.restaurantDays.map((date) => new Date(date.date)) ?? []
             };
 
             calendarElement.innerHTML = '';
             createMonthCalendar(options);
         });
     }
-
-    createCalendars();
 })();
 
 // TODO: refactor calendar elements to allow refresh
