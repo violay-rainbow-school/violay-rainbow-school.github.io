@@ -2,7 +2,13 @@
     const selectChildElementId = 'child-select';
     const selectChildElement = document.getElementById(selectChildElementId);
     const closedDates = [...document.querySelectorAll('.closed-date')].map(
-        (closedDateElement) => new Date(closedDateElement.textContent)
+        (element) => new Date(element.textContent)
+    );
+    const openDates = [...document.querySelectorAll('.open-date')].map(
+        (element) => new Date(element.textContent)
+    );
+    const openWeekdays = [...document.querySelectorAll('.open-weekday')].map(
+        (element) => Number(element.textContent)
     );
     let children = [];
     let currentChild = {};
@@ -97,6 +103,8 @@
             let options = {
                 calendarElement,
                 closedDates,
+                openDates,
+                openWeekdays,
                 year: monthParts[0],
                 month: monthParts[1] - 1,
                 selectedDates: currentChild.restaurantDays.map((date) => new Date(date.date)) ?? []

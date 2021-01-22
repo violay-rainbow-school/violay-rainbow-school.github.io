@@ -32,6 +32,14 @@ layout: default
     <div class="closed-date" style="display: none;">{{ date }}</div>
 {% endfor %}
 
+{% for date in page.open_dates %}
+    <div class="open-date" style="display: none;">{{ date }}</div>
+{% endfor %}
+
+{% for weekday in page.open_weekdays %}
+    <div class="open-weekday" style="display: none;">{{ weekday }}</div>
+{% endfor %}
+
 <script src="/assets/js/calendar/calendar.js"></script>
 <script src="/assets/js/calendar/school_api.js"></script>
 <script src="/assets/js/calendar/reservation.js"></script>

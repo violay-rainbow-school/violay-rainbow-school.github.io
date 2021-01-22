@@ -8,6 +8,8 @@ function createMonthCalendar(properties) {
     const {
         calendarElement,
         closedDates,
+        openDates,
+        openWeekdays,
         year,
         month,
         selectedDates,
@@ -24,15 +26,40 @@ function createMonthCalendar(properties) {
     };
 
     const isSelectedDate = (date) => {
-        const formatDateAsNumber = (dateToFormat) => `${dateToFormat.getFullYear()}${dateToFormat.getMonth()}${dateToFormat.getDate()}`;
-        return selectedDates.filter(currentDate => formatDateAsNumber(date) === formatDateAsNumber(currentDate)).length > 0;
+        const formatDateAsNumber = (dateToFormat) =>
+            `${dateToFormat.getFullYear()}${dateToFormat.getMonth()}${dateToFormat.getDate()}`;
+        return (
+            selectedDates.filter(
+                (currentDate) =>
+                    formatDateAsNumber(date) === formatDateAsNumber(currentDate)
+            ).length > 0
+        );
     };
 
-    const isSchoolOpen = (date) =>
-        closedDates.filter((closedDate) => {
-            closedDate.setHours(0, 0, 0, 0);
-            return date.toString() === closedDate.toString();
-        }).length <= 0;
+    /**
+     * Check if school is open on a specific date
+     *
+     * @param {Date} date
+     */
+    const isSchoolOpen = (date) => {
+        const datesIncludes = (dates, date) => {
+            const formatDateAsNumber = (dateToFormat) =>
+                `${dateToFormat.getFullYear()}${dateToFormat.getMonth()}${dateToFormat.getDate()}`;
+            return (
+                dates.filter(
+                    (currentDate) =>
+                        formatDateAsNumber(date) ===
+                        formatDateAsNumber(currentDate)
+                ).length > 0
+            );
+        };
+
+        const isWeekdayOpen = openWeekdays.includes(date.getDay());
+        const isOpenDate = datesIncludes(openDates, date);
+        const isClosedDate = datesIncludes(closedDates, date);
+
+        return (isWeekdayOpen || isOpenDate) && !isClosedDate;
+    };
 
     const lastDayOfMonth = getLastDayOfMonth(year, month);
     const dateCount = lastDayOfMonth.getDate();
@@ -98,8 +125,12 @@ function createMonthCalendar(properties) {
     dates.map((date) => {
         calendarDatesElement.insertAdjacentHTML(
             'beforeend',
-            `<div class="day ${isSchoolOpen(date) ? 'school-open' : 'school-closed'
-            } ${isSelectedDate(date) ? 'selected-date' : ''}" full-date="${year}-${month + 1
+            `<div class="day ${
+                isSchoolOpen(date) ? 'school-open' : 'school-closed'
+            } ${
+                isSelectedDate(date) ? 'selected-date' : ''
+            }" full-date="${year}-${
+                month + 1
             }-${date.getDate()}">${date.getDate()}</div>`
         );
     });
