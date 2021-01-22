@@ -1,7 +1,12 @@
 SCHOOL_PAPERWORK_PATH = "../school_paperwork"
+API_HOST = '127.0.0.1:8002'
+HOST = '127.0.0.1:4000'
 
 browse:
-	firefox http://127.0.0.1:4000
+	firefox $(HOST)/reservation
+
+browse-api: ## Open the API documentation in a browser
+	firefox $(API_HOST)/api
 
 start: start-api serve
 
