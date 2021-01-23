@@ -13,13 +13,37 @@
     let children = [];
     let currentChild = {};
     const calendarElements = document.querySelectorAll('div[month]');
+    let accessToken = '';
+
+    /**
+     * Handle login form
+     */
+    document.getElementById('login-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        login(
+            document.getElementById('parent-email').value,
+            document.getElementById('parent-password').value,
+            (responseContent) => {
+                if (responseContent.code && responseContent.code != 200) {
+                    console.error('Error from the API', responseContent);
+                    return;
+                }
+                console.log('Login successful', responseContent);
+                accessToken = responseContent.token;
+                console.log(accessToken)
+            },
+            (error) => {
+                console.error(error);
+            }
+        );
+    });
 
     /**
      * Get the current child on change
      */
     selectChildElement.addEventListener('change', function (event) {
         if (!this.value) {
-            showError('Select a child please.')
+            showError('Select a child please.');
             return;
         }
 
@@ -113,8 +137,5 @@
             calendarElement.innerHTML = '';
             createMonthCalendar(options);
         });
-    }
+    };
 })();
-
-// TODO: refactor calendar elements to allow refresh
-// TODO: display already selected elements

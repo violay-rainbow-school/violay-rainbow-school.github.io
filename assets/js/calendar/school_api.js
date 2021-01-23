@@ -8,7 +8,26 @@ const schoolApiUrl = 'http://127.0.0.1:8002';
 const logError = (error) => console.error(error);
 
 /**
+ * Login
+ */
+const login = (username, password, successCallback, errorCallback = logError) => 
+    fetch(`${schoolApiUrl}/api/login_check`, {
+        method: 'POST',
+        body: JSON.stringify({
+            username,
+            password
+        }),
+        headers: { 'Content-type': 'application/json; charset=UTF-8' },
+    })
+        .then((response) => response.json())
+        .then((responseContent) => successCallback(responseContent))
+        .catch((error) => errorCallback(error));
+
+/**
  * List children then execute the callback
+ * 
+ * @param {callable} successCallback 
+ * @param {callable} errorCallback 
  */
 const listChildren = (successCallback, errorCallback = logError) =>
     fetch(`${schoolApiUrl}/api/children`)
@@ -17,10 +36,10 @@ const listChildren = (successCallback, errorCallback = logError) =>
         .catch((error) => errorCallback(error));
 
 const getChild = (childId, successCallback, errorCallback = logError) =>
-fetch(`${schoolApiUrl}/api/children/${childId}`)
-    .then((response) => response.json())
-    .then((responseContent) => successCallback(responseContent))
-    .catch((error) => errorCallback(error));
+    fetch(`${schoolApiUrl}/api/children/${childId}`)
+        .then((response) => response.json())
+        .then((responseContent) => successCallback(responseContent))
+        .catch((error) => errorCallback(error));
 
 /**
  * Update a Child

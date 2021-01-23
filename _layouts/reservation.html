@@ -11,22 +11,38 @@ layout: default
 <!-- Flash messages -->
 <div class="flash" id="flash"></div>
 
-<form action="#" id="calendar-form">
-    <button class="btn btn-success" type="submit">Enregistrer</button>
+<div id="login-form-wrapper">
+    <form id="login-form" action="#">
+        <div class="mb-3">
+            <label class="form-label" for="parent-email">Email</label>
+            <input class="form-control" type="text" name="parent-email" id="parent-email">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="parent-email">Mot de passe</label>
+            <input class="form-control" type="password" name="parent-password" id="parent-password">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-success" type="submit">Ok</button>
+        </div>
+    </form>
+</div>
 
-    <!-- Select child -->
-    <div class="calendar-child">
-        <label for="child-select">Enfant :</label>
-
-        <select name="child-select" id="child-select"></select>
-    </div>
-
-    <!-- Display monthly calendar -->
-    {%- for month in page.months -%}
-        <div month="{{ month }}"></div>
-    {%- endfor -%}
-    <button class="btn btn-success" type="submit">Enregistrer</button>
-</form>
+<div id="calendar-form-wrapper">
+    <form id="calendar-form" action="#">
+        <!-- Select child -->
+        <div class="calendar-child">
+            <label for="child-select">Enfant :</label>
+    
+            <select name="child-select" id="child-select"></select>
+        </div>
+    
+        <!-- Display monthly calendar -->
+        {%- for month in page.months -%}
+            <div month="{{ month }}"></div>
+        {%- endfor -%}
+        <button class="btn btn-success" type="submit">Enregistrer</button>
+    </form>
+</div>
 
 {% for date in page.closed_dates %}
     <div class="closed-date" style="display: none;">{{ date }}</div>
