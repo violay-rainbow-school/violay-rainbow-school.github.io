@@ -21,6 +21,10 @@ h2, strong {
     padding: 1em;
 }
 
+.hidden {
+    display: none;
+}
+
 @font-face {
     font-family: 'handwriting';
     src: url('../fonts/cursive-standard.ttf');

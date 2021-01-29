@@ -2,15 +2,27 @@ const schoolApiUrl = 'http://127.0.0.1:8002';
 
 /**
  * Log an error
- * 
- * @param {object} error 
+ *
+ * @param {object} error
  */
 const logError = (error) => console.error(error);
+
+async function fetchTokenPromise(username, password) {
+    const response = await fetch(`${schoolApiUrl}/api/login_check`, {
+        method: 'POST',
+        body: JSON.stringify({
+            username,
+            password
+        }),
+        headers: { 'Content-type': 'application/json; charset=UTF-8' },
+    });
+    return response.json();
+}
 
 /**
  * Login
  */
-const login = (username, password, successCallback, errorCallback = logError) => 
+const login = (username, password, successCallback, errorCallback = logError) =>
     fetch(`${schoolApiUrl}/api/login_check`, {
         method: 'POST',
         body: JSON.stringify({
@@ -25,9 +37,9 @@ const login = (username, password, successCallback, errorCallback = logError) =>
 
 /**
  * List children then execute the callback
- * 
- * @param {callable} successCallback 
- * @param {callable} errorCallback 
+ *
+ * @param {callable} successCallback
+ * @param {callable} errorCallback
  */
 const listChildren = (successCallback, errorCallback = logError) =>
     fetch(`${schoolApiUrl}/api/children`)

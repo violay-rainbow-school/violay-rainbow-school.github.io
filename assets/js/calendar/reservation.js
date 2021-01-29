@@ -7,35 +7,35 @@
     const openDates = [...document.querySelectorAll('.open-date')].map(
         (element) => new Date(element.textContent)
     );
-    const openWeekdays = [...document.querySelectorAll('.open-weekday')].map(
-        (element) => Number(element.textContent)
-    );
+    const openWeekdays = [
+        ...document.querySelectorAll('.open-weekday'),
+    ].map((element) => Number(element.textContent));
     let children = [];
     let currentChild = {};
     const calendarElements = document.querySelectorAll('div[month]');
     let accessToken = '';
+    const loginFormElement = document.getElementById('login-form');
+    const disconnectButtonElement = document.getElementById('disconnect-button');
+
+    // Logout
+    disconnectButtonElement.addEventListener('click', function (event) {
+        accessToken = '';
+        this.classList.add('hidden');
+        loginFormElement.classList.remove('hidden')
+    });
 
     /**
      * Handle login form
      */
-    document.getElementById('login-form').addEventListener('submit', function (event) {
+    loginFormElement.addEventListener('submit', function (event) {
         event.preventDefault();
-        login(
-            document.getElementById('parent-email').value,
-            document.getElementById('parent-password').value,
-            (responseContent) => {
-                if (responseContent.code && responseContent.code != 200) {
-                    console.error('Error from the API', responseContent);
-                    return;
-                }
-                console.log('Login successful', responseContent);
-                accessToken = responseContent.token;
-                console.log(accessToken)
-            },
-            (error) => {
-                console.error(error);
-            }
-        );
+        email = document.getElementById('parent-email').value;
+        password = document.getElementById('parent-password').value;
+        fetchTokenPromise(email, password).then((response) => {
+            accessToken = response;
+            loginFormElement.classList.add('hidden');
+            disconnectButtonElement.classList.remove('hidden');
+        });
     });
 
     /**
@@ -47,10 +47,14 @@
             return;
         }
 
-        getChild(this.value, (child) => {
-            currentChild = child;
-            createCalendars();
-        }, showError);
+        getChild(
+            this.value,
+            (child) => {
+                currentChild = child;
+                createCalendars();
+            },
+            showError
+        );
     });
 
     /**
@@ -83,7 +87,9 @@
         flashElement.innerHTML = '';
         flashElement.insertAdjacentHTML(
             'beforeend',
-            `<div class="alert-danger">${error instanceof Object ? error.toString() : error}</div>`
+            `<div class="alert-danger">${
+                error instanceof Object ? error.toString() : error
+            }</div>`
         );
     };
 
@@ -131,7 +137,10 @@
                 openWeekdays,
                 year: monthParts[0],
                 month: monthParts[1] - 1,
-                selectedDates: currentChild.restaurantDays.map((date) => new Date(date.date)) ?? []
+                selectedDates:
+                    currentChild.restaurantDays.map(
+                        (date) => new Date(date.date)
+                    ) ?? [],
             };
 
             calendarElement.innerHTML = '';
