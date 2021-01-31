@@ -2,6 +2,28 @@
 
 API_URL='https://www.transparentclassroom.com/api/v1'
 SCRIPT_NAME=$(basename $0)
+URI_LIST="List of URIs:
+    /classrooms.json
+    /children.json
+    /forms.json
+    /users.json"
+
+# Login using credentials from a file written in a specific way:
+#   Line 1: email
+#   Line 2: password
+loginFromFile() {
+    if [ $# -lt 1 ]; then
+        echo -e "${SCRIPT_NAME} ${FUNCNAME[0]} \e[33mcredentialsFileNameHere\e[0m"
+        exit 1
+    fi
+
+    credentialsFile="$1"
+    email=$(sed -n '1p' "$credentialsFile")
+    password=$(sed -n '2p' "$credentialsFile")
+
+    echo "Login with $email $password"
+    login "$email" "$password"
+}
 
 login() {
     if [ $# -lt 2 ]; then
@@ -20,31 +42,43 @@ getTokenFromLoginResponse() {
         exit 1
     fi
 
-    regex="\"api_token\":\"([a-zA-Z0-9_\-\!\?]+)\""
-    [[ "$1" =~ $regex ]]
-    token="${BASH_REMATCH[1]}"
+    token=$(echo "$1" | sed 's#.*\"api_token\":\"\([^\"]*\)\".*#\1#')
     echo $token
 }
 
 # Send a request to the API
 request() {
     if [ $# -lt 3 ]; then
-        echo -e "${SCRIPT_NAME} ${FUNCNAME[0]} \e[33memailHere passwordHere uriHere\e[0m
-
-List of URIs:
-    /classrooms.json
-    /children.json
-    /forms.json
-"
+        echo -e "${SCRIPT_NAME} ${FUNCNAME[0]} \e[33memailHere passwordHere uriHere\e[0m\n\n${URI_LIST}"
         exit 1
     fi
 
     local loginResponse=$(login "$1" "$2") # Sample: {"type":"user","id":190212,"first_name":"Sarah","last_name":"FRAICHIT","email":"sarah@fraichit.zog","roles":["parent"],"school_id":2760,"api_token":"a62hxP2TtXRDpaBqZ_fs","push_tokens":[],"push_enabled":false}
     local token=$(getTokenFromLoginResponse $loginResponse)
+    local tokenHeader="X-TransparentClassroomToken: $token"
     local uri="$3"
 
-    curl -H "X-TransparentClassroomToken: $token" \
+    echo "Header $tokenHeader"
+    curl --header "$tokenHeader" \
         "${API_URL}${uri}"
+}
+
+# Send a request to the API using credentials from a file written in a specific way:
+#   Line 1: email
+#   Line 2: password
+requestFromFile() {
+    if [ $# -lt 2 ]; then
+        echo -e "${SCRIPT_NAME} ${FUNCNAME[0]} \e[33mcredentialsFileNameHere uriHere\e[0m\n\n${URI_LIST}"
+        exit 1
+    fi
+
+    credentialsFile="$1"
+    email=$(sed -n '1p' "$credentialsFile")
+    password=$(sed -n '2p' "$credentialsFile")
+    uri="$2"
+
+    echo "Login with $email $password"
+    request "$email" "$password" "$uri"
 }
 
 # Display the source code of this file
