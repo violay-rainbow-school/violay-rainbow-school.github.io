@@ -1,3 +1,15 @@
+import { createMonthCalendar } from './calendar/calendar.js';
+import {
+    loginEvent,
+    loginFailureEvent,
+    logoutEvent,
+} from './user-login/user-login.js';
+import {
+    login,
+    getChild,
+    updateChild
+} from './school-api/school-api.js';
+
 (function () {
     const selectChildElementId = 'child-select';
     const selectChildElement = document.getElementById(selectChildElementId);
@@ -10,32 +22,34 @@
     const openWeekdays = [
         ...document.querySelectorAll('.open-weekday'),
     ].map((element) => Number(element.textContent));
-    let children = [];
     let currentChild = {};
     const calendarElements = document.querySelectorAll('div[month]');
-    let accessToken = '';
-    const loginFormElement = document.getElementById('login-form');
-    const disconnectButtonElement = document.getElementById('disconnect-button');
-
-    // Logout
-    disconnectButtonElement.addEventListener('click', function (event) {
-        accessToken = '';
-        this.classList.add('hidden');
-        loginFormElement.classList.remove('hidden')
-    });
 
     /**
-     * Handle login form
+     * Refresh child select element options
+     *
+     * @param {json} apiResponseContent
      */
-    loginFormElement.addEventListener('submit', function (event) {
-        event.preventDefault();
-        email = document.getElementById('parent-email').value;
-        password = document.getElementById('parent-password').value;
-        fetchTokenPromise(email, password).then((response) => {
-            accessToken = response;
-            loginFormElement.classList.add('hidden');
-            disconnectButtonElement.classList.remove('hidden');
+    const refreshSelectChildElement = () => {
+        login().then((user) => {
+            selectChildElement.innerHTML = '<option value="">...</option>';
+            user.children.map((child) => {
+                const { id, firstName, lastName } = child;
+                selectChildElement.insertAdjacentHTML(
+                    'beforeend',
+                    `<option value="${id}" full-name="${firstName}%${lastName}">${firstName} ${lastName}</option>`
+                );
+            });
         });
+    };
+
+    loginEvent.addListener(refreshSelectChildElement);
+    logoutEvent.addListener(function (event) {
+        calendarElements.forEach(
+            (calendarElement) => (calendarElements.innerHTML = '')
+        );
+        this.classList.add('hidden');
+        loginFormElement.classList.remove('hidden');
     });
 
     /**
@@ -44,36 +58,15 @@
     selectChildElement.addEventListener('change', function (event) {
         if (!this.value) {
             showError('Select a child please.');
+
             return;
         }
 
-        getChild(
-            this.value,
-            (child) => {
-                currentChild = child;
-                createCalendars();
-            },
-            showError
-        );
-    });
-
-    /**
-     * Refresh child select element options
-     *
-     * @param {json} apiResponseContent
-     */
-    const refreshSelectChildElement = (apiResponseContent) => {
-        children = apiResponseContent['hydra:member'];
-
-        selectChildElement.innerHTML = '<option value="">...</option>';
-        children.map((child) => {
-            const { id, firstName, lastName } = child;
-            selectChildElement.insertAdjacentHTML(
-                'beforeend',
-                `<option value="${id}" full-name="${firstName}%${lastName}">${firstName} ${lastName}</option>`
-            );
+        getChild(this.value, showError).then((child) => {
+            currentChild = child;
+            createCalendars();
         });
-    };
+    });
 
     /**
      * Show an error in the flash message element
@@ -92,9 +85,6 @@
             }</div>`
         );
     };
-
-    // Update child select element
-    listChildren(refreshSelectChildElement);
 
     // Set the calendar submit action
     document

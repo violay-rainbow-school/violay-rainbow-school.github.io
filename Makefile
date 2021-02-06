@@ -16,5 +16,5 @@ serve:
 start-api:
 	cd $(SCHOOL_PAPERWORK_PATH); make start
 
-open_transparent_classroom_api_documentation:
+browse-transparent-classroom-api-documentation:
 	firefox https://www.transparentclassroom.com/api

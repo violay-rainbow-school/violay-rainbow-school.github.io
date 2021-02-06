@@ -4,7 +4,7 @@
  * @param {int} year
  * @param {int} month january is 0
  */
-function createMonthCalendar(properties) {
+export function createMonthCalendar(properties) {
     const {
         calendarElement,
         closedDates,
