@@ -4,11 +4,7 @@ import {
     loginFailureEvent,
     logoutEvent,
 } from './user-login/user-login.js';
-import {
-    login,
-    getChild,
-    updateChild
-} from './school-api/school-api.js';
+import { login, getChild, updateChild } from './school-api/school-api.js';
 
 (function () {
     const selectChildElementId = 'child-select';
@@ -43,6 +39,7 @@ import {
         });
     };
 
+    loginEvent.addListener(() => [...document.getElementsByClassName('calendar-child')].map(element => element.style.display = 'block'));
     loginEvent.addListener(refreshSelectChildElement);
     logoutEvent.addListener(function (event) {
         calendarElements.forEach(
@@ -65,6 +62,7 @@ import {
         getChild(this.value, showError).then((child) => {
             currentChild = child;
             createCalendars();
+            [...document.getElementsByClassName('calendar')].map(element => element.style = 'block');
         });
     });
 
@@ -88,7 +86,7 @@ import {
 
     // Set the calendar submit action
     document
-        .querySelector('#calendar-form')
+        .querySelector('#restaurant-form')
         .addEventListener('submit', function (event) {
             event.preventDefault();
 
