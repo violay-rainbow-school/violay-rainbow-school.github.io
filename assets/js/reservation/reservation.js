@@ -39,7 +39,11 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
         });
     };
 
-    loginEvent.addListener(() => [...document.getElementsByClassName('calendar-child')].map(element => element.style.display = 'block'));
+    loginEvent.addListener(() =>
+        [...document.getElementsByClassName('calendar-child')].map(
+            (element) => (element.style.display = 'block')
+        )
+    );
     loginEvent.addListener(refreshSelectChildElement);
     logoutEvent.addListener(function (event) {
         calendarElements.forEach(
@@ -62,7 +66,9 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
         getChild(this.value, showError).then((child) => {
             currentChild = child;
             createCalendars();
-            [...document.getElementsByClassName('calendar')].map(element => element.style = 'block');
+            [...document.getElementsByClassName('calendar')].map(
+                (element) => (element.style = 'block')
+            );
         });
     });
 
@@ -84,17 +90,30 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
         );
     };
 
+    /**
+     * Get selected dates of a topic
+     */
+    const getSelectedDatesFromDom = (topic) => {
+        const dates = [
+            ...document.querySelectorAll(`[topic=${topic}] .selected-date`),
+        ].map((dateElement) => {
+            return {
+                date: dateElement.getAttribute('full-date'),
+            };
+        });
+        console.log(dates);
+
+        return dates;
+    };
+
     // Set the calendar submit action
     document
-        .querySelector('#restaurant-form')
+        .querySelector('#reservation-form')
         .addEventListener('submit', function (event) {
             event.preventDefault();
 
-            const selectedDates = [
-                ...document.querySelectorAll('.selected-date'),
-            ].map((dateElement) => {
-                return { date: dateElement.getAttribute('full-date') };
-            });
+            const restaurantDays = getSelectedDatesFromDom('restaurant');
+            const nurseryDays = getSelectedDatesFromDom('nursery');
             const childNameElement =
                 selectChildElement.options[selectChildElement.selectedIndex];
             const childFullNameParts = childNameElement
@@ -106,7 +125,8 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
                 firstName: childFullNameParts[0],
                 lastName: childFullNameParts[1],
                 birthday: '2021-01-15T21:37:28.672Z',
-                restaurantDays: selectedDates,
+                restaurantDays,
+                nurseryDays,
             };
 
             updateChild(child);
@@ -118,6 +138,19 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
     const createCalendars = () => {
         calendarElements.forEach((calendarElement) => {
             let monthParts = calendarElement.getAttribute('month').split('-');
+            const topic = calendarElement.getAttribute('topic');
+            let selectedDates = [];
+
+            if (topic === 'restaurant') {
+                selectedDates = currentChild.restaurantDays.map(
+                    (date) => new Date(date.date)
+                );
+            } else if (topic === 'nursery') {
+                selectedDates = currentChild.nurseryDays.map(
+                    (date) => new Date(date.date)
+                );
+            }
+
             let options = {
                 calendarElement,
                 closedDates,
@@ -125,10 +158,7 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
                 openWeekdays,
                 year: monthParts[0],
                 month: monthParts[1] - 1,
-                selectedDates:
-                    currentChild.restaurantDays.map(
-                        (date) => new Date(date.date)
-                    ) ?? [],
+                selectedDates,
             };
 
             calendarElement.innerHTML = '';
