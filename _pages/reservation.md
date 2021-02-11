@@ -1,13 +1,7 @@
 ---
 layout: reservation
 title: Réservation
-months:
-- 2020-12
-- 2021-01
-- 2021-02
-- 2021-03
-- 2021-04
-- 2021-05
+last_school_date: 2021-06-30
 closed_dates:
 - 2020-12-03
 - 2021-01-01
