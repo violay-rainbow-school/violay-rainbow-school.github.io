@@ -7,7 +7,6 @@ image:
 imageshadow: true
 ---
 
-Diaporama photos école
 
 ## La co-éducation
 

@@ -1,0 +1,43 @@
+.calendar-month {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-child {
+    margin: 2em;
+}
+
+.month-name {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0.25em;
+}
+
+.day {
+    text-align: center;
+    padding: 5px 5px 30px 5px;
+    display: grid;
+}
+
+.day-name {
+    text-align: center;
+    padding: 5px;
+}
+
+.school-open {
+    color: black;
+}
+
+.selected-date {
+    background-color: skyblue;
+    color: blanchedalmond;
+}
+
+.school-closed {
+    background-color: gainsboro;
+    color: grey;
+}
