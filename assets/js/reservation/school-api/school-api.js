@@ -23,7 +23,12 @@ export async function login(errorCallback = logError) {
     return fetch(`${SCHOOL_API_LOGIN_URL}`, {
         headers: makeAuthenticationHeaders(),
     })
-        .then((response) => response.json())
+        .then((response) => {
+            if (response.status != 200) {
+                throw Error(`API response status code: ${response.status}`);
+            }
+            return response.json()
+        })
         .catch(errorCallback);
 }
 

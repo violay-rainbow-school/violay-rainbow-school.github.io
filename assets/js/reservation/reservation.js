@@ -2,6 +2,7 @@ import { createCalendar } from './calendar/calendar.js';
 import {
     loginEvent,
     loginFailureEvent,
+    loginSuccessEvent,
     logoutEvent,
 } from './user-login/user-login.js';
 import { login, getChild, updateChild } from './school-api/school-api.js';
@@ -20,47 +21,92 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
     ].map((element) => Number(element.textContent));
     let currentChild = {};
     const calendarElements = document.querySelectorAll('.calendar');
-    const lastSchoolDate = new Date(document.body.querySelector('#last-school-date').textContent);
+    const lastSchoolDate = new Date(
+        document.body.querySelector('#last-school-date').textContent
+    );
+
+    /**
+     * Show an error in the flash message element
+     *
+     * @param {object} error
+     */
+    const showError = (error) => {
+        console.error(error);
+        let flashElement = document.getElementById('flash');
+
+        flashElement.insertAdjacentHTML(
+            'beforeend',
+            `<div class="alert-danger">${
+                error instanceof Object ? error.toString() : error
+            }</div>`
+        );
+    };
+
+    const showSuccess = (message) => {
+        let flashElement = document.getElementById('flash');
+
+        flashElement.insertAdjacentHTML(
+            'beforeend',
+            `<div class="alert-success">${message}</div>`
+        );
+    };
 
     /**
      * Refresh child select element options
      *
      * @param {json} apiResponseContent
      */
-    const refreshSelectChildElement = () => {
-        login().then((user) => {
-            selectChildElement.innerHTML = '<option value="">...</option>';
-            user.children.map((child) => {
-                const { id, firstName, lastName } = child;
-                selectChildElement.insertAdjacentHTML(
-                    'beforeend',
-                    `<option value="${id}" full-name="${firstName}%${lastName}">${firstName} ${lastName}</option>`
-                );
-            });
+    const refreshSelectChildElement = (user) => {
+        selectChildElement.innerHTML = '<option value="">...</option>';
+        user.children.map((child) => {
+            const { id, firstName, lastName } = child;
+            selectChildElement.insertAdjacentHTML(
+                'beforeend',
+                `<option value="${id}" full-name="${firstName}%${lastName}">${firstName} ${lastName}</option>`
+            );
         });
     };
 
-    loginEvent.addListener(() =>
+    // On successful login:
+    // Display child selection
+    loginSuccessEvent.addListener(() =>
         [...document.getElementsByClassName('calendar-child')].map(
             (element) => (element.style.display = 'block')
         )
     );
-    loginEvent.addListener(refreshSelectChildElement);
-    logoutEvent.addListener(function (event) {
-        calendarElements.forEach(
-            (calendarElement) => (calendarElements.innerHTML = '')
+    // Refresh child selection
+    loginSuccessEvent.addListener(refreshSelectChildElement);
+    // Display a flash message
+    loginSuccessEvent.addListener((user) => {
+        showSuccess(
+            `Vous êtes connecté en tant que ${user.firstName} ${user.lastName}, vous pouvez choisir votre enfant.`
         );
-        this.classList.add('hidden');
-        loginFormElement.classList.remove('hidden');
     });
 
-    /**
-     * Show calendars
-     */
-    const showCalendars = () =>
-        [...document.getElementsByClassName('calendar-wrapper')].map(
-            (element) => (element.style = 'block')
+    // On failed login:
+    // Display flash message
+    loginFailureEvent.addListener(() => {
+        showError('Veuillez utiliser vos identifiants transparent classroom');
+    });
+
+    // On logout:
+    // Remove calendars
+    logoutEvent.addListener(() => {
+        calendarElements.forEach(
+            (calendarElement) => (calendarElement.innerHTML = '')
         );
+        hideCalendars();
+    });
+
+    const showCalendars = () =>
+        [
+            ...document.getElementsByClassName('calendar-wrapper'),
+        ].map((element) => element.classList.remove('hidden'));
+
+    const hideCalendars = () =>
+        [
+            ...document.getElementsByClassName('calendar-wrapper'),
+        ].map((element) => element.classList.add('hidden'));
 
     /**
      * Get the current child on change
@@ -78,24 +124,6 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
             showCalendars();
         });
     });
-
-    /**
-     * Show an error in the flash message element
-     *
-     * @param {object} error
-     */
-    const showError = (error) => {
-        console.error(error);
-        let flashElement = document.getElementById('flash');
-
-        flashElement.innerHTML = '';
-        flashElement.insertAdjacentHTML(
-            'beforeend',
-            `<div class="alert-danger">${
-                error instanceof Object ? error.toString() : error
-            }</div>`
-        );
-    };
 
     /**
      * Get selected dates of a topic

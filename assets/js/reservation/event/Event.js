@@ -13,9 +13,9 @@ export function Event() {
         })
     }
 
-    this.fire = function () {
+    this.fire = function (argument) {
         listeners.map(function (listener) {
-            listener();
+            listener(argument);
         })
     }
 }
