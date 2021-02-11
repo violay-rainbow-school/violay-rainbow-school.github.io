@@ -1,4 +1,4 @@
-import { createMonthCalendar } from './calendar/calendar.js';
+import { createCalendar } from './calendar/calendar.js';
 import {
     loginEvent,
     loginFailureEvent,
@@ -19,7 +19,8 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
         ...document.querySelectorAll('.open-weekday'),
     ].map((element) => Number(element.textContent));
     let currentChild = {};
-    const calendarElements = document.querySelectorAll('div[month]');
+    const calendarElements = document.querySelectorAll('.calendar');
+    const lastSchoolDate = new Date(2021, 5, 30);
 
     /**
      * Refresh child select element options
@@ -54,6 +55,14 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
     });
 
     /**
+     * Show calendars
+     */
+    const showCalendars = () =>
+        [...document.getElementsByClassName('calendar-wrapper')].map(
+            (element) => (element.style = 'block')
+        );
+
+    /**
      * Get the current child on change
      */
     selectChildElement.addEventListener('change', function (event) {
@@ -66,9 +75,7 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
         getChild(this.value, showError).then((child) => {
             currentChild = child;
             createCalendars();
-            [...document.getElementsByClassName('calendar')].map(
-                (element) => (element.style = 'block')
-            );
+            showCalendars();
         });
     });
 
@@ -101,7 +108,6 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
                 date: dateElement.getAttribute('full-date'),
             };
         });
-        console.log(dates);
 
         return dates;
     };
@@ -137,7 +143,6 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
      */
     const createCalendars = () => {
         calendarElements.forEach((calendarElement) => {
-            let monthParts = calendarElement.getAttribute('month').split('-');
             const topic = calendarElement.getAttribute('topic');
             let selectedDates = [];
 
@@ -153,16 +158,17 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
 
             let options = {
                 calendarElement,
+                topic,
+                firstDate: new Date(),
+                lastDate: lastSchoolDate,
                 closedDates,
                 openDates,
                 openWeekdays,
-                year: monthParts[0],
-                month: monthParts[1] - 1,
                 selectedDates,
             };
 
             calendarElement.innerHTML = '';
-            createMonthCalendar(options);
+            createCalendar(options);
         });
     };
 })();

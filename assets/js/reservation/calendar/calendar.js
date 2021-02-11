@@ -1,12 +1,81 @@
+const getNextMonth = (date) => {
+    const nextMonth = new Date(date.getFullYear(), 1, 1);
+
+    nextMonth.setMonth(date.getMonth() + 1);
+
+    return nextMonth;
+};
+
+const concatenateYearMonth = (date) => {
+    return `${date.getFullYear()}` + `${date.getMonth()}`.padStart(2, 0);
+};
+
+const getMonthInterval = (firstDate, lastDate) => {
+    let currentMonth = firstDate;
+    let nextMonth = undefined;
+    const months = [currentMonth];
+
+    do {
+        nextMonth = getNextMonth(currentMonth);
+        months.push(nextMonth);
+        currentMonth = nextMonth;
+    } while (
+        concatenateYearMonth(currentMonth) < concatenateYearMonth(lastDate)
+    );
+
+    return months;
+};
+
+const createMonthCalendarElement = (topic) => {
+    const monthCalendarElement = document.createElement('div');
+
+    monthCalendarElement.classList.add('calendar');
+    monthCalendarElement.setAttribute('topic', topic);
+
+    return monthCalendarElement;
+}
+
+/**
+ * Create a calendar from a topic and an array of CalendarMonth
+ */
+export const createCalendar = (properties) => {
+    const {
+        calendarElement,
+        topic,
+        firstDate,
+        lastDate,
+        closedDates,
+        openDates,
+        openWeekdays,
+        selectedDates,
+    } = properties;
+    const months = getMonthInterval(firstDate, lastDate);
+
+    months.forEach((month) => {
+        const monthCalendarElement = createMonthCalendarElement(topic);
+
+        calendarElement.appendChild(monthCalendarElement);
+        createMonthCalendar({
+            monthCalendarElement,
+            closedDates,
+            openDates,
+            openWeekdays,
+            year: month.getFullYear(),
+            month: month.getMonth(),
+            selectedDates,
+        });
+    });
+}
+
 /**
  * Create a calendar for a month
  *
  * @param {int} year
  * @param {int} month january is 0
  */
-export function createMonthCalendar(properties) {
+const createMonthCalendar = (properties) => {
     const {
-        calendarElement,
+        monthCalendarElement,
         closedDates,
         openDates,
         openWeekdays,
@@ -72,7 +141,7 @@ export function createMonthCalendar(properties) {
     const firstDayNameIndex = dates[0].getDay();
 
     // Clear calendar element
-    calendarElement.innerHTML = '';
+    monthCalendarElement.innerHTML = '';
 
     // Draw month name in calendar title
     const getMonthName = (monthIndex) => {
@@ -85,11 +154,11 @@ export function createMonthCalendar(properties) {
     titleElement.innerHTML = `<div class="month-name">${getMonthName(
         month
     )} ${year}</div>`;
-    calendarElement.appendChild(titleElement);
+    monthCalendarElement.appendChild(titleElement);
 
     const calendarDatesElement = document.createElement('div');
     calendarDatesElement.classList.add('calendar-month');
-    calendarElement.appendChild(calendarDatesElement);
+    monthCalendarElement.appendChild(calendarDatesElement);
 
     // Draw day names
     const getDayName = (day) =>
