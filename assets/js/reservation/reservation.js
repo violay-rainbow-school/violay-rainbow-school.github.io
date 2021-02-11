@@ -20,7 +20,7 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
     ].map((element) => Number(element.textContent));
     let currentChild = {};
     const calendarElements = document.querySelectorAll('.calendar');
-    const lastSchoolDate = new Date(2021, 5, 30);
+    const lastSchoolDate = new Date(document.body.querySelector('#last-school-date').textContent);
 
     /**
      * Refresh child select element options
