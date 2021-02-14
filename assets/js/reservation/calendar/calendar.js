@@ -96,7 +96,8 @@ const createMonthCalendar = (properties) => {
 
     const isSelectedDate = (date) => {
         const formatDateAsNumber = (dateToFormat) =>
-            `${dateToFormat.getFullYear()}${dateToFormat.getMonth()}${dateToFormat.getDate()}`;
+            dateToFormat.getFullYear() + `${dateToFormat.getMonth()}`.padStart(2, '0') + `${dateToFormat.getDate()}`.padStart(2, '0');
+
         return (
             selectedDates.filter(
                 (currentDate) =>

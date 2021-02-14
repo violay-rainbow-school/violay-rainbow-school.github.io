@@ -5,7 +5,21 @@ import {
     loginSuccessEvent,
     logoutEvent,
 } from './user-login/user-login.js';
-import { login, getChild, updateChild } from './school-api/school-api.js';
+import {
+    login,
+    getChild,
+    updateChild,
+    createTopicDay,
+    listChildTopicDays,
+    makeChildIri,
+} from './school-api/school-api.js';
+import {
+    saveTopicDaysToSession,
+    getInitialTopicDaysFromSession,
+} from './reservation-storage/reservation-storage.js';
+import {
+    TopicDay
+} from './school-api/TopicDay.js'
 
 (function () {
     const selectChildElementId = 'child-select';
@@ -109,18 +123,27 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
         ].map((element) => element.classList.add('hidden'));
 
     /**
-     * Get the current child on change
+     * Create calendars on child select
      */
     selectChildElement.addEventListener('change', function (event) {
-        if (!this.value) {
+        const childId = this.value;
+
+        if (!childId) {
             showError('Select a child please.');
 
             return;
         }
 
-        getChild(this.value, showError).then((child) => {
-            currentChild = child;
-            createCalendars();
+        currentChild = {
+            id: childId,
+            iri: makeChildIri(childId),
+        };
+
+        listChildTopicDays(this.value, showError).then((response) => {
+            const topicDays = response['hydra:member'].map((responseMember) => new TopicDay(responseMember.id, responseMember.child, responseMember.topic, responseMember.day));
+
+            saveTopicDaysToSession(topicDays);
+            createCalendars(topicDays);
             showCalendars();
         });
     });
@@ -128,17 +151,18 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
     /**
      * Get selected dates of a topic
      */
-    const getSelectedDatesFromDom = (topic) => {
+    const getSelectedDatesByTopicFromDom = (topic) => {
         const dates = [
             ...document.querySelectorAll(`[topic=${topic}] .selected-date`),
         ].map((dateElement) => {
-            return {
-                date: dateElement.getAttribute('full-date'),
-            };
+            return new Date(dateElement.getAttribute('full-date'));
         });
 
         return dates;
     };
+
+    const getSelectedChildIdFromDom = () =>
+        selectChildElement.options[selectChildElement.selectedIndex].value;
 
     // Set the calendar submit action
     document
@@ -146,42 +170,81 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
         .addEventListener('submit', function (event) {
             event.preventDefault();
 
-            const restaurantDays = getSelectedDatesFromDom('restaurant');
-            const nurseryDays = getSelectedDatesFromDom('nursery');
-            const childNameElement =
-                selectChildElement.options[selectChildElement.selectedIndex];
-            const childFullNameParts = childNameElement
-                .getAttribute('full-name')
-                .split('%');
+            const catererSelectedDays = getSelectedDatesByTopicFromDom('caterer').map(
+                (date) => {
+                    return {
+                        day: date,
+                        topic: 'caterer',
+                        child: currentChild.iri,
+                    };
+                }
+            );
+            const nurserySelectedDays = getSelectedDatesByTopicFromDom('nursery').map(
+                (date) => {
+                    return {
+                        day: date,
+                        topic: 'nursery',
+                        child: currentChild.iri,
+                    };
+                }
+            );
 
-            const child = {
-                id: childNameElement.value,
-                firstName: childFullNameParts[0],
-                lastName: childFullNameParts[1],
-                birthday: '2021-01-15T21:37:28.672Z',
-                restaurantDays,
-                nurseryDays,
-            };
+            // TODO:
+            // 1. compare selectedDates with initialSelectedDates
+            // 2. send POST and DELETE topicDay requests accordingly
+            const initialTopicDays = getInitialTopicDaysFromSession();
+            console.log({catererSelectedDays, initialTopicDays});
+            const requests = initialTopicDays.map((initialTopicDay) => {
+                const initialSelectedDate = new Date(initialTopicDay.day);
 
-            updateChild(child);
+                // catererSelectedDays.map((catererSelectedDay) => {
+                //     if (initialSelectedDate.get)
+                // })
+            });
+
+            // catererDays.forEach((date) =>
+            //     createTopicDay({
+            //         child: '/api/children/' + childId,
+            //         date,
+            //         topic: 'caterer',
+            //     })
+            // );
+
+            // nurseryDays.forEach((date) =>
+            //     createTopicDay({
+            //         child: '/api/children/' + childId,
+            //         date,
+            //         topic: 'nursery',
+            //     })
+            // );
         });
 
     /**
      * Create or refresh calendars
      */
-    const createCalendars = () => {
+    const createCalendars = (topicDays) => {
+        const nurserySelectedDays = [];
+        const catererSelectedDates = [];
+
+        topicDays.forEach((topicDay) => {
+            if (topicDay.topic === 'caterer') {
+                catererSelectedDates.push(new Date(topicDay.day));
+                return;
+            }
+
+            if (topicDay.topic === 'nursery') {
+                nurserySelectedDays.push(new Date(topicDay.day));
+            }
+        });
+
         calendarElements.forEach((calendarElement) => {
             const topic = calendarElement.getAttribute('topic');
             let selectedDates = [];
 
-            if (topic === 'restaurant') {
-                selectedDates = currentChild.restaurantDays.map(
-                    (date) => new Date(date.date)
-                );
+            if (topic === 'caterer') {
+                selectedDates = catererSelectedDates;
             } else if (topic === 'nursery') {
-                selectedDates = currentChild.nurseryDays.map(
-                    (date) => new Date(date.date)
-                );
+                selectedDates = nurserySelectedDays;
             }
 
             let options = {
