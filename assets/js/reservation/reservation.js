@@ -17,9 +17,7 @@ import {
     saveTopicDaysToSession,
     getInitialTopicDaysFromSession,
 } from './reservation-storage/reservation-storage.js';
-import {
-    TopicDay
-} from './school-api/TopicDay.js'
+import { TopicDay } from './school-api/TopicDay.js';
 
 (function () {
     const selectChildElementId = 'child-select';
@@ -140,7 +138,15 @@ import {
         };
 
         listChildTopicDays(this.value, showError).then((response) => {
-            const topicDays = response['hydra:member'].map((responseMember) => new TopicDay(responseMember.id, responseMember.child, responseMember.topic, responseMember.day));
+            const topicDays = response['hydra:member'].map(
+                (responseMember) =>
+                    new TopicDay(
+                        responseMember.id,
+                        responseMember.child,
+                        responseMember.topic,
+                        responseMember.day
+                    )
+            );
 
             saveTopicDaysToSession(topicDays);
             createCalendars(topicDays);
@@ -170,30 +176,29 @@ import {
         .addEventListener('submit', function (event) {
             event.preventDefault();
 
-            const catererSelectedDays = getSelectedDatesByTopicFromDom('caterer').map(
-                (date) => {
-                    return {
-                        day: date,
-                        topic: 'caterer',
-                        child: currentChild.iri,
-                    };
-                }
+            const catererSelectedDays = getSelectedDatesByTopicFromDom(
+                'caterer'
+            ).map(
+                (date) => new TopicDay(null, currentChild.iri, 'caterer', date)
             );
-            const nurserySelectedDays = getSelectedDatesByTopicFromDom('nursery').map(
-                (date) => {
-                    return {
-                        day: date,
-                        topic: 'nursery',
-                        child: currentChild.iri,
-                    };
-                }
+            const nurserySelectedDays = getSelectedDatesByTopicFromDom(
+                'nursery'
+            ).map(
+                (date) => new TopicDay(null, currentChild.iri, 'nursery', date)
             );
+
+            console.log({
+                initialTopicDays: JSON.stringify(
+                    getInitialTopicDaysFromSession()
+                ),
+                catererSelectedDays: JSON.stringify(catererSelectedDays),
+                nurserySelectedDays: JSON.stringify(nurserySelectedDays),
+            });
 
             // TODO:
             // 1. compare selectedDates with initialSelectedDates
             // 2. send POST and DELETE topicDay requests accordingly
             const initialTopicDays = getInitialTopicDaysFromSession();
-            console.log({catererSelectedDays, initialTopicDays});
             const requests = initialTopicDays.map((initialTopicDay) => {
                 const initialSelectedDate = new Date(initialTopicDay.day);
 

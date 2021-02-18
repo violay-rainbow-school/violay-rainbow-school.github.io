@@ -17,6 +17,10 @@ const makeAuthenticationHeaders = () => {
     return myHeaders;
 };
 
+//
+// Authentication
+//
+
 export async function login(errorCallback = logError) {
     return fetch(`${SCHOOL_API_LOGIN_URL}`, {
         method: 'GET',
