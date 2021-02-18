@@ -5,18 +5,7 @@ import {
     loginSuccessEvent,
     logoutEvent,
 } from './user-login/user-login.js';
-import {
-    login,
-    getChild,
-    updateChild,
-    createTopicDay,
-    listChildTopicDays,
-    makeChildIri,
-} from './school-api/school-api.js';
-import {
-    saveTopicDaysToSession,
-    getInitialTopicDaysFromSession,
-} from './reservation-storage/reservation-storage.js';
+import { login, getChild, updateChild, makeChildIri, listChildTopicDays } from './school-api/school-api.js';
 import { TopicDay } from './school-api/TopicDay.js';
 
 (function () {
@@ -148,23 +137,34 @@ import { TopicDay } from './school-api/TopicDay.js';
                     )
             );
 
-            saveTopicDaysToSession(topicDays);
             createCalendars(topicDays);
             showCalendars();
         });
     });
 
-    /**
-     * Get selected dates of a topic
-     */
-    const getSelectedDatesByTopicFromDom = (topic) => {
-        const dates = [
-            ...document.querySelectorAll(`[topic=${topic}] .selected-date`),
-        ].map((dateElement) => {
-            return new Date(dateElement.getAttribute('full-date'));
-        });
+    const getSelectedTopicDaysFromDom = (topic = undefined) => {
+        const dates = [...document.querySelectorAll('.selected-date')].map(
+            (dateElement) => {
+                // No topic specified, get all dates
+                if (!topic) {
+                    return createTopicDayFromDomElement(dateElement);
+                }
+
+                // A topic is specified, filter on topic
+                if (dateElement.getAttribute('topic') === topic) {
+                    return createTopicDayFromDomElement(dateElement);
+                }
+            }
+        );
 
         return dates;
+    };
+
+    const createTopicDayFromDomElement = (element) => {
+        const topic = element.getAttribute('topic');
+        const rawDate = element.getAttribute('full-date');
+
+        return new TopicDay(null, currentChild.iri, topic, new Date(rawDate));
     };
 
     const getSelectedChildIdFromDom = () =>
@@ -176,52 +176,11 @@ import { TopicDay } from './school-api/TopicDay.js';
         .addEventListener('submit', function (event) {
             event.preventDefault();
 
-            const catererSelectedDays = getSelectedDatesByTopicFromDom(
-                'caterer'
-            ).map(
-                (date) => new TopicDay(null, currentChild.iri, 'caterer', date)
-            );
-            const nurserySelectedDays = getSelectedDatesByTopicFromDom(
-                'nursery'
-            ).map(
-                (date) => new TopicDay(null, currentChild.iri, 'nursery', date)
-            );
+            const selectedTopicDays = getSelectedTopicDaysFromDom();
 
-            console.log({
-                initialTopicDays: JSON.stringify(
-                    getInitialTopicDaysFromSession()
-                ),
-                catererSelectedDays: JSON.stringify(catererSelectedDays),
-                nurserySelectedDays: JSON.stringify(nurserySelectedDays),
-            });
+            console.log({ selectedTopicDays });
 
-            // TODO:
-            // 1. compare selectedDates with initialSelectedDates
-            // 2. send POST and DELETE topicDay requests accordingly
-            const initialTopicDays = getInitialTopicDaysFromSession();
-            const requests = initialTopicDays.map((initialTopicDay) => {
-                const initialSelectedDate = new Date(initialTopicDay.day);
-
-                // catererSelectedDays.map((catererSelectedDay) => {
-                //     if (initialSelectedDate.get)
-                // })
-            });
-
-            // catererDays.forEach((date) =>
-            //     createTopicDay({
-            //         child: '/api/children/' + childId,
-            //         date,
-            //         topic: 'caterer',
-            //     })
-            // );
-
-            // nurseryDays.forEach((date) =>
-            //     createTopicDay({
-            //         child: '/api/children/' + childId,
-            //         date,
-            //         topic: 'nursery',
-            //     })
-            // );
+            // TODO: update selected Child
         });
 
     /**
