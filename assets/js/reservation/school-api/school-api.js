@@ -75,10 +75,6 @@ export async function deleteTopicDay(topicDayId, errorCallback = logError) {
 // Child
 //
 
-export function makeChildIri(childId) {
-    return `/children/${childId}`;
-}
-
 export async function getChild(childId, errorCallback = logError) {
     return fetch(`${SCHOOL_API_URL}/children/${childId}`, {
         headers: makeAuthenticationHeaders(),

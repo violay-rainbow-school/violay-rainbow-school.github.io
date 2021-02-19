@@ -25,7 +25,10 @@ loginEvent.addListener(() => {
     login((error) => {
         loginFailureEvent.fire(error);
     }).then((user) => {
-        loginSuccessEvent.fire(user);
+        if (user && user.id) {
+            console.log('Fire loginSuccessEvent with user', user);
+            loginSuccessEvent.fire(user);
+        }
     });
 });
 

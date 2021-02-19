@@ -5,8 +5,9 @@ import {
     loginSuccessEvent,
     logoutEvent,
 } from './user-login/user-login.js';
-import { login, getChild, updateChild, makeChildIri, listChildTopicDays } from './school-api/school-api.js';
+import { login, getChild, updateChild, listChildTopicDays } from './school-api/school-api.js';
 import { TopicDay } from './school-api/TopicDay.js';
+import { Child } from './school-api/Child.js';
 
 (function () {
     const selectChildElementId = 'child-select';
@@ -37,8 +38,7 @@ import { TopicDay } from './school-api/TopicDay.js';
 
         flashElement.insertAdjacentHTML(
             'beforeend',
-            `<div class="alert-danger">${
-                error instanceof Object ? error.toString() : error
+            `<div class="alert-danger">${error instanceof Object ? error.toString() : error
             }</div>`
         );
     };
@@ -121,10 +121,9 @@ import { TopicDay } from './school-api/TopicDay.js';
             return;
         }
 
-        currentChild = {
-            id: childId,
-            iri: makeChildIri(childId),
-        };
+        getChild(childId, showError).then((response) => {
+            currentChild = response;
+        });
 
         listChildTopicDays(this.value, showError).then((response) => {
             const topicDays = response['hydra:member'].map(
@@ -164,7 +163,7 @@ import { TopicDay } from './school-api/TopicDay.js';
         const topic = element.getAttribute('topic');
         const rawDate = element.getAttribute('full-date');
 
-        return new TopicDay(null, currentChild.iri, topic, new Date(rawDate));
+        return new TopicDay(null, currentChild.id, topic, new Date(rawDate));
     };
 
     const getSelectedChildIdFromDom = () =>
@@ -175,12 +174,8 @@ import { TopicDay } from './school-api/TopicDay.js';
         .querySelector('#reservation-form')
         .addEventListener('submit', function (event) {
             event.preventDefault();
-
-            const selectedTopicDays = getSelectedTopicDaysFromDom();
-
-            console.log({ selectedTopicDays });
-
-            // TODO: update selected Child
+            const child = new Child(currentChild.id, currentChild.firstName, currentChild.lastName, getSelectedTopicDaysFromDom());
+            updateChild(child);
         });
 
     /**
