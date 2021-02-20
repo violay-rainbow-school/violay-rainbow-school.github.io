@@ -5,7 +5,7 @@ import {
     loginSuccessEvent,
     logoutEvent,
 } from './user-login/user-login.js';
-import { login, getChild, updateChild, listChildTopicDays } from './school-api/school-api.js';
+import { getChild, updateChildTopicDays } from './school-api/school-api.js';
 import { TopicDay } from './school-api/TopicDay.js';
 import { Child } from './school-api/Child.js';
 
@@ -27,18 +27,30 @@ import { Child } from './school-api/Child.js';
         document.body.querySelector('#last-school-date').textContent
     );
 
-    /**
-     * Show an error in the flash message element
-     *
-     * @param {object} error
-     */
+    //
+    // Flash message
+    //
+
     const showError = (error) => {
         console.error(error);
         let flashElement = document.getElementById('flash');
 
         flashElement.insertAdjacentHTML(
             'beforeend',
-            `<div class="alert-danger">${error instanceof Object ? error.toString() : error
+            `<div class="alert-danger">${
+                error instanceof Object ? error.toString() : error
+            }</div>`
+        );
+    };
+
+    const showWarning = (error) => {
+        console.error(error);
+        let flashElement = document.getElementById('flash');
+
+        flashElement.insertAdjacentHTML(
+            'beforeend',
+            `<div class="alert-warning">${
+                error instanceof Object ? error.toString() : error
             }</div>`
         );
     };
@@ -50,6 +62,10 @@ import { Child } from './school-api/Child.js';
             'beforeend',
             `<div class="alert-success">${message}</div>`
         );
+    };
+
+    const clearFlashMessages = () => {
+        document.getElementById('flash').innerHTML = '';
     };
 
     /**
@@ -109,9 +125,10 @@ import { Child } from './school-api/Child.js';
             ...document.getElementsByClassName('calendar-wrapper'),
         ].map((element) => element.classList.add('hidden'));
 
-    /**
-     * Create calendars on child select
-     */
+    //
+    // Create calendars on child select
+    //
+
     selectChildElement.addEventListener('change', function (event) {
         const childId = this.value;
 
@@ -123,20 +140,7 @@ import { Child } from './school-api/Child.js';
 
         getChild(childId, showError).then((response) => {
             currentChild = response;
-        });
-
-        listChildTopicDays(this.value, showError).then((response) => {
-            const topicDays = response['hydra:member'].map(
-                (responseMember) =>
-                    new TopicDay(
-                        responseMember.id,
-                        responseMember.child,
-                        responseMember.topic,
-                        responseMember.day
-                    )
-            );
-
-            createCalendars(topicDays);
+            createCalendars(currentChild.topicDays);
             showCalendars();
         });
     });
@@ -160,7 +164,7 @@ import { Child } from './school-api/Child.js';
     };
 
     const createTopicDayFromDomElement = (element) => {
-        const topic = element.getAttribute('topic');
+        const topic = element.closest('[topic]').getAttribute('topic');
         const rawDate = element.getAttribute('full-date');
 
         return new TopicDay(null, currentChild.id, topic, new Date(rawDate));
@@ -169,13 +173,43 @@ import { Child } from './school-api/Child.js';
     const getSelectedChildIdFromDom = () =>
         selectChildElement.options[selectChildElement.selectedIndex].value;
 
-    // Set the calendar submit action
+    //
+    // Save on calendar form submit
+    //
+
     document
         .querySelector('#reservation-form')
         .addEventListener('submit', function (event) {
             event.preventDefault();
-            const child = new Child(currentChild.id, currentChild.firstName, currentChild.lastName, getSelectedTopicDaysFromDom());
-            updateChild(child);
+            const child = new Child(
+                currentChild.id,
+                currentChild.firstName,
+                currentChild.lastName,
+                getSelectedTopicDaysFromDom()
+            );
+            updateChildTopicDays(child).then((response) => {
+                currentChild = response.child;
+
+                // Fix serialization as object
+                if (!Array.isArray(currentChild.topicDays)) {
+                    currentChild.topicDays = Object.values(currentChild.topicDays);
+                }
+
+                createCalendars(currentChild.topicDays);
+                clearFlashMessages();
+                if (response.addedTopicDaysCount)
+                    showSuccess(
+                        `${response.addedTopicDaysCount} jour(s) ajouté(s).`
+                    );
+                if (response.removedTopicDaysCount)
+                    showSuccess(
+                        `${response.addedTopicDaysCount} jour(s) retiré(s).`
+                    );
+                if (response.removedTopicDaysCount)
+                    showWarning(
+                        `${response.addedTopicDaysCount} jour(s) invalides.`
+                    );
+            });
         });
 
     /**
@@ -184,6 +218,8 @@ import { Child } from './school-api/Child.js';
     const createCalendars = (topicDays) => {
         const nurserySelectedDays = [];
         const catererSelectedDates = [];
+
+        console.log(topicDays);
 
         topicDays.forEach((topicDay) => {
             if (topicDay.topic === 'caterer') {
