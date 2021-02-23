@@ -1,3 +1,5 @@
+import { formatDateAsNumber } from '../date-helper/date-format.js'
+
 const getNextMonth = (date) => {
     const nextMonth = new Date(date.getFullYear(), 1, 1);
 
@@ -96,7 +98,8 @@ const createMonthCalendar = (properties) => {
 
     const isSelectedDate = (date) => {
         const formatDateAsNumber = (dateToFormat) =>
-            `${dateToFormat.getFullYear()}${dateToFormat.getMonth()}${dateToFormat.getDate()}`;
+            dateToFormat.getFullYear() + `${dateToFormat.getMonth()}`.padStart(2, '0') + `${dateToFormat.getDate()}`.padStart(2, '0');
+
         return (
             selectedDates.filter(
                 (currentDate) =>
@@ -112,8 +115,6 @@ const createMonthCalendar = (properties) => {
      */
     const isSchoolOpen = (date) => {
         const datesIncludes = (dates, date) => {
-            const formatDateAsNumber = (dateToFormat) =>
-                `${dateToFormat.getFullYear()}${dateToFormat.getMonth()}${dateToFormat.getDate()}`;
             return (
                 dates.filter(
                     (currentDate) =>

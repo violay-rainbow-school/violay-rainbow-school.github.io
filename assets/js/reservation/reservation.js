@@ -5,7 +5,9 @@ import {
     loginSuccessEvent,
     logoutEvent,
 } from './user-login/user-login.js';
-import { login, getChild, updateChild } from './school-api/school-api.js';
+import { getChild, updateChildTopicDays } from './school-api/school-api.js';
+import { TopicDay } from './school-api/TopicDay.js';
+import { Child } from './school-api/Child.js';
 
 (function () {
     const selectChildElementId = 'child-select';
@@ -25,11 +27,10 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
         document.body.querySelector('#last-school-date').textContent
     );
 
-    /**
-     * Show an error in the flash message element
-     *
-     * @param {object} error
-     */
+    //
+    // Flash message
+    //
+
     const showError = (error) => {
         console.error(error);
         let flashElement = document.getElementById('flash');
@@ -42,6 +43,18 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
         );
     };
 
+    const showWarning = (error) => {
+        console.error(error);
+        let flashElement = document.getElementById('flash');
+
+        flashElement.insertAdjacentHTML(
+            'beforeend',
+            `<div class="alert-warning">${
+                error instanceof Object ? error.toString() : error
+            }</div>`
+        );
+    };
+
     const showSuccess = (message) => {
         let flashElement = document.getElementById('flash');
 
@@ -49,6 +62,10 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
             'beforeend',
             `<div class="alert-success">${message}</div>`
         );
+    };
+
+    const clearFlashMessages = () => {
+        document.getElementById('flash').innerHTML = '';
     };
 
     /**
@@ -108,80 +125,121 @@ import { login, getChild, updateChild } from './school-api/school-api.js';
             ...document.getElementsByClassName('calendar-wrapper'),
         ].map((element) => element.classList.add('hidden'));
 
-    /**
-     * Get the current child on change
-     */
+    //
+    // Create calendars on child select
+    //
+
     selectChildElement.addEventListener('change', function (event) {
-        if (!this.value) {
+        const childId = this.value;
+
+        if (!childId) {
             showError('Select a child please.');
 
             return;
         }
 
-        getChild(this.value, showError).then((child) => {
-            currentChild = child;
-            createCalendars();
+        getChild(childId, showError).then((response) => {
+            currentChild = response;
+            createCalendars(currentChild.topicDays);
             showCalendars();
         });
     });
 
-    /**
-     * Get selected dates of a topic
-     */
-    const getSelectedDatesFromDom = (topic) => {
-        const dates = [
-            ...document.querySelectorAll(`[topic=${topic}] .selected-date`),
-        ].map((dateElement) => {
-            return {
-                date: dateElement.getAttribute('full-date'),
-            };
-        });
+    const getSelectedTopicDaysFromDom = (topic = undefined) => {
+        const dates = [...document.querySelectorAll('.selected-date')].map(
+            (dateElement) => {
+                // No topic specified, get all dates
+                if (!topic) {
+                    return createTopicDayFromDomElement(dateElement);
+                }
+
+                // A topic is specified, filter on topic
+                if (dateElement.getAttribute('topic') === topic) {
+                    return createTopicDayFromDomElement(dateElement);
+                }
+            }
+        );
 
         return dates;
     };
 
-    // Set the calendar submit action
+    const createTopicDayFromDomElement = (element) => {
+        const topic = element.closest('[topic]').getAttribute('topic');
+        const rawDate = element.getAttribute('full-date');
+
+        return new TopicDay(null, currentChild.id, topic, new Date(rawDate));
+    };
+
+    const getSelectedChildIdFromDom = () =>
+        selectChildElement.options[selectChildElement.selectedIndex].value;
+
+    //
+    // Save on calendar form submit
+    //
+
     document
         .querySelector('#reservation-form')
         .addEventListener('submit', function (event) {
             event.preventDefault();
+            const child = new Child(
+                currentChild.id,
+                currentChild.firstName,
+                currentChild.lastName,
+                getSelectedTopicDaysFromDom()
+            );
+            updateChildTopicDays(child).then((response) => {
+                currentChild = response.child;
 
-            const restaurantDays = getSelectedDatesFromDom('restaurant');
-            const nurseryDays = getSelectedDatesFromDom('nursery');
-            const childNameElement =
-                selectChildElement.options[selectChildElement.selectedIndex];
-            const childFullNameParts = childNameElement
-                .getAttribute('full-name')
-                .split('%');
+                // Fix serialization as object
+                if (!Array.isArray(currentChild.topicDays)) {
+                    currentChild.topicDays = Object.values(currentChild.topicDays);
+                }
 
-            const child = {
-                id: childNameElement.value,
-                firstName: childFullNameParts[0],
-                lastName: childFullNameParts[1],
-                birthday: '2021-01-15T21:37:28.672Z',
-                restaurantDays,
-                nurseryDays,
-            };
-
-            updateChild(child);
+                createCalendars(currentChild.topicDays);
+                clearFlashMessages();
+                if (response.addedTopicDaysCount)
+                    showSuccess(
+                        `${response.addedTopicDaysCount} jour(s) ajouté(s).`
+                    );
+                if (response.removedTopicDaysCount)
+                    showSuccess(
+                        `${response.addedTopicDaysCount} jour(s) retiré(s).`
+                    );
+                if (response.removedTopicDaysCount)
+                    showWarning(
+                        `${response.addedTopicDaysCount} jour(s) invalides.`
+                    );
+            });
         });
 
     /**
      * Create or refresh calendars
      */
-    const createCalendars = () => {
+    const createCalendars = (topicDays) => {
+        const nurserySelectedDays = [];
+        const catererSelectedDates = [];
+
+        console.log(topicDays);
+
+        topicDays.forEach((topicDay) => {
+            if (topicDay.topic === 'caterer') {
+                catererSelectedDates.push(new Date(topicDay.day));
+                return;
+            }
+
+            if (topicDay.topic === 'nursery') {
+                nurserySelectedDays.push(new Date(topicDay.day));
+            }
+        });
+
         calendarElements.forEach((calendarElement) => {
             const topic = calendarElement.getAttribute('topic');
             let selectedDates = [];
 
-            if (topic === 'restaurant') {
-                selectedDates = currentChild.restaurantDays.map(
-                    (date) => new Date(date.date)
-                );
+            if (topic === 'caterer') {
+                selectedDates = catererSelectedDates;
             } else if (topic === 'nursery') {
-                selectedDates = currentChild.nurseryDays.map(
-                    (date) => new Date(date.date)
-                );
+                selectedDates = nurserySelectedDays;
             }
 
             let options = {

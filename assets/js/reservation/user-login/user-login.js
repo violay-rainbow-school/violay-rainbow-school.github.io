@@ -20,17 +20,19 @@ loginFormElement.addEventListener('submit', function (event) {
     loginEvent.fire();
 });
 
+// Save credentials on login
+loginEvent.addListener(() => saveCredentialsFromDomToSession());
+
 // Login
 loginEvent.addListener(() => {
     login((error) => {
         loginFailureEvent.fire(error);
     }).then((user) => {
-        loginSuccessEvent.fire(user);
+        if (user && user.id) {
+            loginSuccessEvent.fire(user);
+        }
     });
 });
-
-// Save credentials on login
-loginSuccessEvent.addListener(() => saveCredentialsFromDomToSession());
 
 // Hide login form and display logout button
 loginSuccessEvent.addListener(() => {
