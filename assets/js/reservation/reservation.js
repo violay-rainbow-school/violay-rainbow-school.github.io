@@ -203,11 +203,11 @@ import { Child } from './school-api/Child.js';
                     );
                 if (response.removedTopicDaysCount)
                     showSuccess(
-                        `${response.addedTopicDaysCount} jour(s) retiré(s).`
+                        `${response.removedTopicDaysCount} jour(s) retiré(s).`
                     );
                 if (response.removedTopicDaysCount)
                     showWarning(
-                        `${response.addedTopicDaysCount} jour(s) invalides.`
+                        `${response.invalidTopicDaysCount} jour(s) invalides.`
                     );
             });
         });
@@ -218,8 +218,6 @@ import { Child } from './school-api/Child.js';
     const createCalendars = (topicDays) => {
         const nurserySelectedDays = [];
         const catererSelectedDates = [];
-
-        console.log(topicDays);
 
         topicDays.forEach((topicDay) => {
             if (topicDay.topic === 'caterer') {

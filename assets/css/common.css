@@ -17,7 +17,7 @@ h2, strong {
     margin: 1em 0;
 }
 
-.alert-danger, .alert-success {
+.alert-danger, .alert-success, .alert-warning {
     padding: 1em;
 }
 
