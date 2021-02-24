@@ -7,11 +7,11 @@ const logError = (error) => console.error(error);
 // Authentication
 //
 
-const makeAuthenticationHeaders = () => {
+const makeBasicAuthorizationHeader = () => {
     const credentials = getCredentialsFromSession();
     const myHeaders = new Headers();
-    myHeaders.append('x-authentication-username', credentials.username);
-    myHeaders.append('x-authentication-password', credentials.password);
+    const encodedCredentials = btoa(`${credentials.username}:${credentials.password}`);
+    myHeaders.append('Authorization', `Basic ${encodedCredentials}`);
 
     return myHeaders;
 };
@@ -19,7 +19,7 @@ const makeAuthenticationHeaders = () => {
 export async function login(errorCallback = logError) {
     return fetch(`${SCHOOL_API_LOGIN_URL}`, {
         method: 'GET',
-        headers: makeAuthenticationHeaders(),
+        headers: makeBasicAuthorizationHeader(),
     })
         .then((response) => {
             if (response.status != 200) {
@@ -36,14 +36,14 @@ export async function login(errorCallback = logError) {
 
 export async function getChild(childId, errorCallback = logError) {
     return fetch(`${SCHOOL_API_URL}/children/${childId}`, {
-        headers: makeAuthenticationHeaders(),
+        headers: makeBasicAuthorizationHeader(),
     })
         .then((response) => response.json())
         .catch(errorCallback);
 }
 
 export function updateChildTopicDays(child, errorCallback) {
-    const headers = makeAuthenticationHeaders();
+    const headers = makeBasicAuthorizationHeader();
 
     headers.append('content-type', 'application/json; charset=UTF-8');
 

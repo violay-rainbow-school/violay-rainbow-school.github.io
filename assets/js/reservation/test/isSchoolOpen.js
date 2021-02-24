@@ -26,8 +26,6 @@ const isSchoolOpen = (date) => {
     const isClosedDate = datesIncludes(closedDates, date);
     const result = (isWeekdayOpen || isOpenDate) && !isClosedDate;
 
-    console.log({date, isWeekdayOpen, isOpenDate, isClosedDate, result})
-
     return result;
 };
 
