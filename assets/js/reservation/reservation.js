@@ -8,8 +8,8 @@ import {
 import { getChild, updateChildTopicDays } from './school-api/school-api.js';
 import { TopicDay } from './school-api/TopicDay.js';
 import { Child } from './school-api/Child.js';
-import { isLockedDateFromToday } from './date-helper/date-lock.js'
-import { LOCKING_DAYS_COUNT } from './calendar/calendar-config.js'
+import { isLockedDateFromToday } from './date-helper/date-lock.js';
+import { LOCKING_DAYS_COUNT } from './calendar/calendar-config.js';
 
 (function () {
     const selectChildElementId = 'child-select';
@@ -28,6 +28,18 @@ import { LOCKING_DAYS_COUNT } from './calendar/calendar-config.js'
     const lastSchoolDate = new Date(
         document.body.querySelector('#last-school-date').textContent
     );
+
+    //
+    // Waiting...
+    //
+
+    loginEvent.addListener(() => {
+        showWarning('Patientez...');
+    });
+
+    loginSuccessEvent.addListener(() => {
+        clearFlashMessages();
+    });
 
     //
     // Flash message
@@ -183,18 +195,25 @@ import { LOCKING_DAYS_COUNT } from './calendar/calendar-config.js'
         .querySelector('#reservation-form')
         .addEventListener('submit', function (event) {
             event.preventDefault();
+
             const child = new Child(
                 currentChild.id,
                 currentChild.firstName,
                 currentChild.lastName,
                 getSelectedTopicDaysFromDom()
             );
+
+            clearFlashMessages();
+            showWarning('Enregistrement en cours...');
+
             updateChildTopicDays(child).then((response) => {
                 currentChild = response.child;
 
                 // Fix serialization as object
                 if (!Array.isArray(currentChild.topicDays)) {
-                    currentChild.topicDays = Object.values(currentChild.topicDays);
+                    currentChild.topicDays = Object.values(
+                        currentChild.topicDays
+                    );
                 }
 
                 createCalendars(currentChild.topicDays);
@@ -228,7 +247,12 @@ import { LOCKING_DAYS_COUNT } from './calendar/calendar-config.js'
         const catererSelectedDates = [];
 
         topicDays.forEach((topicDay) => {
-            if (isLockedDateFromToday(new Date(topicDay.day), LOCKING_DAYS_COUNT)) {
+            if (
+                isLockedDateFromToday(
+                    new Date(topicDay.day),
+                    LOCKING_DAYS_COUNT
+                )
+            ) {
                 return;
             }
 
