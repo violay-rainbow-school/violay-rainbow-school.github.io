@@ -199,18 +199,24 @@ import { LOCKING_DAYS_COUNT } from './calendar/calendar-config.js'
 
                 createCalendars(currentChild.topicDays);
                 clearFlashMessages();
-                if (response.addedTopicDaysCount)
+
+                if (response.addedTopicDaysCount) {
                     showSuccess(
                         `${response.addedTopicDaysCount} jour(s) ajouté(s).`
                     );
-                if (response.removedTopicDaysCount)
+                }
+
+                if (response.removedTopicDaysCount) {
                     showSuccess(
                         `${response.removedTopicDaysCount} jour(s) retiré(s).`
                     );
-                if (response.removedTopicDaysCount)
+                }
+
+                if (response.invalidTopicDaysCount) {
                     showWarning(
                         `${response.invalidTopicDaysCount} jour(s) invalides.`
                     );
+                }
             });
         });
 
