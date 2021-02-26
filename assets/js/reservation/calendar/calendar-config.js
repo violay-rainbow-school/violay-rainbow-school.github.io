@@ -1,0 +1,1 @@
+export const LOCKING_DAYS_COUNT = 2;

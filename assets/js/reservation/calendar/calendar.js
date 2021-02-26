@@ -1,4 +1,6 @@
 import { formatDateAsNumber } from '../date-helper/date-format.js'
+import { isLockedDateFromToday } from '../date-helper/date-lock.js'
+import { LOCKING_DAYS_COUNT } from './calendar-config.js'
 
 const getNextMonth = (date) => {
     const nextMonth = new Date(date.getFullYear(), 1, 1);
@@ -127,8 +129,9 @@ const createMonthCalendar = (properties) => {
         const isWeekdayOpen = openWeekdays.includes(date.getDay());
         const isOpenDate = datesIncludes(openDates, date);
         const isClosedDate = datesIncludes(closedDates, date);
+        const isLockedDate = isLockedDateFromToday(date, LOCKING_DAYS_COUNT);
 
-        return (isWeekdayOpen || isOpenDate) && !isClosedDate;
+        return (isWeekdayOpen || isOpenDate) && !isClosedDate && !isLockedDate;
     };
 
     const lastDayOfMonth = getLastDayOfMonth(year, month);

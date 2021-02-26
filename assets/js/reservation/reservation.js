@@ -8,6 +8,8 @@ import {
 import { getChild, updateChildTopicDays } from './school-api/school-api.js';
 import { TopicDay } from './school-api/TopicDay.js';
 import { Child } from './school-api/Child.js';
+import { isLockedDateFromToday } from './date-helper/date-lock.js'
+import { LOCKING_DAYS_COUNT } from './calendar/calendar-config.js'
 
 (function () {
     const selectChildElementId = 'child-select';
@@ -220,6 +222,10 @@ import { Child } from './school-api/Child.js';
         const catererSelectedDates = [];
 
         topicDays.forEach((topicDay) => {
+            if (isLockedDateFromToday(new Date(topicDay.day), LOCKING_DAYS_COUNT)) {
+                return;
+            }
+
             if (topicDay.topic === 'caterer') {
                 catererSelectedDates.push(new Date(topicDay.day));
                 return;

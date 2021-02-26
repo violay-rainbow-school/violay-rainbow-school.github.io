@@ -1,3 +1,5 @@
+import { isLockedDateFromToday } from '../date-helper/date-lock.js';
+
 function assertEquals(expected, actual, message = undefined) {
     if (message) {
         console.log(message);
@@ -18,19 +20,6 @@ function addDaysToDate(date, daysCount) {
     resultDate.setDate(date.getDate() + daysCount);
 
     return resultDate;
-}
-
-function isLockedDateFromToday(date, lockingDayCount) {
-    const today = new Date();
-    const limitDay = new Date();
-
-    limitDay.setDate(today.getDate() + lockingDayCount);
-
-    if (date <= limitDay) {
-        return true;
-    }
-
-    return false;
 }
 
 function testIsLockedDateFromToday() {
