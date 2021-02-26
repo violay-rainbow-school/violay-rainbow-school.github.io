@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<div class="page-single">
+    <div class="entry-header">
+        <h1 class="posttitle">{{ page.title }}</h1>
+    </div>
+</div>
+
+<!-- Flash messages -->
+<div class="flash" id="flash"></div>
+
+{% include user-login.html %}
+
+<!-- Select child -->
+<div class="calendar-child" style="display: none;">
+    <label for="child-select">Enfant :</label>
+    <select name="child-select" id="child-select"></select>
+</div>
+
+<div>
+    <form id="reservation-form" action="#">
+        <!-- Caterer calendar -->
+        <div class="calendar-wrapper hidden">
+            <h2>Traiteur</h2>
+            <button class="btn btn-success" type="submit">Enregistrer</button>
+            <div class="calendar" topic="caterer"></div>
+        </div>
+
+        <!-- Nursery calendar -->
+        <div class="calendar-wrapper hidden">
+            <h2>Garderie</h2>
+            <button class="btn btn-success" type="submit">Enregistrer</button>
+            <div class="calendar" topic="nursery"></div>
+        </div>
+    </form>
+</div>
+
+<div id="last-school-date" style="display: none;">{{ page.last_school_date }}</div>
+
+{% for date in page.closed_dates %}
+    <div class="closed-date" style="display: none;">{{ date }}</div>
+{% endfor %}
+
+{% for date in page.open_dates %}
+    <div class="open-date" style="display: none;">{{ date }}</div>
+{% endfor %}
+
+{% for weekday in page.open_weekdays %}
+    <div class="open-weekday" style="display: none;">{{ weekday }}</div>
+{% endfor %}
+
+<script type="module" src="/assets/js/reservation/reservation.js"></script>

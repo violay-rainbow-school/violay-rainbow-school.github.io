@@ -37,6 +37,10 @@
         <link href="{{ site.baseurl }}/assets/css/contribute.css" rel="stylesheet">
     {% endif %}
 
+    {% if page.url == '/reservation' %}
+        <link href="{{ site.baseurl }}/assets/css/calendar.css" rel="stylesheet">
+    {% endif %}
+
     {% if page.slideshow == 'page' %}
         <link href="{{ site.baseurl }}/assets/css/slideshow.css" rel="stylesheet">
     {% endif %}
@@ -191,6 +195,10 @@
     {% if page.layout == 'post' %}
     <script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
     {% endif %}
+
+    <!-- Custom scripts -->
+    <script src="{{ site.baseurl }}/assets/js/common/flash.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/common/try.js"></script>
 
 </body>
 </html>
