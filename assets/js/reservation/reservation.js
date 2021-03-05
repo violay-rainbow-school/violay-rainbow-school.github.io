@@ -129,6 +129,7 @@ import { LOCKING_DAYS_COUNT } from './calendar/calendar-config.js';
             (calendarElement) => (calendarElement.innerHTML = '')
         );
         hideCalendars();
+        clearFlashMessages();
     });
 
     const showCalendars = () =>
