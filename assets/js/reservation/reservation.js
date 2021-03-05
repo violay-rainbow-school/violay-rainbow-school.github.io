@@ -34,6 +34,7 @@ import { LOCKING_DAYS_COUNT } from './calendar/calendar-config.js';
     //
 
     loginEvent.addListener(() => {
+        clearFlashMessages();
         showWarning('Patientez...');
     });
 
@@ -117,6 +118,7 @@ import { LOCKING_DAYS_COUNT } from './calendar/calendar-config.js';
     // On failed login:
     // Display flash message
     loginFailureEvent.addListener(() => {
+        clearFlashMessages();
         showError('Veuillez utiliser vos identifiants transparent classroom');
     });
 
