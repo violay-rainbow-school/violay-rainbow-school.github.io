@@ -83,13 +83,16 @@ import { LOCKING_DAYS_COUNT } from './calendar/calendar-config.js';
         document.getElementById('flash').innerHTML = '';
     };
 
+    const emptySelectChildElement = () =>
+        (selectChildElement.innerHTML = '<option value="">...</option>');
+
     /**
      * Refresh child select element options
      *
      * @param {json} apiResponseContent
      */
     const refreshSelectChildElement = (user) => {
-        selectChildElement.innerHTML = '<option value="">...</option>';
+        emptySelectChildElement();
         user.children.map((child) => {
             const { id, firstName, lastName } = child;
             selectChildElement.insertAdjacentHTML(
@@ -99,13 +102,19 @@ import { LOCKING_DAYS_COUNT } from './calendar/calendar-config.js';
         });
     };
 
-    // On successful login:
-    // Display child selection
-    loginSuccessEvent.addListener(() =>
+    const showCalendarChildSelection = () =>
         [...document.getElementsByClassName('calendar-child')].map(
             (element) => (element.style.display = 'block')
-        )
-    );
+        );
+
+    const hideCalendarChildSelection = () =>
+        [...document.getElementsByClassName('calendar-child')].map(
+            (element) => (element.style.display = 'none')
+        );
+
+    // On successful login:
+    // Display child selection
+    loginSuccessEvent.addListener(showCalendarChildSelection);
     // Refresh child selection
     loginSuccessEvent.addListener(refreshSelectChildElement);
     // Display a flash message
@@ -125,6 +134,8 @@ import { LOCKING_DAYS_COUNT } from './calendar/calendar-config.js';
     // On logout:
     // Remove calendars
     logoutEvent.addListener(() => {
+        emptySelectChildElement();
+        hideCalendarChildSelection();
         calendarElements.forEach(
             (calendarElement) => (calendarElement.innerHTML = '')
         );
