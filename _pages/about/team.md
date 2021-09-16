@@ -36,7 +36,6 @@ Le poste d’assistante Montessori que j’ai occupé durant l’année scolaire
 
 
 
-![Benedicte](https://user-images.githubusercontent.com/78353339/133675329-50673b3b-0466-42c6-aaec-d09f6afb9ed7.jpeg)
 
 ## Bénédicte Coupat-Goutaland
 
