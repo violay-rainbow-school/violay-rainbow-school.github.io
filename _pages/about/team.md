@@ -34,6 +34,20 @@ J’ai pu faire mes preuves dans le domaine de l’enfance en encadrant des enfa
 
 Le poste d’assistante Montessori que j’ai occupé durant l’année scolaire 2018-2019 à l’envol des petits curieux a été l’opportunité pour moi de continuer dans cette voie d’autant que je partageais déjà les valeurs de cette pédagogie passionnante. J’ai suivi la formation d’assistante Montessori avec Caroline Dallo éducatrice AMI 6-12 ans et traductrice des formations AMI assistante 3-6 ans et éducateur 6-12 ans ainsi que la formation d’éducatrice Montessori 3-6 ans avec Marie-Hélène Barbier. J’ai également pris beaucoup de plaisir à suivre la formation CNV (module 1, 2 et 3) dispensée par Line Sandrini, formatrice certifiée de Déclic Education CNV avec Sophie. Je suis ravie de rejoindre cette belle école, d’apporter ma bonne humeur et mon énergie en tant qu’éducatrice auprès des enfants.
 
+
+
+![Benedicte](https://user-images.githubusercontent.com/78353339/133675329-50673b3b-0466-42c6-aaec-d09f6afb9ed7.jpeg)
+
+## Bénédicte Coupat-Goutaland
+
+Educatrice Montessori 3-6 ans
+
+Je suis maman de 2 enfants, Maëlle et Jonas. Avec mon mari, ce que nous souhaitions pour nos enfants c'est qu'ils soient heureux, qu'ils sachent ce qu'ils veulent dans la vie, qu'ils aient de l'empathie et qu'ils soient bienveillants l'un envers l'autre. Nous avons lu de nombreux livres de parentalité positives (Catherine Guéguen, Isabelle Filliozat,…) nous avons également participé à des ateliers Faber & Mazlish. Lorsque Maëlle a eu 3 ans nous avons choisi l'école Montessori "L'envol des petits curieux" car cette école correspondait profondément à nos valeurs éducatives (bienveillance, empathie, autonomie). 
+
+Nous avons alors créé l'association des parents d'élèves pour épauler Sophie et créer du lien entre les parents. En parallèle je suis enseignante-chercheure en microbiologie à l'université Lyon 1 et j'ai souhaité me former avec Marie-Hélène Barbier afin de changer ma posture d'enseignante. Lorsque cette merveilleuse école dans laquelle nos enfants (et nous) ont passé 4 belles années, a fermé ses portes, nous n'avons pas trouvé d'école locale à la hauteur de nos espérances pour nos enfants et avons choisi de faire l'instruction en famille. Après ces quelques mois d'IEF, les enfants ont émis le souhait de retrouver un groupe classe. Quant à moi, cette expérience d'enseignement avec mes enfants m'a appris la patience et la joie de voir leurs visages s'illuminer pour chaque notion comprise ! C'est donc une grande opportunité pour tous les 3 de rejoindre l'école Arc-en-ciel ! 
+Je serai au-coté d'Angélique en tant qu'éducatrice 3-6 ans pour prendre soin de vos enfants.
+
+
 <figure id="team-member-2" style="background-image: url({{ site.educational_team_members[2].picture }})"></figure>
 
 ## Marie-Hélène Barbier
