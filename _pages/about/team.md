@@ -48,6 +48,7 @@ Nous avons alors créé l'association des parents d'élèves pour épauler Sophi
 Je serai au-coté d'Angélique en tant qu'éducatrice 3-6 ans pour prendre soin de vos enfants.
 
 
+<img src="https://user-images.githubusercontent.com/78353339/133678107-7bde2203-a6ff-4ffb-bee2-0cbe29dc5b4b.jpeg" width="300">
 
 ## Sarah Boudeheb 
 
