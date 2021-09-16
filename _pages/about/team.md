@@ -35,6 +35,7 @@ J’ai pu faire mes preuves dans le domaine de l’enfance en encadrant des enfa
 Le poste d’assistante Montessori que j’ai occupé durant l’année scolaire 2018-2019 à l’envol des petits curieux a été l’opportunité pour moi de continuer dans cette voie d’autant que je partageais déjà les valeurs de cette pédagogie passionnante. J’ai suivi la formation d’assistante Montessori avec Caroline Dallo éducatrice AMI 6-12 ans et traductrice des formations AMI assistante 3-6 ans et éducateur 6-12 ans ainsi que la formation d’éducatrice Montessori 3-6 ans avec Marie-Hélène Barbier. J’ai également pris beaucoup de plaisir à suivre la formation CNV (module 1, 2 et 3) dispensée par Line Sandrini, formatrice certifiée de Déclic Education CNV avec Sophie. Je suis ravie de rejoindre cette belle école, d’apporter ma bonne humeur et mon énergie en tant qu’éducatrice auprès des enfants.
 
 
+<img src="https://user-images.githubusercontent.com/78353339/133677364-2cb1169c-3571-4c45-a686-80032ac8e946.jpeg" width="300">
 
 
 ## Bénédicte Coupat-Goutaland
