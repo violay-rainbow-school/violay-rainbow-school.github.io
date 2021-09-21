@@ -5,7 +5,7 @@ permalink: /
 comments: false
 image: 
 imageshadow: true
-hide_logo: false
+hide_logo: true
 show_site_tag: false
 button_links:
 - content: "Présentation"
