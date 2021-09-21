@@ -22,7 +22,7 @@ button_links:
   url: "/contact"
 ---
 
-![image](https://github.com/violay-rainbow-school/violay-rainbow-school.github.io/blob/master/assets/images/logo/logo_eco_ecole.png)
+![Eco Ecole](/assets/images/logo/logo_eco_ecole.png)
 
 ## QUI SOMMES-NOUS?
 
