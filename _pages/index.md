@@ -3,9 +3,9 @@ layout: home
 title: Bienvenue à l'école Montessori Arc-en-ciel
 permalink: /
 comments: false
-image: [/assets/images/logo/logo_eco_ecole.png]
+image: 
 imageshadow: true
-hide_logo: true
+hide_logo: false
 show_site_tag: false
 button_links:
 - content: "Présentation"
