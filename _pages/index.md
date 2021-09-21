@@ -22,7 +22,7 @@ button_links:
   url: "/contact"
 ---
 
-[[/assets/images/logo/logo_eco_ecole.png]]
+[Eco école](https://github.com/violay-rainbow-school/violay-rainbow-school.github.io/blob/master/assets/images/logo/logo_eco_ecole.png)
 ## QUI SOMMES-NOUS?
 
 Une école de deux classes (3/6ans et 6/12ans) indépendante Montessori.
