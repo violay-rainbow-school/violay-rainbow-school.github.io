@@ -22,5 +22,5 @@ Vous envisagez une inscription chez nous ? Vous souhaitez visiter l'école ? Rem
 Il n'y a pas de période spécifique pour l'inscription.  
 Lorsque vous avez lu [notre projet pédagogique]({{ site.educational_project_url }}), vous pouvez compléter le formulaire de préinscription :
 
-<a class="btn btn-success" href="/school-registration/pre-registration-form">Se préinscrire</a>
+<a class="btn btn-success" href="https://forms.gle/iK6vwEsg2d4Fq7Rd8" target="_blank">Se préinscrire</a>
 
