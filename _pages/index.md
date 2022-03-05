@@ -22,7 +22,9 @@ button_links:
   url: "/contact"
 ---
 
-![Eco Ecole](/assets/images/logo/logo_eco_ecole.png)
+<figure style="display: grid;">
+  <img src="/assets/images/logo/logo_eco_ecole.png" alt="Eco Ecole" style="margin: 0 auto 1em auto;">
+</figure>
 
 ## QUI SOMMES-NOUS?
 

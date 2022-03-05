@@ -8,6 +8,9 @@ browse:
 browse-api: ## Open the API documentation in a browser
 	firefox $(API_HOST)/api
 
+install:
+	bundle install
+
 start: start-api serve
 
 serve:
