@@ -19,19 +19,14 @@
         <div class="card-body">
             <h2 class="card-title">
                 <a class="text-dark" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                {% if post.rating %}
-                <div class="mb-2 mt-2 font-weight-normal">
-                {% include star_rating_postbox.html %}
-                </div>
-                {% endif %}
             </h2>
             <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4>
         </div>
         <div class="card-footer bg-white">
             <div class="wrapfooter">
-                <span class="event-date">{{ post.date | date_to_string }}</span>
+                <span class="event-date">{{ post.start_date }}</span>
                 {% if post.end_date %}
-                    <span class="event-date"> au {{ post.end_date | date_to_string }}</span>
+                    <span> au </span><span class="event-date">{{ post.end_date }}</span>
                 {% endif %}
                 <div class="clearfix"></div>
             </div>
