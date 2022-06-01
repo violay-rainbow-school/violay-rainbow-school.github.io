@@ -27,10 +27,6 @@ educational_team_members:
     job_title: "Educatrice 3-6 ans"
     picture: "https://drive.google.com/uc?export=view&id=1sff6WJnWWLYvttNDZN93Fg90Iry_Pgqj"
     style: ""
-  - name: "Marie-Hélène Barbier"
-    job_title: "Formatrice et ressources Montessori"
-    picture: "https://drive.google.com/uc?export=view&id=1dJ07nYWbZl4fN_1D2fnM2xopZweu5TFU"
-    style: ""
 button_images:
   - "/assets/images/svg/button-red.svg"
   - "/assets/images/svg/button-orange.svg"

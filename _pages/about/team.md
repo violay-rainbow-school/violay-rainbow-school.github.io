@@ -47,17 +47,6 @@ Je suis maman de 2 enfants, Maëlle et Jonas. Avec mon mari, ce que nous souhait
 Nous avons alors créé l'association des parents d'élèves pour épauler Sophie et créer du lien entre les parents. En parallèle je suis enseignante-chercheure en microbiologie à l'université Lyon 1 et j'ai souhaité me former avec Marie-Hélène Barbier afin de changer ma posture d'enseignante. Lorsque cette merveilleuse école dans laquelle nos enfants (et nous) ont passé 4 belles années, a fermé ses portes, nous n'avons pas trouvé d'école locale à la hauteur de nos espérances pour nos enfants et avons choisi de faire l'instruction en famille. Après ces quelques mois d'IEF, les enfants ont émis le souhait de retrouver un groupe classe. Quant à moi, cette expérience d'enseignement avec mes enfants m'a appris la patience et la joie de voir leurs visages s'illuminer pour chaque notion comprise ! C'est donc une grande opportunité pour tous les 3 de rejoindre l'école Arc-en-ciel ! 
 Je serai au-coté d'Angélique en tant qu'éducatrice 3-6 ans pour prendre soin de vos enfants.
 
-
-<img src="https://user-images.githubusercontent.com/78353339/133678107-7bde2203-a6ff-4ffb-bee2-0cbe29dc5b4b.jpeg" width="300">
-
-## Sarah Boudeheb 
-
-Volontaire en service civique
-
-Je m'appelle Sarah, je viens d'intégrer l'équipe de l’éco-école Arc-en-ciel pour une mission de service civique d’une durée de 6 mois. Je souhaite y apporter mon dynamisme, ma bienveillance, et être très à l'écoute de chacun. J’ai pour projet d’obtenir mon BAFA pour faire de l'animation auprès des petits comme des grands, donc cette expérience pourra m'aider dans mon développement professionnel. Je suis impatiente de débuter cette action sociale car c'est une passion pour moi de travailler auprès des enfants. Imaginative et vive d'esprit, je saurai mener à bien les activités proposées durant ma période de service civique. 
-Cette année est une première étape à l'aboutissement de mes projets, je suis ravie de pouvoir progresser dans cet établissement. J’ai hâte de découvrir les spécificités de cette pédagogie dont on parle tant.
-
-
 <figure id="team-member-2" style="background-image: url({{ site.educational_team_members[2].picture }})"></figure>
 
 ## Marie-Hélène Barbier
