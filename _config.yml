@@ -21,11 +21,15 @@ educational_project_url: 'https://s3.amazonaws.com/transparentclassroom.com/scho
 educational_team_members:
   - name: "Sophie Pardigon"
     job_title: "Directrice et éducatrice 6-12 ans"
-    picture: "https://drive.google.com/uc?export=view&id=1LLXYMrRnpMuTN8zCHVQWlCVzGgZ2VOyz"
+    picture: "assets/images/team/sophie.jpg"
     style: "background-position: 0 0;"
   - name: "Angélique Dumontet"
     job_title: "Educatrice 3-6 ans"
-    picture: "https://drive.google.com/uc?export=view&id=1sff6WJnWWLYvttNDZN93Fg90Iry_Pgqj"
+    picture: "assets/images/team/angelique.jpg"
+    style: ""
+  - name: "Bénédicte Coupat-Goutaland"
+    job_title: "Educatrice 3-6 ans"
+    picture: "https://user-images.githubusercontent.com/78353339/133677364-2cb1169c-3571-4c45-a686-80032ac8e946.jpeg"
     style: ""
 button_images:
   - "/assets/images/svg/button-red.svg"

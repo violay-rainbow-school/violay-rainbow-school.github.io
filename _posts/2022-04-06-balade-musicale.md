@@ -4,6 +4,9 @@ title: Balade musicale
 categories:
 - Event
 start_date: 05/06/2022
+image: ~
 ---
 
-![](https://drive.google.com/uc?export=view&id=19NxNYbJ8eBA50h8PLUBDjTsIfpWFtsJv)
+Petite randonnée d'environ 5 km ponctuée de plusieurs pauses musicales à partir de 14h. Informations et réservations au 06 75 17 97 72.
+
+![](/assets/images/events/2022-06-05_affiche_balade_musicale.jpeg)
