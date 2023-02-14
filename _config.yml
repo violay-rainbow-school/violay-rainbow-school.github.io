@@ -31,6 +31,10 @@ educational_team_members:
     job_title: "Educatrice 3-6 ans"
     picture: "https://user-images.githubusercontent.com/78353339/133677364-2cb1169c-3571-4c45-a686-80032ac8e946.jpeg"
     style: ""
+  - name: "Cécile Dronneau"
+    job_title: "Educatrice 6-12 ans"
+    picture: "assets/images/team/cecile.jpg"
+    style: ""
 button_images:
   - "/assets/images/svg/button-red.svg"
   - "/assets/images/svg/button-orange.svg"
