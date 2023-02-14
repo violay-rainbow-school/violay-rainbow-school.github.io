@@ -45,7 +45,19 @@ Je suis maman de 2 enfants, Maëlle et Jonas. Avec mon mari, ce que nous souhait
 Nous avons alors créé l'association des parents d'élèves pour épauler Sophie et créer du lien entre les parents. En parallèle je suis enseignante-chercheure en microbiologie à l'université Lyon 1 et j'ai souhaité me former avec Marie-Hélène Barbier afin de changer ma posture d'enseignante. Lorsque cette merveilleuse école dans laquelle nos enfants (et nous) ont passé 4 belles années, a fermé ses portes, nous n'avons pas trouvé d'école locale à la hauteur de nos espérances pour nos enfants et avons choisi de faire l'instruction en famille. Après ces quelques mois d'IEF, les enfants ont émis le souhait de retrouver un groupe classe. Quant à moi, cette expérience d'enseignement avec mes enfants m'a appris la patience et la joie de voir leurs visages s'illuminer pour chaque notion comprise ! C'est donc une grande opportunité pour tous les 3 de rejoindre l'école Arc-en-ciel ! 
 Je serai au-coté d'Angélique en tant qu'éducatrice 3-6 ans pour prendre soin de vos enfants.
 
-<figure id="team-member-2" style="background-image: url(assets/images/team/marie-helene.jpg)"></figure>
+<figure id="team-member-3" style="background-image: url(assets/images/team/cecile.jpg)"></figure>
+
+## Cécile Dronneau
+
+J’ai commencé en 1994 à m’investir auprès des enfants en tant qu’animatrice puis directrice dans les centres de vacances. Je participais régulièrement à des formations auprès des CEMEA (Centre d’Entrainement aux Méthodes d’Education Active) où j’ai pu découvrir une posture d’éducateur qui me convenait profondément et qui met l’autonomie de l’enfant et le respect de ses besoins en priorité.
+
+Après avoir obtenu une licence à la faculté de sciences humaines, j’ai passé le concours de professeure des écoles en 2003. J’ai exercé dans des écoles publiques en classes maternelles, élémentaires et spécialisées jusqu’en 2020.
+
+A la naissance de mes enfants, en 2014, les questions sur ma posture d’éducatrice au sens large et d’enseignante en particulier a pris un nouveau tournant. J’ai beaucoup lu autour de la notion de bienveillance et d’autonomie. Avec mon mari, nous avons suivi la formation Faber et Mazlich. J’ai visité des écoles à pédagogie particulières (Montessori, Steiner, Freinet, démocratiques). Notre réflexion nous a naturellement amené à choisir une école Montessori pour nos enfants. Ainsi nous sommes arrivés à l’école Arc-en-Ciel de Violay. En 2021, l’équipe pédagogique de l’école s’est étoffée et j’ai eu la chance d’être embauchée pour travailler dans la classe 6-12 ans. J’ai d’abord exercée en tant qu’assistante puis, après m’être formée auprès de Marie-Hélène Barbier (à la formation d’éducateur à la pédagogie Montessori 6-12 ans), en tant qu’éducatrice.
+
+Aujourd’hui, c’est un aboutissement et une chance pour moi de travailler au sein d’une école où les valeurs d’autonomie et de respect des besoins de l’enfant sont au centre. La pédagogie Montessori est aussi une base de réflexion profonde permettant un questionnement continu de notre posture, de nos pratiques. Cela permet de rester en lien étroit avec les besoins de l’enfant.
+
+<figure id="team-member-4" style="background-image: url(assets/images/team/marie-helene.jpg)"></figure>
 
 ## Marie-Hélène Barbier
 
