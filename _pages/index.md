@@ -36,7 +36,7 @@ Notre magnifique école bicentenaire, au cœur d’un village de montagne entre 
 
 Enthousiasmés par ce qui se vivait dans cette classe, nous avons décidé de poursuivre l’aventure en ouvrant en septembre 2017 notre classe primaire Montessori.
 
-Cette année, notre école continue de se construire et d'évoluer en accueillant notre nouvelle équipe : Sophie Pardigon et Angélique Dumontet ; qui toutes deux, donnent le meilleur d'elles-mêmes pour faire vivre les valeurs profondes de notre école : autonomie, liberté, respect.
+Depuis, familles, enseignants et bénévoles continuent à faire vivre cette belle école et ses valeurs qui l'ont porté tout au long de son histoire, notamment la sobriété et l'accessibilité financière.
 
 **Une école pour révéler le meilleur de chacun**
 
