@@ -7,7 +7,7 @@ image:
 imageshadow: true
 ---
 
-Notre école a une volonté très ambitieuse, celle d'être accessible à toutes les familles.
+Notre école a un souhait qui lui tient profondément à coeur, celui d'être accessible financièrement à toutes les familles.
 
 Nous faisons vivre cette valeur de non-élitisme financier par un fonctionnement très sobre et une confiance importante envers nos indispensables donateurs.
 
@@ -26,12 +26,5 @@ Vous recevrez automatiquement votre reçu fiscal et pourrez déduire de vos imp�
 
 **60% du montant de votre don si vous êtes une entreprise**
 
-**75% du montant de votre don si vous le déduisez de l'IFI**
-
 ## Votre soutien est très précieux, merci !
 
-Ils nous soutiennent :
-- [Albatross](https://www.albatrossglobal.org/)
-- [Pâte à tartiner](https://m.facebook.com/pateatartiner)
-- [Hypnothérapeute Bini](http://bien-dans-sa-tete.com/)
-- [Garage Farjot](https://www.facebook.com/garage.farjot/)
