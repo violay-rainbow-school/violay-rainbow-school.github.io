@@ -6,7 +6,7 @@ comments: false
 map: true
 ---
 
-Eco-école Montessori Arc-en-Ciel  
+Ecole Montessori Arc-en-Ciel  
 36 rue des genêts  
 42 780 VIOLAY  
 
