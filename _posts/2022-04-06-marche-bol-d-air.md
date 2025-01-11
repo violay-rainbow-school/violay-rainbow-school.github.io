@@ -1,9 +1,0 @@
----
-layout: post
-title: Marche du Bol d'Air
-categories:
-- Event
-start_date: 07/11/2021
----
-
-Randonnée pédestre, proposition de plusieurs circuits balisés de 5 à 28km, jusqu'à 5 relais, soupe à l'arrivée. Départs 7h45 salle 1004 à Violay. Renseignements au 06 32 08 83 46.
