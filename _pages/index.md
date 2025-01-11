@@ -36,7 +36,7 @@ Notre magnifique école bicentenaire, au cœur d’un village de montagne entre 
 
 Enthousiasmés par ce qui se vivait dans cette classe, nous avons décidé de poursuivre l’aventure en ouvrant en septembre 2017 notre classe primaire Montessori.
 
-Cette année, notre école continue de se construire et d'évoluer en accueillant notre nouvelle équipe : Sophie Pardigon et Angélique Dumontet ; qui toutes deux, donnent le meilleur d'elles-mêmes pour faire vivre les valeurs profondes de notre école : autonomie, liberté, respect.
+Depuis, notre école continue de se construire et d'évoluer et accueillant notre nouvelle directrice : Florence Gaillard et notre nouvelle assistante : Cynthia Michel. L'ensemble de l'équipe donne le meilleur d'elles-mêmes pour faire vivre les valeurs profondes de notre école : autonomie, liberté, respect.
 
 **Une école pour révéler le meilleur de chacun**
 
@@ -44,7 +44,7 @@ Libérer son plein potentiel dans la joie avec la pédagogie Montessori
 
 **Une école d'aujourd'hui pour le monde de demain**
 
-Avec un ancrage fort dans la nature, une ouverture sur le monde, la découverte des langues (anglais), des arts et de la culture :
+Avec un ancrage fort dans la nature, une ouverture sur le monde, la découverte des langues (anglais), sobriété de fonctionnement et des conditions optimales d'accueil :
 - semaine à 4 jours,
 - petits effectifs,
 - classes spacieuses et lumineuses
