@@ -19,7 +19,7 @@ phone:
   mobileLink: '+33632088346'
 educational_project_url: 'https://s3.amazonaws.com/transparentclassroom.com/schools/2760/2020/attachments/37c7a7d25c9f189d89782831492e41df3a285c50.original.pdf'
 educational_team_members:
-  - name: "Sophie Pardigon"
+  - name: "Florence Gaillard"
     job_title: "Directrice et éducatrice 6-12 ans"
     picture: "assets/images/team/sophie.jpg"
     style: "background-position: 0 0;"
@@ -28,11 +28,11 @@ educational_team_members:
     picture: "assets/images/team/angelique.jpg"
     style: ""
   - name: "Bénédicte Coupat-Goutaland"
-    job_title: "Educatrice 3-6 ans"
+    job_title: "Educatrice 6-12 ans"
     picture: "https://user-images.githubusercontent.com/78353339/133677364-2cb1169c-3571-4c45-a686-80032ac8e946.jpeg"
     style: ""
-  - name: "Cécile Dronneau"
-    job_title: "Educatrice 6-12 ans"
+  - name: "Cynthia Michel"
+    job_title: "Assistante 3-6 ans"
     picture: "assets/images/team/cecile.jpg"
     style: ""
 button_images:
