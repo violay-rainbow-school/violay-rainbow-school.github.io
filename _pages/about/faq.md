@@ -21,15 +21,13 @@ EST-CE UNE ECOLE COÛTEUSE?
 
 Notre école étant hors contrat, elle n’obtient aucun financement de la part de l’Etat.
 
-Mais grâce à la gestion des dépenses au plus serré et l’investissement important des parents, notre école est de très loin l’école hors contrat **la moins chère de toute la région**!
-
-Et c’est un réel tour de force pour l’association de proposer à ce tarif une école Montessori de haute qualité.
+Mais grâce à la gestion des dépenses au plus serré et l’investissement important des parents, notre école est très accessible!
 
 EN QUOI CONSISTE L’INVESTISSEMENT PARENTAL?
 
 Dans le projet pédagogique de l’école, les **parents font partie intégrante de la vie scolaire**. Il est en effet primordial qu’il y ait une réelle cohérence entre ce que vit l’enfant à l’école et à la maison. Les parents pourront donc souvent échanger avec les éducatrices, participer à des moments de classe pour présenter leur métier, faire découvrir un centre d’intérêt aux enfants…
 
-En outre, l’investissement des parents permet de **réduire le coût de la scolarité.** Il peut prendre des formes très variées :
+En outre, l’investissement des parents permet de **contenir le coût de la scolarité.** Il peut prendre des formes très variées :
 
 - participation bénévole à la vie de l’école : aide pour la garderie, les moments de repas, les sorties, le ménage…
 - mise en place ou participation à des manifestations lucratives : marches, concerts, cours d’initiation à la musique ou au bricolage… La liste peut s’allonger à l’infini en fonction de vos disponibilités, vos compétences et la participation de votre réseau de connaissances.
@@ -45,11 +43,9 @@ Si l’approche éducative de Maria Montessori s’applique à l’intégralité
 
 Nulle inquiétude à avoir, la scolarité Montessori est toujours une pépite dans la vie de l’enfant : il y développe une grande capacité d'adaptation, un sens aigu des responsabilités, de solides connaissances et construit son intelligence émotionnelle et sociale, qui lui permettront de continuer sa scolarité en milieu traditionnel sans difficulté.
 
-Chaque enfant, quelque soit son école de provenance, devra s’adapter à un nouveau fonctionnement au collège. L’autonomie déjà acquise et la confiance en eux sera un fort atout.
+Chaque enfant, quelque soit son école de provenance, devra s’adapter à un nouveau fonctionnement au collège. L’autonomie déjà acquise et la confiance en eux sera un fort atout. 
 
-En outre, Sophie, notre directrice et éducatrice Montessori 6-12 a enseigné plus de 10 ans dans le secondaire, elle connait parfaitement ce milieu et préparera nos élèves à ce grand changement en douceur. 
-
-Sur le plan administratif, il est prévu que les enfants qui passent dans un collège publique passent un petit test d’orientation (similaire aux évaluations nationales que passent les élèves des écoles publiques pour évaluer le niveau moyen français). Le collège Champagnat de Feurs nous a informé qu’il ne demandera pas ce test et se basera sur l’avis de l’enseignantes de CM2.
+Sur le plan administratif, il est prévu que les enfants qui passent dans un collège publique passent un petit test d’orientation (similaire aux évaluations nationales que passent les élèves des écoles publiques pour évaluer le niveau moyen français). En pratique, il est souvent demandé simplement le dossier scolaire de l'enfant.
 
 EST-CE UNE ECOLE D’ÉLITES?
 
