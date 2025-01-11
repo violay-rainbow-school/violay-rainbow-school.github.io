@@ -30,8 +30,3 @@ Vous recevrez automatiquement votre reçu fiscal et pourrez déduire de vos imp�
 
 ## Votre soutien est très précieux, merci !
 
-Ils nous soutiennent :
-- [Albatross](https://www.albatrossglobal.org/)
-- [Pâte à tartiner](https://m.facebook.com/pateatartiner)
-- [Hypnothérapeute Bini](http://bien-dans-sa-tete.com/)
-- [Garage Farjot](https://www.facebook.com/garage.farjot/)
