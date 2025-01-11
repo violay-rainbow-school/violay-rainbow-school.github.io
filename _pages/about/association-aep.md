@@ -26,32 +26,30 @@ Les manifestations sont organisées par l’AEP et l’association ParenTssori o
 ## LES FONDATRICES
 
 Magalie Farjot
-Photo
+
 
 Eliette Lafay
-Photo
+
 
 ### Un petit mot de nos fondatrices
 
-> "A la naissance de mes enfants, j’ai découvert progressivement tout un monde : Isabelle Filiozat, Faber et Malish, la CNV, l’éducation positive et les pédagogies actives (Montessori, 3ème type…). Mon investissement dans ce projet c’est donc fait tout naturellement, comme une évidence… "– Magalie Farjot
+> "A la naissance de mes enfants, j’ai découvert progressivement tout un monde : Isabelle Filiozat, Faber et Malish, la CNV, l’éducation positive et les pédagogies actives (Montessori…). Mon investissement dans ce projet c’est donc fait tout naturellement, comme une évidence… "– Magalie Farjot
 
 > "J’aime cette belle école pour son âme, son histoire, en mémoire à tous les gens qui l’ont fait vivre et évoluer. Je m’investi pour les enfants, pour conserver le choix d’école. Il me semble important de faire vivre toutes ces petites écoles qui font vivre les villages." – Eliette Lafay
 
 ## Notre équipe
 
-Diaporama?
+
 
 Magalie FARJOT, Présidente 
-Photo
 
-Emmanuel Mure, Trésorier
-Photo
 
-Alexandra Jacobs, Secrétaire
-Photo
+Marie-Ange Gieskes, Trésorière
 
-Anne-Claire Rouquier, Membre active
-Photo
+
+Chantal Perrier, Vice-trésorière
+
 
 Eliette Lafay, Membre active
-Photo
+
+
