@@ -51,7 +51,7 @@ Je suis maman de 2 enfants, Maëlle et Jonas. Avec mon mari, ce que nous souhait
 
 Nous avons alors créé l'association des parents d'élèves pour épauler la directrice et créer du lien entre les parents. En parallèle je suis enseignante-chercheure en microbiologie à l'université Lyon 1 et j'ai souhaité me former avec Marie-Hélène Barbier afin de changer ma posture d'enseignante. Lorsque cette merveilleuse école dans laquelle nos enfants (et nous) ont passé 4 belles années, a fermé ses portes, nous n'avons pas trouvé d'école locale à la hauteur de nos espérances pour nos enfants et avons choisi de faire l'instruction en famille. Après ces quelques mois d'IEF, les enfants ont émis le souhait de retrouver un groupe classe. Quant à moi, cette expérience d'enseignement avec mes enfants m'a appris la patience et la joie de voir leurs visages s'illuminer pour chaque notion comprise ! C'est donc une grande opportunité pour tous les 3 de rejoindre l'école Arc-en-ciel ! 
 
-<figure id="team-member-3" style="background-image: url(assets/images/team/cecile.jpg)"></figure>
+<figure id="team-member-3" style="background-image: url(assets/images/team/cynthia.jpg)"></figure>
 
 ## Cynthia Michel
 
@@ -62,7 +62,7 @@ En 2022, j’ai eu l’opportunité d’effectuer mon service civique en classe 
 Durant l’année scolaire 2023-2024, j’ai travaillé en tant qu’ASEM (Agent Spécialisé des Écoles Maternelles) à l’école privée Jeanne d’Arc de Panissières, où j’ai soutenu les élèves dans leur quotidien scolaire et contribué à l’organisation de leur environnement.
 À présent, c’est avec enthousiasme que je rejoins l’école Arc-en-Ciel en tant qu’assistante 3-6 ans, aux côtés d’Angélique. Je suis ravie d’apporter ma bienveillance et mon engagement pour veiller au bien-être de vos enfants.
 
-<figure id="team-member-4" style="background-image: url(assets/images/team/marie-helene.jpg)"></figure>
+
 
 
 
