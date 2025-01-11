@@ -7,10 +7,8 @@ image:
 imageshadow: true
 ---
 
-Les frais de scolarité sont détaillés dans le document suivant : [charte financière](/assets/pdf/2022-2023-financial-charter.pdf)
+Les frais de scolarité sont adaptés afin que toutes les familles puissent inscrire leur enfant quelque soit leurs moyens financiers.
 
-N'hésitez pas à contacter l'association gérante (Magalie Farjot, AEP : 06 32 08 83 46, aep.violay@gmail.com) si ce tarif est trop élevé pour votre budget, nous avons des solutions à vous proposer pour que cette école soit accessible à tous.
+Pour que cela puisse se faire, l'association gérante sollicite la participation des familles (pour l'organisation de ses évènements, des services à l'école, rechercher des dons...) 
 
-Frais pour une première inscription : 100€ non remboursables en cas de désistement.
-
-Le paiement se fait annuellement ou mensuellement.
+N'hésitez pas à contacter Magalie Farjot, gérante : 06 32 08 83 46, aep.violay@gmail.com, pour plus de précisions.
