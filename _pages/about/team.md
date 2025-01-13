@@ -58,8 +58,11 @@ Nous avons alors créé l'association des parents d'élèves pour épauler la di
 Assistante Montessori 3-6 ans
 
 Lors de mon Bac professionnel ASSP (Accompagnement, Soins et Services à la Personne), j’ai découvert l’animation, ce qui m’a incitée à passer mon BAFA en 2021. Depuis, j’exerce le métier d’animatrice, un rôle dans lequel je m’épanouis pleinement en encadrant les enfants dans la réalisation d’activités ludiques et créatives.
+
 En 2022, j’ai eu l’opportunité d’effectuer mon service civique en classe de 3-6 ans au sein de cette école. Cette pratique m’a permis de découvrir la pédagogie Montessori, d’accompagner les enfants dans leur développement, tout en favorisant leur autonomie. Cela m’a également donné l’envie de poursuivre cette approche éducative dans ma carrière professionnelle.
+
 Durant l’année scolaire 2023-2024, j’ai travaillé en tant qu’ASEM (Agent Spécialisé des Écoles Maternelles) à l’école privée Jeanne d’Arc de Panissières, où j’ai soutenu les élèves dans leur quotidien scolaire et contribué à l’organisation de leur environnement.
+
 À présent, c’est avec enthousiasme que je rejoins l’école Arc-en-Ciel en tant qu’assistante 3-6 ans, aux côtés d’Angélique. Je suis ravie d’apporter ma bienveillance et mon engagement pour veiller au bien-être de vos enfants.
 
 
