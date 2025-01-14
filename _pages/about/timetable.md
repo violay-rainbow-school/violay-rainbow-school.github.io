@@ -22,3 +22,11 @@ Pour le repas, les enfants apportent leur panier repas : préparée par vos soin
 ## Garderie
 
 Actuellement, la garderie a lieu tous les jours de 16h45 à 17h30. Une garderie le matin peut être mise en place en fonction de la demande. 
+
+## Catéchisme - Préparation aux sacrements
+
+Le catéchisme est proposé le lundi de 16h45 à 17h45 pour :
+- Découvrir la foi catholique
+- Approfondir ses connaissances, développer sa vie de prière
+- Préparer un sacrement (baptême, communion, confirmation)
+En lien avec notre paroisse.
