@@ -36,7 +36,7 @@ Notre magnifique école bicentenaire, au cœur d’un village de montagne entre 
 
 Enthousiasmés par ce qui se vivait dans cette classe, nous avons décidé de poursuivre l’aventure en ouvrant en septembre 2017 notre classe primaire Montessori. Depuis, notre école continue de se construire et d'évoluer.
 
-Nous accueillons cette année notre nouvelle directrice : Florence Gaillard et notre nouvelle assistante : Cynthia Michel. L'ensemble de l'équipe donne le meilleur d'elles-mêmes pour faire vivre les priorités éducatives de notre école : autonomie, liberté, respect ; soutenue par les membres de l'association qui mettent tout leur coeur à offrir le meilleur cadre pour cette école, dans un sobriété de fonctionnement et un esprit de service qui nous permet d'être financièrement accessible à tous ! 
+Nous accueillons cette année notre nouvelle directrice : Florence Gaillard et notre nouvelle assistante : Cynthia Michel. L'ensemble de l'équipe donne le meilleur d'elles-mêmes pour faire vivre les priorités éducatives de notre école : autonomie, liberté, respect ; soutenue par les membres de l'association qui mettent tout leur coeur à offrir le meilleur cadre pour cette école, dans une sobriété de fonctionnement et un esprit de service qui nous permet d'être financièrement accessible à tous ! 
 
 **Une école pour révéler le meilleur de chacun**
 
@@ -56,6 +56,7 @@ Des conditions optimales d'accueil :
 
 > « N’élevons pas nos enfants pour le monde d’aujourd’hui. Ce monde aura changé lorsqu’ils seront grands. Aussi doit-on en priorité aider l’enfant à cultiver ses facultés de création et d’adaptation. » Maria Montessori
 
+**Notre projet pédagogique**
 
 Retrouvez l'intégralité de nos priorités éducatives et valeurs dans le projet ci-dessous :
 [Projet pédagogique](/educational-project)
