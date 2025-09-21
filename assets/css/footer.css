@@ -32,6 +32,15 @@
     margin: auto;
 }
 
+.footer-instagram-link {
+    display: block;
+    background-image: url("/assets/images/svg/instagram_footer.svg");
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    margin: auto;
+}
+
 .footer-bye {
     margin-top: 1em;
     font-size: 2em;
