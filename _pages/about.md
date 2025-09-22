@@ -15,7 +15,7 @@ button_links:
   - content: "Coût"
     url: "/cost"
   - content: "Photos de notre école"
-    url: "/portfolio"
+    url: "/slideshow"
   - content: "Association gérante"
     url: "/association-aep"
   - content: "Horaires"
