@@ -16,8 +16,8 @@ Notre projet vous touche, vous partagez nos valeurs et souhaitez nous soutenir ?
 Vous pouvez en toute simplicité effectuer votre don ci-dessous :
 
 <div class="contribute-link-wrapper">
-    <a class="contribute-link" href="https://www.helloasso.com/associations/ecole-montessori-arc-en-ciel/collectes/mecenat-particulier/don">Vous êtes un particulier<br><span class="contribute-link-donate">Faire un don</span></a>
-    <a class="contribute-link" href="https://www.helloasso.com/associations/ecole-montessori-arc-en-ciel/formulaires/1">Vous êtes un professionnel<br><span class="contribute-link-donate">Faire un don</span></a>
+    <a class="contribute-link" href="https://www.helloasso.com/associations/ecole-montessori-arc-en-ciel-aep-de-violay/collectes/dons-particuliers-et-entreprises-pour-nous-soutenir">Vous êtes un particulier<br><span class="contribute-link-donate">Faire un don</span></a>
+    <a class="contribute-link" href="[https://www.helloasso.com/associations/ecole-montessori-arc-en-ciel/formulaires/1](https://www.helloasso.com/associations/ecole-montessori-arc-en-ciel-aep-de-violay/collectes/dons-particuliers-et-entreprises-pour-nous-soutenir)">Vous êtes un professionnel<br><span class="contribute-link-donate">Faire un don</span></a>
 </div>
 
 Vous recevrez automatiquement votre reçu fiscal et pourrez déduire de vos impôts :
