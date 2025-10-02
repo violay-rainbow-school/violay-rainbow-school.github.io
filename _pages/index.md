@@ -10,7 +10,7 @@ show_site_tag: false
 button_links:
 - content: "Présentation"
   url: "/about"
-- content: "Photos"
+- content: "Photos/Vidéos"
   url: "/slideshow"
 - content: "Rejoindre l'école"
   url: "/school-registration"
