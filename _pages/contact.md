@@ -12,8 +12,7 @@ Ecole Montessori Arc-en-Ciel
 
 <montessori.violay@gmail.com>  
 04 74 63 91 41
-
-Florence Gailllard, Directrice : <direction.montessori.violay@gmail.com>  
+ 
 Magalie Farjot, Présidente AEP : <aep.violay@gmail.com>, 06 32 08 83 46
 
 Vous souhaitez nous rejoindre ?
